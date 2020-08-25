@@ -40,19 +40,47 @@ OracleVirtualCloudNetworkUtils.prototype = {
             }
         return outputs;
     },
+	
+	createTagsPayload: function(inputTags) {
+        var tags = {};
+        inputTags.forEach(function(property) {
+            if (property.Name)
+                tags[property.Name] = property.Value;
+        });
+        return tags;
+    },
+    trimValues: function(inputArr) {
+        inputArr.forEach(function(inputArr) {
+            for (var key in inputArr) {
+                inputArr[key] = inputArr[key].trim();
+            }
+            return inputArr;
+        });
+
+    },
+	
+	createPayload: function (obj, keys) {
+        var payload = {};
+        keys.forEach(function(key) {
+            if (obj[key])
+
+                payload[key] = obj[key];
+        });
+        return payload;
+    },
     type: 'OracleVirtualCloudNetworkUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-20 09:41:31</sys_created_on>
         <sys_id>3f961cf0db76541020c17a2faa9619af</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>OracleVirtualCloudNetworkUtils</sys_name>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_script_include_3f961cf0db76541020c17a2faa9619af</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-20 09:41:31</sys_updated_on>
+        <sys_updated_on>2020-08-25 10:21:22</sys_updated_on>
     </sys_script_include>
 </record_update>
