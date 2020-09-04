@@ -10,23 +10,23 @@
         <copied_from/>
         <copied_from_name/>
         <description/>
-        <ih_action>false</ih_action>
+        <ih_action>true</ih_action>
         <internal_name>lookup_network</internal_name>
-        <label_cache>[{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartment_id}}","label":"step➛Pre Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartmentid}}","label":"step➛Pre Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartmentid1}}","label":"step➛Pre Processing➛CompartmentId","type":"step","ref":""},{"name":"{{step[8b7a7100-38c0-4908-885f-00e201cd1661].response_body}}","label":"step➛Lookup Network➛Response Body","type":"step","ref":""},{"name":"{{step[8b7a7100-38c0-4908-885f-00e201cd1661].status_code}}","label":"step➛Lookup Network➛Status Code","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3]._}}","label":"step➛Post Processing➛","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].error_message}}","label":"step➛Post Processing➛error_message","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].documents}}","label":"step➛Post Processing➛documents","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>4272ced2db365410b7a7e5bd0b961901</latest_snapshot>
+        <label_cache>[{"name":"{{action.cidr_block}}","label":"action➛CIDR Block","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Subnet Id","type":"action","ref":""},{"name":"{{action.availability_domain}}","label":"action➛Availability Domain","type":"action","ref":""},{"name":"{{action.dhcpoptionsid}}","label":"action➛dhcpOptionsId","type":"action","ref":""},{"name":"{{action.dhcp_options_id}}","label":"action➛Dhcp Options Id","type":"action","ref":""},{"name":"{{action.displayname}}","label":"action➛DisplayName","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action.dns_label}}","label":"action➛DNS Label","type":"action","ref":""},{"name":"{{action.ipv6_cidr_block}}","label":"action➛IPV6 CIDR Block","type":"action","ref":""},{"name":"{{action.prohibit_publicip_on_vnic}}","label":"action➛Prohibit PublicIp On Vnic","type":"action","ref":""},{"name":"{{action.prohibit_public_ip_on_vnic}}","label":"action➛Prohibit Public Ip on VNIC","type":"action","ref":""},{"name":"{{action.routetable_id}}","label":"action➛RouteTable Id","type":"action","ref":""},{"name":"{{action.security_list_ids}}","label":"action➛Security List Ids","type":"action","ref":""},{"name":"{{action.freeform_tags}}","label":"action➛Freeform Tags","type":"action","ref":""},{"name":"{{action.defined_tags}}","label":"action➛Defined Tags","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags}}","label":"action➛Freeform Tags➛Tags","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags.Name}}","label":"action➛Freeform Tags➛Tags➛Name","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags.Value}}","label":"action➛Freeform Tags➛Tags➛Value","type":"action","ref":""},{"name":"{{action.security_list_ids.Security_List_Id}}","label":"action➛Security List Ids➛Security List Id","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].payload}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[88602dda-a9ad-4966-9921-346344880197].status_code}}","label":"step➛Get Subnet➛Status Code","type":"step","ref":""},{"name":"{{step[88602dda-a9ad-4966-9921-346344880197].response_body}}","label":"step➛Get Subnet➛Response Body","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].availabilitydomain}}","label":"step➛Post Processing➛availabilityDomain","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].cidrblock}}","label":"step➛Post Processing➛cidrBlock","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].compartmentid}}","label":"step➛Post Processing➛compartmentId","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].dhcpoptionsid}}","label":"step➛Post Processing➛dhcpOptionsId","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].displayname}}","label":"step➛Post Processing➛displayName","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].id}}","label":"step➛Post Processing➛id","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].lifecyclestate}}","label":"step➛Post Processing➛lifecycleState","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].routetableid}}","label":"step➛Post Processing➛routeTableId","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].securitylistids}}","label":"step➛Post Processing➛securityListIds","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].timecreated}}","label":"step➛Post Processing➛timeCreated","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].vcnid}}","label":"step➛Post Processing➛vcnId","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].virtualrouterip}}","label":"step➛Post Processing➛virtualRouterIp","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].virtualroutermac}}","label":"step➛Post Processing➛virtualRouterMac","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].subnetdomainname}}","label":"step➛Post Processing➛subnetDomainName","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].ipv6publiccidrblock}}","label":"step➛Post Processing➛ipv6PublicCidrBlock","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].ipv6virtualrouterip}}","label":"step➛Post Processing➛ipv6VirtualRouterIp","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].ipv6cidrblock}}","label":"step➛Post Processing➛ipv6CidrBlock","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].prohibitpubliciponvnic}}","label":"step➛Post Processing➛prohibitPublicIpOnVnic","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].definedtags}}","label":"step➛Post Processing➛definedTags","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].dnslabel}}","label":"step➛Post Processing➛dnsLabel","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].freeformtags}}","label":"step➛Post Processing➛freeformTags","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].errormessage}}","label":"step➛Post Processing➛errormessage","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].securitylistids.securityListId}}","label":"step➛Post Processing➛securityListIds➛securityListId","type":"step","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].networkid}}","label":"step➛Pre Processing➛subnetid","type":"step","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].subnetid}}","label":"step➛Pre Processing➛subnetid","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartment_id}}","label":"step➛Pre Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartmentid}}","label":"step➛Pre Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartmentid1}}","label":"step➛Pre Processing➛CompartmentId","type":"step","ref":""},{"name":"{{step[8b7a7100-38c0-4908-885f-00e201cd1661].response_body}}","label":"step➛Lookup Network➛Response Body","type":"step","ref":""},{"name":"{{step[8b7a7100-38c0-4908-885f-00e201cd1661].status_code}}","label":"step➛Lookup Network➛Status Code","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3]._}}","label":"step➛Post Processing➛","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].error_message}}","label":"step➛Post Processing➛error_message","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].documents}}","label":"step➛Post Processing➛documents","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>2719df30db8b9810b7a7e5bd0b9619d6</latest_snapshot>
         <master_snapshot>a272ced2db365410b7a7e5bd0b96199a</master_snapshot>
         <name>Lookup Network</name>
         <natlang/>
         <outputs/>
         <outputs/>
-        <state>draft</state>
+        <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-24 06:14:15</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1fae08cedbf61410b7a7e5bd0b96192c</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>Lookup Network</sys_name>
         <sys_overrides/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -34,13 +34,73 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_1fae08cedbf61410b7a7e5bd0b96192c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 06:24:25</sys_updated_on>
+        <sys_updated_on>2020-09-02 10:02:08</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
     <sys_translated_text action="delete_multiple" query="documentkey=1fae08cedbf61410b7a7e5bd0b96192c"/>
     <sys_variable_value action="delete_multiple" query="document_key=1fae08cedbf61410b7a7e5bd0b96192c"/>
     <sys_element_mapping action="delete_multiple" query="id=1fae08cedbf61410b7a7e5bd0b96192c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>cidrblock</field>
+        <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>80c3dff8db4b9810b7a7e5bd0b961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].cidrblock}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>compartmentid</field>
+        <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>c0c3dff8db4b9810b7a7e5bd0b961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].compartmentid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>definedtags</field>
+        <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>33b3dff8db4b9810b7a7e5bd0b961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].definedtags}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>dhcpoptionsid</field>
+        <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>73b3dff8db4b9810b7a7e5bd0b961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].dhcpoptionsid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>displayname</field>
+        <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>0cc3dff8db4b9810b7a7e5bd0b961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].displayname}}</value>
+    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>error_message</field>
         <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
@@ -52,6 +112,42 @@
         <sys_updated_on>2020-08-24 11:03:37</sys_updated_on>
         <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
         <value>{{step[cf703277-754d-4242-afee-d673089d93e3].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>freeformtags</field>
+        <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>bbb3dff8db4b9810b7a7e5bd0b961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].freeformtags}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>id</field>
+        <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>08c3dff8db4b9810b7a7e5bd0b961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lifecyclestate</field>
+        <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>7fb3dff8db4b9810b7a7e5bd0b961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].lifecyclestate}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>output</field>
@@ -66,6 +162,42 @@
         <value>{{step[cf703277-754d-4242-afee-d673089d93e3].documents}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>prohibitpubliciponvnic</field>
+        <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>bfb3dff8db4b9810b7a7e5bd0b961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].prohibitpubliciponvnic}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>routetableid</field>
+        <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>c8c3dff8db4b9810b7a7e5bd0b961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].routetableid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>securitylistids</field>
+        <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>ccc3dff8db4b9810b7a7e5bd0b961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].securitylistids}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>status</field>
         <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
         <sys_created_by>admin</sys_created_by>
@@ -76,6 +208,66 @@
         <sys_updated_on>2020-08-24 11:03:37</sys_updated_on>
         <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
         <value>{{step[cf703277-754d-4242-afee-d673089d93e3].status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>timecreated</field>
+        <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>48c3dff8db4b9810b7a7e5bd0b961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].timecreated}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable17</field>
+        <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>44c3dff8db4b9810b7a7e5bd0b961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].errormessage}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>vcnid</field>
+        <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>84c3dff8db4b9810b7a7e5bd0b961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].vcnid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>virtualrouterip</field>
+        <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>37b3dff8db4b9810b7a7e5bd0b961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].vcnid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>virtualroutermac</field>
+        <id>1fae08cedbf61410b7a7e5bd0b96192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>f7b3dff8db4b9810b7a7e5bd0b961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1fae08cedbf61410b7a7e5bd0b96192c</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].virtualroutermac}}</value>
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=1fae08cedbf61410b7a7e5bd0b96192c^sys_idNOT IN4ee095c2dbba1410b7a7e5bd0b961914,e3f8f886db7a1410b7a7e5bd0b9619df,ebf8f886db7a1410b7a7e5bd0b9619ca"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
@@ -640,10 +832,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-24 09:19:08</sys_created_on>
         <sys_id>e3f8f886db7a1410b7a7e5bd0b9619df</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-24 11:03:36</sys_updated_on>
+        <sys_updated_on>2020-09-02 09:38:31</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e3f8f886db7a1410b7a7e5bd0b9619df"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -668,10 +860,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-24 09:19:08</sys_created_on>
         <sys_id>2ff8f886db7a1410b7a7e5bd0b9619f3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-24 09:19:08</sys_updated_on>
-        <value>eece3c01dbbe541020c17a2faa96193e</value>
+        <sys_updated_on>2020-09-02 09:38:31</sys_updated_on>
+        <value/>
         <variable display_value="">445c2a72b3701300176b051a16a8dcc2</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -687,6 +879,20 @@
         <sys_updated_on>2020-08-24 09:19:08</sys_updated_on>
         <value>https://iaas.ap-mumbai-1.oraclecloud.com</value>
         <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e3f8f886db7a1410b7a7e5bd0b9619df</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:31</sys_created_on>
+        <sys_id>9bb39ff8db4b9810b7a7e5bd0b9619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:31</sys_updated_on>
+        <value>89e8b8d3dbf2d410b7a7e5bd0b961947</value>
+        <variable display_value="">262882f03b23320057a4a2e334efc4f0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
@@ -719,15 +925,29 @@
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
         <document_key>e3f8f886db7a1410b7a7e5bd0b9619df</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:31</sys_created_on>
+        <sys_id>d7b39ff8db4b9810b7a7e5bd0b9619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:31</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e3f8f886db7a1410b7a7e5bd0b9619df</document_key>
         <order>5</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-24 09:19:08</sys_created_on>
         <sys_id>e3f8f886db7a1410b7a7e5bd0b9619f3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-24 09:19:08</sys_updated_on>
-        <value>define_connection_inline</value>
+        <sys_updated_on>2020-09-02 09:38:31</sys_updated_on>
+        <value>use_connection_alias</value>
         <variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -808,6 +1028,18 @@
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>e3f8f886db7a1410b7a7e5bd0b9619df</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:31</sys_created_on>
+        <sys_id>53b39ff8db4b9810b7a7e5bd0b9619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>credential_alias</field>
         <id>e3f8f886db7a1410b7a7e5bd0b9619df</id>
         <sys_created_by>admin</sys_created_by>
@@ -855,12 +1087,24 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>e3f8f886db7a1410b7a7e5bd0b9619df</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:31</sys_created_on>
+        <sys_id>9fb39ff8db4b9810b7a7e5bd0b9619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
     <sys_hub_step_ext_output action="delete_multiple" query="model=e3f8f886db7a1410b7a7e5bd0b9619df^sys_idNOT IN6ff8f886db7a1410b7a7e5bd0b9619e6"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=2a85870c-c178-4935-84b5-a406abb7b585</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=3e3ee90e-64cd-4272-8ce0-b7f3bb38d557</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -918,14 +1162,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-24 09:19:08</sys_created_on>
         <sys_id>6ff8f886db7a1410b7a7e5bd0b9619e6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-24 11:03:36</sys_updated_on>
+        <sys_updated_on>2020-09-02 09:38:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1240,7 +1484,7 @@
         <hint/>
         <internal_type display_value="String">string</internal_type>
         <label>Compartment Id</label>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Lookup Network">1fae08cedbf61410b7a7e5bd0b96192c</model>
         <model_id>1fae08cedbf61410b7a7e5bd0b96192c</model_id>
@@ -1265,14 +1509,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-24 09:19:07</sys_created_on>
         <sys_id>23f8fc46db7a1410b7a7e5bd0b961947</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:21:28</sys_updated_on>
+        <sys_updated_on>2020-09-02 09:42:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1349,14 +1593,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-24 11:03:37</sys_created_on>
         <sys_id>0ae095c2dbba1410b7a7e5bd0b96193f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:21:28</sys_updated_on>
+        <sys_updated_on>2020-09-02 10:01:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1432,14 +1676,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-24 11:03:37</sys_created_on>
         <sys_id>82e095c2dbba1410b7a7e5bd0b961939</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:21:28</sys_updated_on>
+        <sys_updated_on>2020-09-02 10:01:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1515,14 +1759,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-24 11:03:37</sys_created_on>
         <sys_id>c6e095c2dbba1410b7a7e5bd0b961945</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:21:28</sys_updated_on>
+        <sys_updated_on>2020-09-02 10:01:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2097,10 +2341,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-24 09:19:08</sys_created_on>
         <sys_id>e3f8f886db7a1410b7a7e5bd0b9619df</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-24 11:03:36</sys_updated_on>
+        <sys_updated_on>2020-09-02 09:38:31</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e3f8f886db7a1410b7a7e5bd0b9619df"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2125,10 +2369,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-24 09:19:08</sys_created_on>
         <sys_id>2ff8f886db7a1410b7a7e5bd0b9619f3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-24 09:19:08</sys_updated_on>
-        <value>eece3c01dbbe541020c17a2faa96193e</value>
+        <sys_updated_on>2020-09-02 09:38:31</sys_updated_on>
+        <value/>
         <variable display_value="">445c2a72b3701300176b051a16a8dcc2</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2144,6 +2388,20 @@
         <sys_updated_on>2020-08-24 09:19:08</sys_updated_on>
         <value>https://iaas.ap-mumbai-1.oraclecloud.com</value>
         <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e3f8f886db7a1410b7a7e5bd0b9619df</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:31</sys_created_on>
+        <sys_id>9bb39ff8db4b9810b7a7e5bd0b9619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:31</sys_updated_on>
+        <value>89e8b8d3dbf2d410b7a7e5bd0b961947</value>
+        <variable display_value="">262882f03b23320057a4a2e334efc4f0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
@@ -2176,15 +2434,29 @@
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
         <document_key>e3f8f886db7a1410b7a7e5bd0b9619df</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:31</sys_created_on>
+        <sys_id>d7b39ff8db4b9810b7a7e5bd0b9619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:31</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e3f8f886db7a1410b7a7e5bd0b9619df</document_key>
         <order>5</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-24 09:19:08</sys_created_on>
         <sys_id>e3f8f886db7a1410b7a7e5bd0b9619f3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-24 09:19:08</sys_updated_on>
-        <value>define_connection_inline</value>
+        <sys_updated_on>2020-09-02 09:38:31</sys_updated_on>
+        <value>use_connection_alias</value>
         <variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2265,6 +2537,18 @@
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>e3f8f886db7a1410b7a7e5bd0b9619df</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:31</sys_created_on>
+        <sys_id>53b39ff8db4b9810b7a7e5bd0b9619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>credential_alias</field>
         <id>e3f8f886db7a1410b7a7e5bd0b9619df</id>
         <sys_created_by>admin</sys_created_by>
@@ -2312,12 +2596,24 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>e3f8f886db7a1410b7a7e5bd0b9619df</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:31</sys_created_on>
+        <sys_id>9fb39ff8db4b9810b7a7e5bd0b9619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
     <sys_hub_step_ext_output action="delete_multiple" query="model=e3f8f886db7a1410b7a7e5bd0b9619df^sys_idNOT IN6ff8f886db7a1410b7a7e5bd0b9619e6"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=2a85870c-c178-4935-84b5-a406abb7b585</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=3e3ee90e-64cd-4272-8ce0-b7f3bb38d557</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2375,14 +2671,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-24 09:19:08</sys_created_on>
         <sys_id>6ff8f886db7a1410b7a7e5bd0b9619e6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-24 11:03:36</sys_updated_on>
+        <sys_updated_on>2020-09-02 09:38:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2757,17 +3053,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Lookup Network">1fae08cedbf61410b7a7e5bd0b96192c</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"eb720216db365410b7a7e5bd0b9619bb","name":"plan"}}</plan>
-        <snapshot>4272ced2db365410b7a7e5bd0b961901</snapshot>
+        <snapshot>2719df30db8b9810b7a7e5bd0b9619d6</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:45</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>eb720216db365410b7a7e5bd0b9619bb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:45</sys_updated_on>
+        <sys_updated_on>2020-09-02 10:02:11</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2780,7 +3076,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>lookup_network</internal_name>
-        <label_cache>[{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartment_id}}","label":"step➛Pre Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartmentid}}","label":"step➛Pre Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartmentid1}}","label":"step➛Pre Processing➛CompartmentId","type":"step","ref":""},{"name":"{{step[8b7a7100-38c0-4908-885f-00e201cd1661].response_body}}","label":"step➛Lookup Network➛Response Body","type":"step","ref":""},{"name":"{{step[8b7a7100-38c0-4908-885f-00e201cd1661].status_code}}","label":"step➛Lookup Network➛Status Code","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3]._}}","label":"step➛Post Processing➛","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].error_message}}","label":"step➛Post Processing➛error_message","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].documents}}","label":"step➛Post Processing➛documents","type":"step","ref":""}]</label_cache>
+        <label_cache>[{"name":"{{action.cidr_block}}","label":"action➛CIDR Block","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Subnet Id","type":"action","ref":""},{"name":"{{action.availability_domain}}","label":"action➛Availability Domain","type":"action","ref":""},{"name":"{{action.dhcpoptionsid}}","label":"action➛dhcpOptionsId","type":"action","ref":""},{"name":"{{action.dhcp_options_id}}","label":"action➛Dhcp Options Id","type":"action","ref":""},{"name":"{{action.displayname}}","label":"action➛DisplayName","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action.dns_label}}","label":"action➛DNS Label","type":"action","ref":""},{"name":"{{action.ipv6_cidr_block}}","label":"action➛IPV6 CIDR Block","type":"action","ref":""},{"name":"{{action.prohibit_publicip_on_vnic}}","label":"action➛Prohibit PublicIp On Vnic","type":"action","ref":""},{"name":"{{action.prohibit_public_ip_on_vnic}}","label":"action➛Prohibit Public Ip on VNIC","type":"action","ref":""},{"name":"{{action.routetable_id}}","label":"action➛RouteTable Id","type":"action","ref":""},{"name":"{{action.security_list_ids}}","label":"action➛Security List Ids","type":"action","ref":""},{"name":"{{action.freeform_tags}}","label":"action➛Freeform Tags","type":"action","ref":""},{"name":"{{action.defined_tags}}","label":"action➛Defined Tags","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags}}","label":"action➛Freeform Tags➛Tags","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags.Name}}","label":"action➛Freeform Tags➛Tags➛Name","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags.Value}}","label":"action➛Freeform Tags➛Tags➛Value","type":"action","ref":""},{"name":"{{action.security_list_ids.Security_List_Id}}","label":"action➛Security List Ids➛Security List Id","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].payload}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[88602dda-a9ad-4966-9921-346344880197].status_code}}","label":"step➛Get Subnet➛Status Code","type":"step","ref":""},{"name":"{{step[88602dda-a9ad-4966-9921-346344880197].response_body}}","label":"step➛Get Subnet➛Response Body","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].availabilitydomain}}","label":"step➛Post Processing➛availabilityDomain","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].cidrblock}}","label":"step➛Post Processing➛cidrBlock","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].compartmentid}}","label":"step➛Post Processing➛compartmentId","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].dhcpoptionsid}}","label":"step➛Post Processing➛dhcpOptionsId","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].displayname}}","label":"step➛Post Processing➛displayName","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].id}}","label":"step➛Post Processing➛id","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].lifecyclestate}}","label":"step➛Post Processing➛lifecycleState","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].routetableid}}","label":"step➛Post Processing➛routeTableId","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].securitylistids}}","label":"step➛Post Processing➛securityListIds","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].timecreated}}","label":"step➛Post Processing➛timeCreated","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].vcnid}}","label":"step➛Post Processing➛vcnId","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].virtualrouterip}}","label":"step➛Post Processing➛virtualRouterIp","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].virtualroutermac}}","label":"step➛Post Processing➛virtualRouterMac","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].subnetdomainname}}","label":"step➛Post Processing➛subnetDomainName","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].ipv6publiccidrblock}}","label":"step➛Post Processing➛ipv6PublicCidrBlock","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].ipv6virtualrouterip}}","label":"step➛Post Processing➛ipv6VirtualRouterIp","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].ipv6cidrblock}}","label":"step➛Post Processing➛ipv6CidrBlock","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].prohibitpubliciponvnic}}","label":"step➛Post Processing➛prohibitPublicIpOnVnic","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].definedtags}}","label":"step➛Post Processing➛definedTags","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].dnslabel}}","label":"step➛Post Processing➛dnsLabel","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].freeformtags}}","label":"step➛Post Processing➛freeformTags","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].errormessage}}","label":"step➛Post Processing➛errormessage","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].securitylistids.securityListId}}","label":"step➛Post Processing➛securityListIds➛securityListId","type":"step","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].networkid}}","label":"step➛Pre Processing➛subnetid","type":"step","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].subnetid}}","label":"step➛Pre Processing➛subnetid","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartment_id}}","label":"step➛Pre Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartmentid}}","label":"step➛Pre Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartmentid1}}","label":"step➛Pre Processing➛CompartmentId","type":"step","ref":""},{"name":"{{step[8b7a7100-38c0-4908-885f-00e201cd1661].response_body}}","label":"step➛Lookup Network➛Response Body","type":"step","ref":""},{"name":"{{step[8b7a7100-38c0-4908-885f-00e201cd1661].status_code}}","label":"step➛Lookup Network➛Status Code","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3]._}}","label":"step➛Post Processing➛","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].error_message}}","label":"step➛Post Processing➛error_message","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].documents}}","label":"step➛Post Processing➛documents","type":"step","ref":""}]</label_cache>
         <master>true</master>
         <name>Lookup Network</name>
         <natlang/>
@@ -2793,21 +3089,81 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a272ced2db365410b7a7e5bd0b96199a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:40</sys_updated_on>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=a272ced2db365410b7a7e5bd0b96199a"/>
     <sys_variable_value action="delete_multiple" query="document_key=a272ced2db365410b7a7e5bd0b96199a"/>
     <sys_element_mapping action="delete_multiple" query="id=a272ced2db365410b7a7e5bd0b96199a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>cidrblock</field>
+        <id>a272ced2db365410b7a7e5bd0b96199a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:39:02</sys_created_on>
+        <sys_id>3ad3173cdb4b9810b7a7e5bd0b961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:39:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].cidrblock}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>compartmentid</field>
+        <id>a272ced2db365410b7a7e5bd0b96199a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:39:02</sys_created_on>
+        <sys_id>7ad3173cdb4b9810b7a7e5bd0b961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:39:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].compartmentid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>definedtags</field>
+        <id>a272ced2db365410b7a7e5bd0b96199a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:39:02</sys_created_on>
+        <sys_id>b6d3173cdb4b9810b7a7e5bd0b961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:39:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].definedtags}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>dhcpoptionsid</field>
+        <id>a272ced2db365410b7a7e5bd0b96199a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:39:02</sys_created_on>
+        <sys_id>f6d3173cdb4b9810b7a7e5bd0b961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:39:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].dhcpoptionsid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>displayname</field>
+        <id>a272ced2db365410b7a7e5bd0b96199a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:39:02</sys_created_on>
+        <sys_id>b2d3173cdb4b9810b7a7e5bd0b961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:39:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].displayname}}</value>
+    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>error_message</field>
         <id>a272ced2db365410b7a7e5bd0b96199a</id>
@@ -2819,6 +3175,42 @@
         <sys_updated_on>2020-08-25 09:18:42</sys_updated_on>
         <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
         <value>{{step[cf703277-754d-4242-afee-d673089d93e3].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>freeformtags</field>
+        <id>a272ced2db365410b7a7e5bd0b96199a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:39:02</sys_created_on>
+        <sys_id>32d3173cdb4b9810b7a7e5bd0b961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:39:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].freeformtags}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>id</field>
+        <id>a272ced2db365410b7a7e5bd0b96199a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:39:02</sys_created_on>
+        <sys_id>bed3173cdb4b9810b7a7e5bd0b961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:39:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lifecyclestate</field>
+        <id>a272ced2db365410b7a7e5bd0b96199a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:39:02</sys_created_on>
+        <sys_id>f2d3173cdb4b9810b7a7e5bd0b961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:39:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].lifecyclestate}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>output</field>
@@ -2833,6 +3225,42 @@
         <value>{{step[cf703277-754d-4242-afee-d673089d93e3].documents}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>prohibitpubliciponvnic</field>
+        <id>a272ced2db365410b7a7e5bd0b96199a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:39:02</sys_created_on>
+        <sys_id>36d3173cdb4b9810b7a7e5bd0b961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:39:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].prohibitpubliciponvnic}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>routetableid</field>
+        <id>a272ced2db365410b7a7e5bd0b96199a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:39:02</sys_created_on>
+        <sys_id>72d3173cdb4b9810b7a7e5bd0b961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:39:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].routetableid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>securitylistids</field>
+        <id>a272ced2db365410b7a7e5bd0b96199a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:39:02</sys_created_on>
+        <sys_id>76d3173cdb4b9810b7a7e5bd0b961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:39:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].securitylistids}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>status</field>
         <id>a272ced2db365410b7a7e5bd0b96199a</id>
         <sys_created_by>admin</sys_created_by>
@@ -2843,6 +3271,66 @@
         <sys_updated_on>2020-08-25 09:18:42</sys_updated_on>
         <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
         <value>{{step[cf703277-754d-4242-afee-d673089d93e3].status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>timecreated</field>
+        <id>a272ced2db365410b7a7e5bd0b96199a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:39:02</sys_created_on>
+        <sys_id>fed3173cdb4b9810b7a7e5bd0b961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:39:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].timecreated}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable17</field>
+        <id>a272ced2db365410b7a7e5bd0b96199a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:39:02</sys_created_on>
+        <sys_id>fad3173cdb4b9810b7a7e5bd0b961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:39:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].errormessage}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>vcnid</field>
+        <id>a272ced2db365410b7a7e5bd0b96199a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:39:02</sys_created_on>
+        <sys_id>3ed3173cdb4b9810b7a7e5bd0b961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:39:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].vcnid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>virtualrouterip</field>
+        <id>a272ced2db365410b7a7e5bd0b96199a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:39:02</sys_created_on>
+        <sys_id>bad3173cdb4b9810b7a7e5bd0b961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:39:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].vcnid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>virtualroutermac</field>
+        <id>a272ced2db365410b7a7e5bd0b96199a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:39:02</sys_created_on>
+        <sys_id>7ed3173cdb4b9810b7a7e5bd0b961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:39:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a272ced2db365410b7a7e5bd0b96199a</table>
+        <value>{{step[da5ef75f-ba59-4612-88c1-8242577302b8].virtualroutermac}}</value>
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=a272ced2db365410b7a7e5bd0b96199a^sys_idNOT IN3e72ced2db365410b7a7e5bd0b9619cf,6272ced2db365410b7a7e5bd0b9619b8,ea72ced2db365410b7a7e5bd0b9619a2"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
@@ -2861,10 +3349,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:41</sys_created_on>
         <sys_id>3e72ced2db365410b7a7e5bd0b9619cf</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:41</sys_updated_on>
+        <sys_updated_on>2020-09-02 09:17:54</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3e72ced2db365410b7a7e5bd0b9619cf"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2889,9 +3377,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:41</sys_created_on>
         <sys_id>fe720216db365410b7a7e5bd0b96190c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:41</sys_updated_on>
+        <sys_updated_on>2020-09-02 09:17:54</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 // ... code ...
   var data = new Array();
@@ -2917,7 +3405,7 @@
             }
         } catch (ex) {
             var dummyDoc = new Object();
-            dummyDoc.label = '&lt;No Compartments retrieved&gt;';
+            dummyDoc.label = '&lt;No Network retrieved&gt;';
             dummyDoc.name = null;
             data.push(dummyDoc);
         } finally {
@@ -3407,10 +3895,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:41</sys_created_on>
         <sys_id>6272ced2db365410b7a7e5bd0b9619b8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:41</sys_updated_on>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6272ced2db365410b7a7e5bd0b9619b8"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3421,10 +3909,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:41</sys_created_on>
         <sys_id>3272ced2db365410b7a7e5bd0b9619cb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:41</sys_updated_on>
-        <value>define_connection_inline</value>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
+        <value>use_connection_alias</value>
         <variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3435,11 +3923,25 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:41</sys_created_on>
         <sys_id>3e72ced2db365410b7a7e5bd0b9619cb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
+        <value/>
+        <variable display_value="">445c2a72b3701300176b051a16a8dcc2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6272ced2db365410b7a7e5bd0b9619b8</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:59</sys_created_on>
+        <sys_id>4ad3d33cdb4b9810b7a7e5bd0b961930</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:41</sys_updated_on>
-        <value>eece3c01dbbe541020c17a2faa96193e</value>
-        <variable display_value="">445c2a72b3701300176b051a16a8dcc2</variable>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
+        <value>89e8b8d3dbf2d410b7a7e5bd0b961947</value>
+        <variable display_value="">262882f03b23320057a4a2e334efc4f0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
@@ -3468,6 +3970,20 @@
         <sys_updated_on>2020-08-25 09:18:41</sys_updated_on>
         <value>/20160918/vcns</value>
         <variable display_value="">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6272ced2db365410b7a7e5bd0b9619b8</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:59</sys_created_on>
+        <sys_id>86d3d33cdb4b9810b7a7e5bd0b961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="">37be397587c03300a8cc7d5e27cb0ba2</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
@@ -3575,6 +4091,18 @@
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>6272ced2db365410b7a7e5bd0b9619b8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:59</sys_created_on>
+        <sys_id>02d3d33cdb4b9810b7a7e5bd0b961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>credential_alias</field>
         <id>6272ced2db365410b7a7e5bd0b9619b8</id>
         <sys_created_by>admin</sys_created_by>
@@ -3622,12 +4150,24 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>6272ced2db365410b7a7e5bd0b9619b8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:59</sys_created_on>
+        <sys_id>4ed3d33cdb4b9810b7a7e5bd0b96192f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
     <sys_hub_step_ext_output action="delete_multiple" query="model=6272ced2db365410b7a7e5bd0b9619b8^sys_idNOT INf272ced2db365410b7a7e5bd0b9619be"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=2a85870c-c178-4935-84b5-a406abb7b585</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=3e3ee90e-64cd-4272-8ce0-b7f3bb38d557</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -3685,14 +4225,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:41</sys_created_on>
         <sys_id>f272ced2db365410b7a7e5bd0b9619be</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:41</sys_updated_on>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4007,7 +4547,7 @@
         <hint/>
         <internal_type display_value="String">string</internal_type>
         <label>Compartment Id</label>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Lookup Network">a272ced2db365410b7a7e5bd0b96199a</model>
         <model_id>a272ced2db365410b7a7e5bd0b96199a</model_id>
@@ -4032,14 +4572,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:40</sys_created_on>
         <sys_id>6672ced2db365410b7a7e5bd0b96199b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:40</sys_updated_on>
+        <sys_updated_on>2020-09-02 09:42:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4116,14 +4656,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:42</sys_created_on>
         <sys_id>8f720216db365410b7a7e5bd0b961916</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:42</sys_updated_on>
+        <sys_updated_on>2020-09-02 10:02:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4199,14 +4739,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:42</sys_created_on>
         <sys_id>8f720216db365410b7a7e5bd0b96191c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:42</sys_updated_on>
+        <sys_updated_on>2020-09-02 10:02:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4282,14 +4822,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:42</sys_created_on>
         <sys_id>f6720216db365410b7a7e5bd0b961910</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:42</sys_updated_on>
+        <sys_updated_on>2020-09-02 10:02:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4318,10 +4858,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:41</sys_created_on>
         <sys_id>3e72ced2db365410b7a7e5bd0b9619cf</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:41</sys_updated_on>
+        <sys_updated_on>2020-09-02 09:17:54</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3e72ced2db365410b7a7e5bd0b9619cf"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4346,9 +4886,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:41</sys_created_on>
         <sys_id>fe720216db365410b7a7e5bd0b96190c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:41</sys_updated_on>
+        <sys_updated_on>2020-09-02 09:17:54</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 // ... code ...
   var data = new Array();
@@ -4374,7 +4914,7 @@
             }
         } catch (ex) {
             var dummyDoc = new Object();
-            dummyDoc.label = '&lt;No Compartments retrieved&gt;';
+            dummyDoc.label = '&lt;No Network retrieved&gt;';
             dummyDoc.name = null;
             data.push(dummyDoc);
         } finally {
@@ -4864,10 +5404,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:41</sys_created_on>
         <sys_id>6272ced2db365410b7a7e5bd0b9619b8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:41</sys_updated_on>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6272ced2db365410b7a7e5bd0b9619b8"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4878,10 +5418,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:41</sys_created_on>
         <sys_id>3272ced2db365410b7a7e5bd0b9619cb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:41</sys_updated_on>
-        <value>define_connection_inline</value>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
+        <value>use_connection_alias</value>
         <variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4892,11 +5432,25 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:41</sys_created_on>
         <sys_id>3e72ced2db365410b7a7e5bd0b9619cb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
+        <value/>
+        <variable display_value="">445c2a72b3701300176b051a16a8dcc2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6272ced2db365410b7a7e5bd0b9619b8</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:59</sys_created_on>
+        <sys_id>4ad3d33cdb4b9810b7a7e5bd0b961930</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:41</sys_updated_on>
-        <value>eece3c01dbbe541020c17a2faa96193e</value>
-        <variable display_value="">445c2a72b3701300176b051a16a8dcc2</variable>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
+        <value>89e8b8d3dbf2d410b7a7e5bd0b961947</value>
+        <variable display_value="">262882f03b23320057a4a2e334efc4f0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
@@ -4925,6 +5479,20 @@
         <sys_updated_on>2020-08-25 09:18:41</sys_updated_on>
         <value>/20160918/vcns</value>
         <variable display_value="">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6272ced2db365410b7a7e5bd0b9619b8</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:59</sys_created_on>
+        <sys_id>86d3d33cdb4b9810b7a7e5bd0b961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="">37be397587c03300a8cc7d5e27cb0ba2</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
@@ -5032,6 +5600,18 @@
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>6272ced2db365410b7a7e5bd0b9619b8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:59</sys_created_on>
+        <sys_id>02d3d33cdb4b9810b7a7e5bd0b961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>credential_alias</field>
         <id>6272ced2db365410b7a7e5bd0b9619b8</id>
         <sys_created_by>admin</sys_created_by>
@@ -5079,12 +5659,24 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>6272ced2db365410b7a7e5bd0b9619b8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:59</sys_created_on>
+        <sys_id>4ed3d33cdb4b9810b7a7e5bd0b96192f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
     <sys_hub_step_ext_output action="delete_multiple" query="model=6272ced2db365410b7a7e5bd0b9619b8^sys_idNOT INf272ced2db365410b7a7e5bd0b9619be"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=2a85870c-c178-4935-84b5-a406abb7b585</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=3e3ee90e-64cd-4272-8ce0-b7f3bb38d557</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5142,14 +5734,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:18:41</sys_created_on>
         <sys_id>f272ced2db365410b7a7e5bd0b9619be</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:18:41</sys_updated_on>
+        <sys_updated_on>2020-09-02 09:38:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

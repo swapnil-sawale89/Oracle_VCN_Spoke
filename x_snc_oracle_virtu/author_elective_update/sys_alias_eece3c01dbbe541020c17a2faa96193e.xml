@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="DELETE">
+        <configuration_template/>
+        <connection_type>http_connection</connection_type>
+        <id>sn_oracle_vcn_spke.Oracle_VCN_Credential_Alias</id>
+        <multiple_connections>false</multiple_connections>
+        <name>Oracle_VCN_Credential_Alias</name>
+        <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-21 07:11:20</sys_created_on>
+        <sys_id>eece3c01dbbe541020c17a2faa96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_oracle_vcn_spke.Oracle_VCN_Credential_Alias</sys_name>
+        <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name>sys_alias_eece3c01dbbe541020c17a2faa96193e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-21 07:11:20</sys_updated_on>
+        <type>credential</type>
+    </sys_alias>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</application>
+        <file_path/>
+        <instance_id>424fea06db2e1058e26fd7c8f4961941</instance_id>
+        <instance_name>swapnil</instance_name>
+        <name>sys_alias_eece3c01dbbe541020c17a2faa96193e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias"><sys_alias action="INSERT_OR_UPDATE"><configuration_template/><connection_type>http_connection</connection_type><id>sn_oracle_vcn_spke.Oracle_VCN_Credential_Alias</id><multiple_connections>false</multiple_connections><name>Oracle_VCN_Credential_Alias</name><retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy><sys_class_name>sys_alias</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-08-21 07:11:20</sys_created_on><sys_id>eece3c01dbbe541020c17a2faa96193e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sn_oracle_vcn_spke.Oracle_VCN_Credential_Alias</sys_name><sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package><sys_policy/><sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope><sys_update_name>sys_alias_eece3c01dbbe541020c17a2faa96193e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-08-21 07:11:20</sys_updated_on><type>credential</type></sys_alias></record_update>]]></payload>
+        <payload_hash>-1725894742</payload_hash>
+        <record_name>sn_oracle_vcn_spke.Oracle_VCN_Credential_Alias</record_name>
+        <reverted_from/>
+        <source>f0aedfe4dbf2541020c17a2faa961968</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-21 07:11:20</sys_created_on>
+        <sys_id>5efe3c01dbbe541020c17a2faa9619ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1740fdb8cbd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-21 07:11:20</sys_updated_on>
+        <type>Connection &amp; Credential Aliases</type>
+        <update_guid>56fe3c0117be5410d287b0c15557d4ee</update_guid>
+        <update_guid_history>56fe3c0117be5410d287b0c15557d4ee:-1725894742</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-04 12:32:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_alias">sys_alias</sys_db_object>
+        <sys_id>cd42750de9a544d4af30d65291aba190</sys_id>
+        <sys_metadata>eece3c01dbbe541020c17a2faa96193e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_oracle_vcn_spke.Oracle_VCN_Credential_Alias</sys_name>
+        <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_scope_delete display_value="">06f34fb5a0154f8080b8b17d269696a1</sys_scope_delete>
+        <sys_update_name>sys_alias_eece3c01dbbe541020c17a2faa96193e</sys_update_name>
+        <sys_update_version display_value="sys_alias_eece3c01dbbe541020c17a2faa96193e">5efe3c01dbbe541020c17a2faa9619ee</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-04 12:32:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

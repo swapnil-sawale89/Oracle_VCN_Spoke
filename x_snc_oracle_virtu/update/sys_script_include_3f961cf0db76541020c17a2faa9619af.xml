@@ -9,9 +9,8 @@
         <name>OracleVirtualCloudNetworkUtils</name>
         <script><![CDATA[var OracleVirtualCloudNetworkUtils = Class.create();
 OracleVirtualCloudNetworkUtils.prototype = {
-    initialize: function() {
-    },
-	validateInputVariables: function(inputs, outputs) {
+    initialize: function() {},
+    validateInputVariables: function(inputs, outputs) {
         for (var key in inputs) {
             var value = inputs[key];
             if (typeof value == 'string')
@@ -40,8 +39,8 @@ OracleVirtualCloudNetworkUtils.prototype = {
             }
         return outputs;
     },
-	
-	createTagsPayload: function(inputTags) {
+
+    createTagsPayload: function(inputTags) {
         var tags = {};
         inputTags.forEach(function(property) {
             if (property.Name)
@@ -58,30 +57,134 @@ OracleVirtualCloudNetworkUtils.prototype = {
         });
 
     },
-	
-	createPayload: function (obj, keys) {
+
+    createPayload: function(obj, keys) {
         var payload = {};
         keys.forEach(function(key) {
-            if (obj[key])
-
+			if (obj[key] && typeof obj[key] == 'string') {
                 payload[key] = obj[key];
-        });
+            }
+			else if (obj[key] && typeof obj[key] == 'object' && obj[key].length > 0){
+				var value = obj[key].trim;
+				if(value){
+					payload[key] = obj[key];
+				}
+			}
+		});
         return payload;
     },
-	
+    createSLRPayload: function(inputTags) {
+        var tags = [];
+        for (var i = 0; i < inputTags.length; i++) {
+            var tag = {};
+            if (inputTags[i].protocol) {
+                tag.protocol = inputTags[i].protocol.trim();
+            }
+
+            if (inputTags[i].source) {
+                tag.source = inputTags[i].source.trim();
+            }
+            if (inputTags[i].destination) {
+                tag.destination = inputTags[i].destination.trim();
+            }
+            if (inputTags[i].tcpOptions.destinationPortRange.min) {
+                tag['tcpOptions'] = {
+                    destinationPortRange: {
+                        min: inputTags[i].tcpOptions.destinationPortRange.min
+                    }
+                };
+            } else {
+                delete tag.tcpOptions;
+            }
+            if (!inputTags[i].tcpOptions.destinationPortRange.min && inputTags[i].tcpOptions.destinationPortRange.max) {
+                tag['tcpOptions'] = {
+                    destinationPortRange: {
+                        max: inputTags[i].tcpOptions.destinationPortRange.max
+                    }
+                };
+            } else if (inputTags[i].tcpOptions.destinationPortRange.max) {
+                tag.tcpOptions.destinationPortRange.max = inputTags[i].tcpOptions.destinationPortRange.max;
+            } else if (!inputTags[i].tcpOptions.destinationPortRange.min) {
+                delete tag.tcpOptions;
+            }
+            if (inputTags[i].isStateless) {
+                tag.isStateless = inputTags[i].isStateless;
+            }
+
+            if (Object.keys(tag).length > 0 && !tag.protocol) {
+                throw new Error("Incorrect Protocol");
+            } else if (Object.keys(tag).length > 0 && ("destination" in inputTags[i]) && !tag.destination) {
+                throw new Error("Incorrect Destination Value");
+            } else if (Object.keys(tag).length > 0 && ("source" in inputTags[i]) && !tag.source) {
+                throw new Error("Incorrect Source Value");
+            }
+            if (Object.keys(tag).length > 0) {
+                tags.push(tag);
+            }
+        }
+        return tags;
+    },
+
+    createSecListPayLoad: function(inputs,outputs) {
+        var payload = {};
+        if (inputs.vcnId && inputs.vcnId.trim()) {
+            payload.vcnId = inputs.vcnId.trim();
+        }
+        if (inputs.compartmentId && inputs.compartmentId.trim()) {
+            payload.compartmentId = inputs.compartmentId.trim();
+        }
+        if (inputs.displayName) {
+            payload.displayName = inputs.displayName.trim();
+        }
+        var ingressSLR = this.createSLRPayload(inputs.ingressSecurityRules);
+        if (ingressSLR.length > 0) {
+            payload.ingressSecurityRules = ingressSLR;
+        }
+
+        var egressSLR = this.createSLRPayload(inputs.egressSecurityRules);
+        if (egressSLR.length > 0) {
+            payload.egressSecurityRules = egressSLR;
+        }
+        payload = JSON.stringify(payload);
+
+        payload = payload.replaceAll('"name$":"destinationPortRange",', '');
+        payload = payload.replaceAll('"name$":"tcpOptions",', '');
+        outputs.payload = payload.toString();
+		return outputs;
+    },
+	updateSecListPayLoad: function(inputs,outputs){
+		var payload = {};
+        if (inputs.displayName)
+            payload.displayName = inputs.displayName.trim();
+        var ingressSLR = this.createSLRPayload(inputs.ingressSecurityRules);
+        if (ingressSLR.length > 0)
+            payload.ingressSecurityRules = ingressSLR;
+
+        var egressSLR = this.createSLRPayload(inputs.egressSecurityRules);
+        if (egressSLR.length > 0)
+            payload.egressSecurityRules = egressSLR;
+
+        payload = JSON.stringify(payload);
+        payload = payload.replaceAll('"name$":"destinationPortRange",', '');
+        payload = payload.replaceAll('"name$":"tcpOptions",', '');
+        outputs.payload = payload.toString();
+        outputs.securitylistid = inputs.securityListId;
+		return outputs;
+	},
+
     type: 'OracleVirtualCloudNetworkUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-20 09:41:31</sys_created_on>
         <sys_id>3f961cf0db76541020c17a2faa9619af</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_name>OracleVirtualCloudNetworkUtils</sys_name>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_script_include_3f961cf0db76541020c17a2faa9619af</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 05:24:57</sys_updated_on>
+        <sys_updated_on>2020-09-04 08:16:40</sys_updated_on>
     </sys_script_include>
 </record_update>
