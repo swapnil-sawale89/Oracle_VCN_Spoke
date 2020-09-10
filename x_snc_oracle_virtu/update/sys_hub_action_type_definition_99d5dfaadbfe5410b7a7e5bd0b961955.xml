@@ -9,11 +9,11 @@
         <category display_value="Subnet Management">a3d19996dbb25410b7a7e5bd0b96191d</category>
         <copied_from>f14b9ee6db7e5410b7a7e5bd0b961929</copied_from>
         <copied_from_name>Change Sub-net Compartment</copied_from_name>
-        <description/>
+        <description>&lt;p&gt;Moves a subnet into a different compartment within the same tenancy. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Subnet Id&lt;/b&gt; - The OCID of the subnet.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment Id&lt;/b&gt; - The OCID of the compartment to move the subnet to.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>change_subnet_compartment</internal_name>
         <label_cache>[{"name":"{{action.network_id}}","label":"action➛Subnet Id","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{action.subnet_id}}","label":"action➛Subnet Id","type":"action","ref":""},{"name":"{{step[2c850f0d-0954-49a2-af7d-b15d3c2aa46c].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[2c850f0d-0954-49a2-af7d-b15d3c2aa46c].network_id}}","label":"step➛Pre Processing➛subnet_id","type":"step","ref":""},{"name":"{{step[2c850f0d-0954-49a2-af7d-b15d3c2aa46c].compartment_id}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[2c850f0d-0954-49a2-af7d-b15d3c2aa46c].payload}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[1132c8e6-6b00-4fe6-b5e4-854644e9dc3b].response_body}}","label":"step➛Change Subnet Compartment➛Response Body","type":"step","ref":""},{"name":"{{step[1132c8e6-6b00-4fe6-b5e4-854644e9dc3b].status_code}}","label":"step➛Change Subnet Compartment➛Status Code","type":"step","ref":""},{"name":"{{step[20df4add-5bda-49ea-aee5-62f32b19aaf9].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[20df4add-5bda-49ea-aee5-62f32b19aaf9].errormessage}}","label":"step➛Post Processing➛errormessage","type":"step","ref":""},{"name":"{{step[20df4add-5bda-49ea-aee5-62f32b19aaf9].variable2}}","label":"step➛Post Processing➛variable2","type":"step","ref":""},{"name":"{{step[20df4add-5bda-49ea-aee5-62f32b19aaf9].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[2c850f0d-0954-49a2-af7d-b15d3c2aa46c].subnet_id}}","label":"step➛Pre Processing➛subnet_id","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>72cf0daddb8fd810b7a7e5bd0b9619af</latest_snapshot>
+        <latest_snapshot>77f7b35fdb4fdc10b7a7e5bd0b961919</latest_snapshot>
         <master_snapshot>5ffd4774db4b9810b7a7e5bd0b961947</master_snapshot>
         <name>Change Subnet Compartment</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>99d5dfaadbfe5410b7a7e5bd0b961955</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Change Subnet Compartment</sys_name>
         <sys_overrides/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_99d5dfaadbfe5410b7a7e5bd0b961955</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 07:57:32</sys_updated_on>
+        <sys_updated_on>2020-09-10 06:41:47</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -3083,17 +3083,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Change Subnet Compartment">99d5dfaadbfe5410b7a7e5bd0b961955</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"a00e8774db4b9810b7a7e5bd0b96197a","name":"plan"}}</plan>
-        <snapshot>72cf0daddb8fd810b7a7e5bd0b9619af</snapshot>
+        <snapshot>77f7b35fdb4fdc10b7a7e5bd0b961919</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:13:29</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a00e8774db4b9810b7a7e5bd0b96197a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 07:57:34</sys_updated_on>
+        <sys_updated_on>2020-09-10 06:41:50</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -3104,7 +3104,7 @@
         <category display_value="Subnet Management">a3d19996dbb25410b7a7e5bd0b96191d</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Moves a subnet into a different compartment within the same tenancy. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Subnet Id&lt;/b&gt; - The OCID of the subnet.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment Id&lt;/b&gt; - The OCID of the compartment to move the subnet to.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <internal_name>change_subnet_compartment</internal_name>
         <label_cache>[{"name":"{{action.network_id}}","label":"action➛Subnet Id","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{action.subnet_id}}","label":"action➛Subnet Id","type":"action","ref":""},{"name":"{{step[2c850f0d-0954-49a2-af7d-b15d3c2aa46c].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[2c850f0d-0954-49a2-af7d-b15d3c2aa46c].network_id}}","label":"step➛Pre Processing➛subnet_id","type":"step","ref":""},{"name":"{{step[2c850f0d-0954-49a2-af7d-b15d3c2aa46c].compartment_id}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[2c850f0d-0954-49a2-af7d-b15d3c2aa46c].payload}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[1132c8e6-6b00-4fe6-b5e4-854644e9dc3b].response_body}}","label":"step➛Change Subnet Compartment➛Response Body","type":"step","ref":""},{"name":"{{step[1132c8e6-6b00-4fe6-b5e4-854644e9dc3b].status_code}}","label":"step➛Change Subnet Compartment➛Status Code","type":"step","ref":""},{"name":"{{step[20df4add-5bda-49ea-aee5-62f32b19aaf9].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[20df4add-5bda-49ea-aee5-62f32b19aaf9].errormessage}}","label":"step➛Post Processing➛errormessage","type":"step","ref":""},{"name":"{{step[20df4add-5bda-49ea-aee5-62f32b19aaf9].variable2}}","label":"step➛Post Processing➛variable2","type":"step","ref":""},{"name":"{{step[20df4add-5bda-49ea-aee5-62f32b19aaf9].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[2c850f0d-0954-49a2-af7d-b15d3c2aa46c].subnet_id}}","label":"step➛Pre Processing➛subnet_id","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -3119,7 +3119,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5ffd4774db4b9810b7a7e5bd0b961947</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3127,7 +3127,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 07:57:31</sys_updated_on>
+        <sys_updated_on>2020-09-10 06:41:46</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>

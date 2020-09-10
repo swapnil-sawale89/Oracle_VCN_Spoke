@@ -9,11 +9,11 @@
         <category display_value="Subnet Management">a3d19996dbb25410b7a7e5bd0b96191d</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Deletes the specified subnet&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Subnet Id&lt;/b&gt; -The OCID of the subnet.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>delete_subnet</internal_name>
         <label_cache>[{"name":"{{action.subnet_id}}","label":"action➛Subnet Id","type":"action","ref":""},{"name":"{{action.subnetid}}","label":"action➛Subnet Id","type":"action","ref":""},{"name":"{{step[3415b992-5274-4f8e-8183-cbb539d53fac].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[3415b992-5274-4f8e-8183-cbb539d53fac].subnetid}}","label":"step➛Pre Processing➛subnetid","type":"step","ref":""},{"name":"{{step[1710f0e8-a492-4763-bca0-e01a81a7a33f].response_body}}","label":"step➛Delete Subnet➛Response Body","type":"step","ref":""},{"name":"{{step[1710f0e8-a492-4763-bca0-e01a81a7a33f].status_code}}","label":"step➛Delete Subnet➛Status Code","type":"step","ref":""},{"name":"{{step[8edb5acf-d5cb-44f3-bfdf-31b52e9b5281].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[8edb5acf-d5cb-44f3-bfdf-31b52e9b5281].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[8edb5acf-d5cb-44f3-bfdf-31b52e9b5281].errormessage}}","label":"step➛Post Processing➛errormessage","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>ffece561db031c10b7a7e5bd0b961976</latest_snapshot>
+        <latest_snapshot>a50fa463db031050b7a7e5bd0b9619f4</latest_snapshot>
         <master_snapshot>b28d4b34db4b9810b7a7e5bd0b9619a6</master_snapshot>
         <name>Delete Subnet</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1cf6da26db7e5410b7a7e5bd0b96193d</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>Delete Subnet</sys_name>
         <sys_overrides/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_1cf6da26db7e5410b7a7e5bd0b96193d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 10:04:51</sys_updated_on>
+        <sys_updated_on>2020-09-10 10:42:13</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -2363,17 +2363,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Delete Subnet">1cf6da26db7e5410b7a7e5bd0b96193d</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"f38d8b34db4b9810b7a7e5bd0b96199f","name":"plan"}}</plan>
-        <snapshot>ffece561db031c10b7a7e5bd0b961976</snapshot>
+        <snapshot>a50fa463db031050b7a7e5bd0b9619f4</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:11:31</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f38d8b34db4b9810b7a7e5bd0b96199f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 10:04:53</sys_updated_on>
+        <sys_updated_on>2020-09-10 10:42:15</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2384,7 +2384,7 @@
         <category display_value="Subnet Management">a3d19996dbb25410b7a7e5bd0b96191d</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Deletes the specified subnet&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Subnet Id&lt;/b&gt; -The OCID of the subnet.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <internal_name>delete_subnet</internal_name>
         <label_cache>[{"name":"{{action.subnet_id}}","label":"action➛Subnet Id","type":"action","ref":""},{"name":"{{action.subnetid}}","label":"action➛Subnet Id","type":"action","ref":""},{"name":"{{step[3415b992-5274-4f8e-8183-cbb539d53fac].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[3415b992-5274-4f8e-8183-cbb539d53fac].subnetid}}","label":"step➛Pre Processing➛subnetid","type":"step","ref":""},{"name":"{{step[1710f0e8-a492-4763-bca0-e01a81a7a33f].response_body}}","label":"step➛Delete Subnet➛Response Body","type":"step","ref":""},{"name":"{{step[1710f0e8-a492-4763-bca0-e01a81a7a33f].status_code}}","label":"step➛Delete Subnet➛Status Code","type":"step","ref":""},{"name":"{{step[8edb5acf-d5cb-44f3-bfdf-31b52e9b5281].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[8edb5acf-d5cb-44f3-bfdf-31b52e9b5281].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[8edb5acf-d5cb-44f3-bfdf-31b52e9b5281].errormessage}}","label":"step➛Post Processing➛errormessage","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -2399,7 +2399,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b28d4b34db4b9810b7a7e5bd0b9619a6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2407,7 +2407,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 09:36:14</sys_updated_on>
+        <sys_updated_on>2020-09-10 10:42:12</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD75653e83a9c3dc1034171515c7c0e575</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>4f6e5be4dbf2541020c17a2faa96190d</scope_name>
+        <serialized_content>{"FlowDesigner:FD75653e83a9c3dc1034171515c7c0e575":{"$COCollectionField":[{"routeRule":{"cidrBlock":"String","cidrBlock.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"CIDR Block\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"6758f1a7-a81f-46fe-9ff8-4523d7ee2e64\"}"},"destination":"String","destination.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Destination\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"5660022e-0797-43c8-bfaf-8b581d03789d\"}"},"destinationType":"String","destinationType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Destination Type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"a7441e72-2311-4b4f-9d5a-d8026524bedc\"}"},"networkEntityId":"String","networkEntityId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Network Entity Id\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"3c641159-2019-48f0-ae3f-0bf406deee45\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Route Rules\",\"mandatory\":\"false\",\"child_name\":\"routeRule\",\"uiUniqueId\":\"a75e366d-199c-4c5f-90f7-5966c8e80917\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD75653e83a9c3dc1034171515c7c0e575\",\"child_label\":\"RouteRule\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"8\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"8cbaacfe-5d47-480a-a312-76ecac910fcd\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD75653e83a9c3dc1034171515c7c0e575.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Route Rules\",\"mandatory\":\"false\",\"child_name\":\"routeRule\",\"uiUniqueId\":\"a75e366d-199c-4c5f-90f7-5966c8e80917\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD75653e83a9c3dc1034171515c7c0e575\",\"child_label\":\"RouteRule\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"8\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"8cbaacfe-5d47-480a-a312-76ecac910fcd\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-09 07:12:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>39653e83dbc3dc10b7a7e5bd0b961975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD75653e83a9c3dc1034171515c7c0e575</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name>sys_complex_object_39653e83dbc3dc10b7a7e5bd0b961975</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:12:19</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

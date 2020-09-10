@@ -9,11 +9,11 @@
         <category display_value="Route Table Management">31b7e6eedb7e5410b7a7e5bd0b9619de</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Creates a new route table for the specified VCN.&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment Id&lt;/b&gt; -The OCID of the compartment to contain the route table.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network Id&lt;/b&gt; -The OCID of the VCN the route table belongs to. &lt;/li&gt; &lt;li&gt;&lt;b&gt;Route Rules&lt;/b&gt; -The collection of rules used for routing destination IPs to network devices.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Route Table Id&lt;/b&gt; -The route table's Oracle ID (OCID).&lt;/li&gt; &lt;li&gt;&lt;b&gt;Free Form Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Lifecycle State&lt;/b&gt; -The route table's current state.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Defined Tags&lt;/b&gt; -Defined tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Time Created&lt;/b&gt; -The date and time the route table was created.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network Id&lt;/b&gt; -The OCID of the VCN the route table list belongs to.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Route Rules&lt;/b&gt; -The collection of rules used for routing destination IPs to network devices.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment Id&lt;/b&gt; -The OCID of the compartment to contain the route table.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>create_route_table</internal_name>
         <label_cache>[{"name":"{{action.compartmentid}}","label":"action➛compartmentId","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{action.displayname}}","label":"action➛displayName","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Network Id","type":"action","ref":""},{"name":"{{action.route_rules}}","label":"action➛RouteRule","type":"action","ref":""},{"name":"{{action.route_rules.Route}}","label":"action➛RouteRule➛Route","type":"action","ref":""},{"name":"{{action.route_rules.RouteRule}}","label":"action➛RouteRule➛RouteRule","type":"action","ref":""},{"name":"{{action.route_rules.RouteRule.cidrBlock}}","label":"action➛RouteRule➛RouteRule➛CIDRBlock","type":"action","ref":""},{"name":"{{action.route_rules.RouteRule.Network_Entity_Id}}","label":"action➛RouteRule➛RouteRule➛Network Entity Id","type":"action","ref":""},{"name":"{{action.route_rules.RouteRule.networkEntityId}}","label":"action➛RouteRule➛RouteRule➛Network Entity Id","type":"action","ref":""},{"name":"{{action.routerules}}","label":"action➛RouteRules","type":"action","ref":""},{"name":"{{action.routerules.RouteRule}}","label":"action➛RouteRules➛RouteRule","type":"action","ref":""},{"name":"{{action.routerules.routeRule}}","label":"action➛RouteRules➛RouteRule","type":"action","ref":""},{"name":"{{action.routerules.routeRule._}}","label":"action➛RouteRules➛RouteRule","type":"action","ref":""},{"name":"{{action.routerules.routeRule.cidrBlock}}","label":"action➛RouteRules➛RouteRule➛cidrBlock","type":"action","ref":""},{"name":"{{action.routerules.routeRule.networkEntityId}}","label":"action➛RouteRules➛RouteRule➛networkEntityId","type":"action","ref":""},{"name":"{{step[6aa1fdc6-713f-475b-bcb4-9a04dab39090].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[6aa1fdc6-713f-475b-bcb4-9a04dab39090].payload}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[e6e4de55-c8c1-4cbe-9b17-b633730e3522].status_code}}","label":"step➛Create Route Table➛Status Code","type":"step","ref":""},{"name":"{{step[e6e4de55-c8c1-4cbe-9b17-b633730e3522].response_body}}","label":"step➛Create Route Table➛Response Body","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].compartmentid}}","label":"step➛Post Processing➛compartmentid","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].definedtags}}","label":"step➛Post Processing➛definedtags","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].displayname}}","label":"step➛Post Processing➛displayname","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].freeformtags}}","label":"step➛Post Processing➛freeformtags","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].id}}","label":"step➛Post Processing➛id","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].lifecyclestate}}","label":"step➛Post Processing➛lifecyclestate","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules}}","label":"step➛Post Processing➛routerules","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].timecreated}}","label":"step➛Post Processing➛timecreated","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].vcnid}}","label":"step➛Post Processing➛vcnid","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].errormessage}}","label":"step➛Post Processing➛errormessage","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule}}","label":"step➛Post Processing➛routerules➛routerule","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.FDaaa67ee6dbbe5410f970474dd615d6d7}}","label":"step➛Post Processing➛routerules➛routerule➛routerules","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.routerule_child1}}","label":"step➛Post Processing➛routerules➛routerule➛routerule_child1","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule._}}","label":"step➛Post Processing➛routerules➛routerule","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.cidrBlock}}","label":"step➛Post Processing➛routerules➛routerule➛cidrBlock","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.routerule_child2}}","label":"step➛Post Processing➛routerules➛routerule➛routerule_child2","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.destination}}","label":"step➛Post Processing➛routerules➛routerule➛destination","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.routerule_child3}}","label":"step➛Post Processing➛routerules➛routerule➛routerule_child3","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.destinationType}}","label":"step➛Post Processing➛routerules➛routerule➛destinationType","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.routerule_child4}}","label":"step➛Post Processing➛routerules➛routerule➛routerule_child4","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.networkEntityId}}","label":"step➛Post Processing➛routerules➛routerule➛networkEntityId","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>569c2161db031c10b7a7e5bd0b9619b4</latest_snapshot>
+        <latest_snapshot>bd2a406bdb8fdc10b7a7e5bd0b9619ee</latest_snapshot>
         <master_snapshot>4e25cb3cdb0b9810b7a7e5bd0b9619c8</master_snapshot>
         <name>Create Route Table</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f3c72aeedb7e5410b7a7e5bd0b9619e5</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>Create Route Table</sys_name>
         <sys_overrides/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_f3c72aeedb7e5410b7a7e5bd0b9619e5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 10:03:26</sys_updated_on>
+        <sys_updated_on>2020-09-10 08:01:11</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -126,6 +126,18 @@
         <value>{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].lifecyclestate}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>networkid</field>
+        <id>f3c72aeedb7e5410b7a7e5bd0b9619e5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-09 07:52:19</sys_created_on>
+        <sys_id>fb8efecbdbc3dc10b7a7e5bd0b96195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:52:19</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</table>
+        <value>{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].vcnid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>routerules</field>
         <id>f3c72aeedb7e5410b7a7e5bd0b9619e5</id>
         <sys_created_by>admin</sys_created_by>
@@ -136,6 +148,18 @@
         <sys_updated_on>2020-08-26 07:45:12</sys_updated_on>
         <table>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</table>
         <value>{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>routetableid</field>
+        <id>f3c72aeedb7e5410b7a7e5bd0b9619e5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-09 07:54:19</sys_created_on>
+        <sys_id>910f7a0fdbc3dc10b7a7e5bd0b96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:54:19</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</table>
+        <value>{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].id}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>status</field>
@@ -629,7 +653,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=routerule,child_name=routerule,child_type=object,child_type_label=Object,child_uiUniqueId=25c608d9-9247-4044-a674-f1a459b29dad,co_type_name=FDaaa67ee6dbbe5410f970474dd615d6d7,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=6074a29d-2b16-4735-b37a-b8d89a80c27f</attributes>
+        <attributes>child_label=routerule,child_name=routerule,child_type=object,child_type_label=Object,child_uiUniqueId=2c952fae-5ab8-4349-9d10-b9e169edbc53,co_type_name=FDaaa67ee6dbbe5410f970474dd615d6d7,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=6074a29d-2b16-4735-b37a-b8d89a80c27f</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -687,14 +711,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:11</sys_created_on>
         <sys_id>36a6bee6dbbe5410b7a7e5bd0b96190a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 10:03:15</sys_updated_on>
+        <sys_updated_on>2020-09-10 08:00:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2316,7 +2340,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=RouteRule,child_name=routeRule,child_type=object,child_type_label=Object,child_uiUniqueId=38fa09c7-d8c2-400d-a611-d52105b8c8e8,co_type_name=FD0aa67ee697be54102ba90ea1a4424464,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=eebe2bcc-3064-4de1-a50e-cb18ece7307c</attributes>
+        <attributes>child_label=RouteRule,child_name=routeRule,child_type=object,child_type_label=Object,child_uiUniqueId=c1e321d4-ac7c-4d63-bc6b-c54e767814d6,co_type_name=FD0aa67ee697be54102ba90ea1a4424464,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=eebe2bcc-3064-4de1-a50e-cb18ece7307c</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2374,14 +2398,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:08</sys_created_on>
         <sys_id>02a67ee6dbbe5410b7a7e5bd0b96196c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 10:03:14</sys_updated_on>
+        <sys_updated_on>2020-09-10 08:00:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2636,90 +2660,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
-    <sys_hub_action_output action="delete_multiple" query="model=f3c72aeedb7e5410b7a7e5bd0b9619e5^sys_idNOT IN03a6bee6dbbe5410b7a7e5bd0b96198e,0ba6bee6dbbe5410b7a7e5bd0b961956,0ba6bee6dbbe5410b7a7e5bd0b961981,43a6bee6dbbe5410b7a7e5bd0b961994,87a6bee6dbbe5410b7a7e5bd0b961944,87a6bee6dbbe5410b7a7e5bd0b961975,c7a6bee6dbbe5410b7a7e5bd0b96194a,c7a6bee6dbbe5410b7a7e5bd0b961950,c7a6bee6dbbe5410b7a7e5bd0b96197b,cfa6bee6dbbe5410b7a7e5bd0b961987,f6a6bee6dbbe5410b7a7e5bd0b961931"/>
-    <sys_hub_action_output action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=04be45e8-3ee5-49b4-b221-5de9df968404</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>vcnid</element>
-        <element_prototype/>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_link/>
-        <internal_type display_value="String">string</internal_type>
-        <label>vcnId</label>
-        <mandatory>false</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Create Route Table">f3c72aeedb7e5410b7a7e5bd0b9619e5</model>
-        <model_id>f3c72aeedb7e5410b7a7e5bd0b9619e5</model_id>
-        <model_table>sys_hub_action_type_definition</model_table>
-        <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
-        <next_element/>
-        <order>10</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-08-26 07:45:12</sys_created_on>
-        <sys_id>03a6bee6dbbe5410b7a7e5bd0b96198e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy>read</sys_policy>
-        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:12</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_action_output>
+    <sys_hub_action_output action="delete_multiple" query="model=f3c72aeedb7e5410b7a7e5bd0b9619e5^sys_idNOT IN0ba6bee6dbbe5410b7a7e5bd0b961956,0ba6bee6dbbe5410b7a7e5bd0b961981,410f3a0fdbc3dc10b7a7e5bd0b9619fc,43a6bee6dbbe5410b7a7e5bd0b961994,7f8efecbdbc3dc10b7a7e5bd0b96193c,87a6bee6dbbe5410b7a7e5bd0b961944,87a6bee6dbbe5410b7a7e5bd0b961975,c7a6bee6dbbe5410b7a7e5bd0b96194a,c7a6bee6dbbe5410b7a7e5bd0b961950,cfa6bee6dbbe5410b7a7e5bd0b961987,f6a6bee6dbbe5410b7a7e5bd0b961931"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2758,7 +2699,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="JSON">json</internal_type>
-        <label>freeformTags</label>
+        <label>Freeform Tags</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
         <model display_value="Create Route Table">f3c72aeedb7e5410b7a7e5bd0b9619e5</model>
@@ -2784,14 +2725,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:12</sys_created_on>
         <sys_id>0ba6bee6dbbe5410b7a7e5bd0b961956</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:12</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:11:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2807,7 +2748,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=RouteRule,child_name=routeRule,child_type=object,child_type_label=Object,child_uiUniqueId=5d564406-0f15-458a-8f09-37327282bb68,co_type_name=FD36a6bee69fbe5410dfbd38b8527b972f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceUiUniqueId=eebe2bcc-3064-4de1-a50e-cb18ece7307c,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=a75e366d-199c-4c5f-90f7-5966c8e80917</attributes>
+        <attributes>child_label=RouteRule,child_name=routeRule,child_type=object,child_type_label=Object,child_uiUniqueId=36e0dc83-17a2-40d4-b2e8-458eda826068,co_type_name=FD36a6bee69fbe5410dfbd38b8527b972f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=a75e366d-199c-4c5f-90f7-5966c8e80917</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2841,7 +2782,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>routeRules</label>
+        <label>Route Rules</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
         <model display_value="Create Route Table">f3c72aeedb7e5410b7a7e5bd0b9619e5</model>
@@ -2849,7 +2790,7 @@
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
         <next_element/>
-        <order>8</order>
+        <order>7</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -2867,14 +2808,97 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:12</sys_created_on>
         <sys_id>0ba6bee6dbbe5410b7a7e5bd0b961981</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 10:03:15</sys_updated_on>
+        <sys_updated_on>2020-09-10 08:00:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=b5ec3fc7-51af-4306-b92c-d657d556fa6d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>routetableid</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Route Table Id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Route Table">f3c72aeedb7e5410b7a7e5bd0b9619e5</model>
+        <model_id>f3c72aeedb7e5410b7a7e5bd0b9619e5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
+        <next_element/>
+        <order>11</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-09 07:54:19</sys_created_on>
+        <sys_id>410f3a0fdbc3dc10b7a7e5bd0b9619fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:54:19</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2924,7 +2948,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>status</label>
+        <label>Status</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Create Route Table">f3c72aeedb7e5410b7a7e5bd0b9619e5</model>
@@ -2932,7 +2956,7 @@
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
         <next_element/>
-        <order>11</order>
+        <order>9</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -2950,14 +2974,97 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:12</sys_created_on>
         <sys_id>43a6bee6dbbe5410b7a7e5bd0b961994</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:12</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:54:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=04be45e8-3ee5-49b4-b221-5de9df968404</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>networkid</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Network Id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Route Table">f3c72aeedb7e5410b7a7e5bd0b9619e5</model>
+        <model_id>f3c72aeedb7e5410b7a7e5bd0b9619e5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
+        <next_element/>
+        <order>10</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-09 07:52:18</sys_created_on>
+        <sys_id>7f8efecbdbc3dc10b7a7e5bd0b96193c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:54:19</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3007,7 +3114,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>compartmentId</label>
+        <label>Compartment Id</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Create Route Table">f3c72aeedb7e5410b7a7e5bd0b9619e5</model>
@@ -3033,14 +3140,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:11</sys_created_on>
         <sys_id>87a6bee6dbbe5410b7a7e5bd0b961944</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:11</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:11:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3090,7 +3197,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>lifecycleState</label>
+        <label>Lifecycle State</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Create Route Table">f3c72aeedb7e5410b7a7e5bd0b9619e5</model>
@@ -3116,14 +3223,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:12</sys_created_on>
         <sys_id>87a6bee6dbbe5410b7a7e5bd0b961975</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:12</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:11:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3173,7 +3280,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="JSON">json</internal_type>
-        <label>definedTags</label>
+        <label>Defined Tags</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
         <model display_value="Create Route Table">f3c72aeedb7e5410b7a7e5bd0b9619e5</model>
@@ -3199,14 +3306,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:11</sys_created_on>
         <sys_id>c7a6bee6dbbe5410b7a7e5bd0b96194a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:11</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:11:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3256,7 +3363,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>displayName</label>
+        <label>Display Name</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Create Route Table">f3c72aeedb7e5410b7a7e5bd0b9619e5</model>
@@ -3282,97 +3389,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:11</sys_created_on>
         <sys_id>c7a6bee6dbbe5410b7a7e5bd0b961950</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:11</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_action_output>
-    <sys_hub_action_output action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=b5ec3fc7-51af-4306-b92c-d657d556fa6d</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>id</element>
-        <element_prototype/>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_link/>
-        <internal_type display_value="String">string</internal_type>
-        <label>id</label>
-        <mandatory>false</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Create Route Table">f3c72aeedb7e5410b7a7e5bd0b9619e5</model>
-        <model_id>f3c72aeedb7e5410b7a7e5bd0b9619e5</model_id>
-        <model_table>sys_hub_action_type_definition</model_table>
-        <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
-        <next_element/>
-        <order>7</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-08-26 07:45:12</sys_created_on>
-        <sys_id>c7a6bee6dbbe5410b7a7e5bd0b96197b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy>read</sys_policy>
-        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:12</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:11:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3422,7 +3446,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>timeCreated</label>
+        <label>Time Created</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Create Route Table">f3c72aeedb7e5410b7a7e5bd0b9619e5</model>
@@ -3430,7 +3454,7 @@
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
         <next_element/>
-        <order>9</order>
+        <order>8</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -3448,14 +3472,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:12</sys_created_on>
         <sys_id>cfa6bee6dbbe5410b7a7e5bd0b961987</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:12</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:54:19</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3505,7 +3529,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>errormessage</label>
+        <label>Error Message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Create Route Table">f3c72aeedb7e5410b7a7e5bd0b9619e5</model>
@@ -3531,14 +3555,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:11</sys_created_on>
         <sys_id>f6a6bee6dbbe5410b7a7e5bd0b961931</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:11</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:11:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4006,7 +4030,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=routerule,child_name=routerule,child_type=object,child_type_label=Object,child_uiUniqueId=25c608d9-9247-4044-a674-f1a459b29dad,co_type_name=FDaaa67ee6dbbe5410f970474dd615d6d7,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=6074a29d-2b16-4735-b37a-b8d89a80c27f</attributes>
+        <attributes>child_label=routerule,child_name=routerule,child_type=object,child_type_label=Object,child_uiUniqueId=2c952fae-5ab8-4349-9d10-b9e169edbc53,co_type_name=FDaaa67ee6dbbe5410f970474dd615d6d7,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=6074a29d-2b16-4735-b37a-b8d89a80c27f</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -4064,14 +4088,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:11</sys_created_on>
         <sys_id>36a6bee6dbbe5410b7a7e5bd0b96190a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 10:03:15</sys_updated_on>
+        <sys_updated_on>2020-09-10 08:00:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5781,12 +5805,12 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5^sys_idNOT IN03a6bee6dbbe5410b7a7e5bd0b961949,03a6bee6dbbe5410b7a7e5bd0b96194f,03a6bee6dbbe5410b7a7e5bd0b96197a,0ba6bee6dbbe5410b7a7e5bd0b961986,43a6bee6dbbe5410b7a7e5bd0b961955,43a6bee6dbbe5410b7a7e5bd0b961980,4ba6bee6dbbe5410b7a7e5bd0b96198c,8ba6bee6dbbe5410b7a7e5bd0b961992,cba6bee6dbbe5410b7a7e5bd0b961998,cfa6bee6dbbe5410b7a7e5bd0b961942,cfa6bee6dbbe5410b7a7e5bd0b961973"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5^sys_idNOT IN03a6bee6dbbe5410b7a7e5bd0b961949,03a6bee6dbbe5410b7a7e5bd0b96194f,03a6bee6dbbe5410b7a7e5bd0b96197a,0ba6bee6dbbe5410b7a7e5bd0b961986,43a6bee6dbbe5410b7a7e5bd0b961955,4ba6bee6dbbe5410b7a7e5bd0b96198c,c90f7a0fdbc3dc10b7a7e5bd0b961900,cba6bee6dbbe5410b7a7e5bd0b961998,cfa6bee6dbbe5410b7a7e5bd0b961942,cfa6bee6dbbe5410b7a7e5bd0b961973,f78efecbdbc3dc10b7a7e5bd0b961941"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>compartmentid</element>
         <help/>
         <hint/>
-        <label>compartmentId</label>
+        <label>Compartment Id</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
         <plural/>
@@ -5794,14 +5818,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:11</sys_created_on>
         <sys_id>03a6bee6dbbe5410b7a7e5bd0b961949</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:11</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:11:34</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -5809,7 +5833,7 @@
         <element>definedtags</element>
         <help/>
         <hint/>
-        <label>definedTags</label>
+        <label>Defined Tags</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
         <plural/>
@@ -5817,14 +5841,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:11</sys_created_on>
         <sys_id>03a6bee6dbbe5410b7a7e5bd0b96194f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:11</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:11:34</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -5832,7 +5856,7 @@
         <element>lifecyclestate</element>
         <help/>
         <hint/>
-        <label>lifecycleState</label>
+        <label>Lifecycle State</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
         <plural/>
@@ -5840,14 +5864,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:12</sys_created_on>
         <sys_id>03a6bee6dbbe5410b7a7e5bd0b96197a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:12</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:11:34</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -5855,7 +5879,7 @@
         <element>routerules</element>
         <help/>
         <hint/>
-        <label>routeRules</label>
+        <label>Route Rules</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
         <plural/>
@@ -5863,14 +5887,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:12</sys_created_on>
         <sys_id>0ba6bee6dbbe5410b7a7e5bd0b961986</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:12</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:11:34</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -5878,7 +5902,7 @@
         <element>displayname</element>
         <help/>
         <hint/>
-        <label>displayName</label>
+        <label>Display Name</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
         <plural/>
@@ -5886,37 +5910,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:12</sys_created_on>
         <sys_id>43a6bee6dbbe5410b7a7e5bd0b961955</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:12</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>id</element>
-        <help/>
-        <hint/>
-        <label>id</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-08-26 07:45:12</sys_created_on>
-        <sys_id>43a6bee6dbbe5410b7a7e5bd0b961980</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:12</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:11:34</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -5924,7 +5925,7 @@
         <element>timecreated</element>
         <help/>
         <hint/>
-        <label>timeCreated</label>
+        <label>Time Created</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
         <plural/>
@@ -5932,29 +5933,29 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:12</sys_created_on>
         <sys_id>4ba6bee6dbbe5410b7a7e5bd0b96198c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:12</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:11:35</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>vcnid</element>
+        <element>routetableid</element>
         <help/>
         <hint/>
-        <label>vcnId</label>
+        <label>Route Table Id</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-08-26 07:45:12</sys_created_on>
-        <sys_id>8ba6bee6dbbe5410b7a7e5bd0b961992</sys_id>
+        <sys_created_on>2020-09-09 07:54:19</sys_created_on>
+        <sys_id>c90f7a0fdbc3dc10b7a7e5bd0b961900</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -5962,7 +5963,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:12</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:54:19</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -5970,7 +5971,7 @@
         <element>status</element>
         <help/>
         <hint/>
-        <label>status</label>
+        <label>Status</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
         <plural/>
@@ -5978,14 +5979,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:12</sys_created_on>
         <sys_id>cba6bee6dbbe5410b7a7e5bd0b961998</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:12</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:11:35</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -5993,7 +5994,7 @@
         <element>errormessage</element>
         <help/>
         <hint/>
-        <label>errormessage</label>
+        <label>Error Message</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
         <plural/>
@@ -6001,14 +6002,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:11</sys_created_on>
         <sys_id>cfa6bee6dbbe5410b7a7e5bd0b961942</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:11</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:11:34</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -6016,7 +6017,7 @@
         <element>freeformtags</element>
         <help/>
         <hint/>
-        <label>freeformTags</label>
+        <label>Freeform Tags</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
         <plural/>
@@ -6024,6 +6025,29 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 07:45:12</sys_created_on>
         <sys_id>cfa6bee6dbbe5410b7a7e5bd0b961973</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:11:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>networkid</element>
+        <help/>
+        <hint/>
+        <label>Network Id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f3c72aeedb7e5410b7a7e5bd0b9619e5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-09 07:52:18</sys_created_on>
+        <sys_id>f78efecbdbc3dc10b7a7e5bd0b961941</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -6031,7 +6055,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 07:45:12</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:52:18</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -6039,17 +6063,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Create Route Table">f3c72aeedb7e5410b7a7e5bd0b9619e5</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"08354f3cdb0b9810b7a7e5bd0b9619f5","name":"plan"}}</plan>
-        <snapshot>569c2161db031c10b7a7e5bd0b9619b4</snapshot>
+        <snapshot>bd2a406bdb8fdc10b7a7e5bd0b9619ee</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:57</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>08354f3cdb0b9810b7a7e5bd0b9619f5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 10:03:31</sys_updated_on>
+        <sys_updated_on>2020-09-10 08:01:15</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -6060,7 +6084,7 @@
         <category display_value="Route Table Management">31b7e6eedb7e5410b7a7e5bd0b9619de</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Creates a new route table for the specified VCN.&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment Id&lt;/b&gt; -The OCID of the compartment to contain the route table.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network Id&lt;/b&gt; -The OCID of the VCN the route table belongs to. &lt;/li&gt; &lt;li&gt;&lt;b&gt;Route Rules&lt;/b&gt; -The collection of rules used for routing destination IPs to network devices.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Route Table Id&lt;/b&gt; -The route table's Oracle ID (OCID).&lt;/li&gt; &lt;li&gt;&lt;b&gt;Free Form Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Lifecycle State&lt;/b&gt; -The route table's current state.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Defined Tags&lt;/b&gt; -Defined tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Time Created&lt;/b&gt; -The date and time the route table was created.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network Id&lt;/b&gt; -The OCID of the VCN the route table list belongs to.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Route Rules&lt;/b&gt; -The collection of rules used for routing destination IPs to network devices.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment Id&lt;/b&gt; -The OCID of the compartment to contain the route table.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <internal_name>create_route_table</internal_name>
         <label_cache>[{"name":"{{action.compartmentid}}","label":"action➛compartmentId","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{action.displayname}}","label":"action➛displayName","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Network Id","type":"action","ref":""},{"name":"{{action.route_rules}}","label":"action➛RouteRule","type":"action","ref":""},{"name":"{{action.route_rules.Route}}","label":"action➛RouteRule➛Route","type":"action","ref":""},{"name":"{{action.route_rules.RouteRule}}","label":"action➛RouteRule➛RouteRule","type":"action","ref":""},{"name":"{{action.route_rules.RouteRule.cidrBlock}}","label":"action➛RouteRule➛RouteRule➛CIDRBlock","type":"action","ref":""},{"name":"{{action.route_rules.RouteRule.Network_Entity_Id}}","label":"action➛RouteRule➛RouteRule➛Network Entity Id","type":"action","ref":""},{"name":"{{action.route_rules.RouteRule.networkEntityId}}","label":"action➛RouteRule➛RouteRule➛Network Entity Id","type":"action","ref":""},{"name":"{{action.routerules}}","label":"action➛RouteRules","type":"action","ref":""},{"name":"{{action.routerules.RouteRule}}","label":"action➛RouteRules➛RouteRule","type":"action","ref":""},{"name":"{{action.routerules.routeRule}}","label":"action➛RouteRules➛RouteRule","type":"action","ref":""},{"name":"{{action.routerules.routeRule._}}","label":"action➛RouteRules➛RouteRule","type":"action","ref":""},{"name":"{{action.routerules.routeRule.cidrBlock}}","label":"action➛RouteRules➛RouteRule➛cidrBlock","type":"action","ref":""},{"name":"{{action.routerules.routeRule.networkEntityId}}","label":"action➛RouteRules➛RouteRule➛networkEntityId","type":"action","ref":""},{"name":"{{step[6aa1fdc6-713f-475b-bcb4-9a04dab39090].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[6aa1fdc6-713f-475b-bcb4-9a04dab39090].payload}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[e6e4de55-c8c1-4cbe-9b17-b633730e3522].status_code}}","label":"step➛Create Route Table➛Status Code","type":"step","ref":""},{"name":"{{step[e6e4de55-c8c1-4cbe-9b17-b633730e3522].response_body}}","label":"step➛Create Route Table➛Response Body","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].compartmentid}}","label":"step➛Post Processing➛compartmentid","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].definedtags}}","label":"step➛Post Processing➛definedtags","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].displayname}}","label":"step➛Post Processing➛displayname","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].freeformtags}}","label":"step➛Post Processing➛freeformtags","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].id}}","label":"step➛Post Processing➛id","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].lifecyclestate}}","label":"step➛Post Processing➛lifecyclestate","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules}}","label":"step➛Post Processing➛routerules","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].timecreated}}","label":"step➛Post Processing➛timecreated","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].vcnid}}","label":"step➛Post Processing➛vcnid","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].errormessage}}","label":"step➛Post Processing➛errormessage","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule}}","label":"step➛Post Processing➛routerules➛routerule","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.FDaaa67ee6dbbe5410f970474dd615d6d7}}","label":"step➛Post Processing➛routerules➛routerule➛routerules","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.routerule_child1}}","label":"step➛Post Processing➛routerules➛routerule➛routerule_child1","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule._}}","label":"step➛Post Processing➛routerules➛routerule","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.cidrBlock}}","label":"step➛Post Processing➛routerules➛routerule➛cidrBlock","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.routerule_child2}}","label":"step➛Post Processing➛routerules➛routerule➛routerule_child2","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.destination}}","label":"step➛Post Processing➛routerules➛routerule➛destination","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.routerule_child3}}","label":"step➛Post Processing➛routerules➛routerule➛routerule_child3","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.destinationType}}","label":"step➛Post Processing➛routerules➛routerule➛destinationType","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.routerule_child4}}","label":"step➛Post Processing➛routerules➛routerule➛routerule_child4","type":"step","ref":""},{"name":"{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules.routerule.networkEntityId}}","label":"step➛Post Processing➛routerules➛routerule➛networkEntityId","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -6075,7 +6099,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4e25cb3cdb0b9810b7a7e5bd0b9619c8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -6083,7 +6107,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 10:03:24</sys_updated_on>
+        <sys_updated_on>2020-09-10 08:01:08</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -6175,6 +6199,18 @@
         <value>{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].lifecyclestate}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>networkid</field>
+        <id>4e25cb3cdb0b9810b7a7e5bd0b9619c8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-09 07:52:42</sys_created_on>
+        <sys_id>a9aef20fdbc3dc10b7a7e5bd0b9619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:52:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</table>
+        <value>{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].vcnid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>routerules</field>
         <id>4e25cb3cdb0b9810b7a7e5bd0b9619c8</id>
         <sys_created_by>admin</sys_created_by>
@@ -6185,6 +6221,18 @@
         <sys_updated_on>2020-09-02 08:34:53</sys_updated_on>
         <table>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</table>
         <value>{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].routerules}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>routetableid</field>
+        <id>4e25cb3cdb0b9810b7a7e5bd0b9619c8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-09 07:54:39</sys_created_on>
+        <sys_id>c61f7e0fdbc3dc10b7a7e5bd0b961994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:54:39</sys_updated_on>
+        <table>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</table>
+        <value>{{step[d713bd70-5d02-474c-9f98-0b7ccb32d65d].id}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>status</field>
@@ -7571,7 +7619,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=routerule,child_name=routerule,child_type=object,child_type_label=Object,child_uiUniqueId=25c608d9-9247-4044-a674-f1a459b29dad,co_type_name=FD2b9c616126031c102aa3d6262d79c3f5,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=6074a29d-2b16-4735-b37a-b8d89a80c27f</attributes>
+        <attributes>child_label=routerule,child_name=routerule,child_type=object,child_type_label=Object,child_uiUniqueId=2c952fae-5ab8-4349-9d10-b9e169edbc53,co_type_name=FD4f2ac06bcb8fdc1039e0b99edec1774f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=6074a29d-2b16-4735-b37a-b8d89a80c27f</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -7629,14 +7677,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:51</sys_created_on>
         <sys_id>62250f3cdb0b9810b7a7e5bd0b961981</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 10:03:25</sys_updated_on>
+        <sys_updated_on>2020-09-10 08:01:10</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -8301,7 +8349,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=RouteRule,child_name=routeRule,child_type=object,child_type_label=Object,child_uiUniqueId=38fa09c7-d8c2-400d-a611-d52105b8c8e8,co_type_name=FD579c6161da031c10494b3e0a576985b7,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=eebe2bcc-3064-4de1-a50e-cb18ece7307c</attributes>
+        <attributes>child_label=RouteRule,child_name=routeRule,child_type=object,child_type_label=Object,child_uiUniqueId=c1e321d4-ac7c-4d63-bc6b-c54e767814d6,co_type_name=FD3e2ac06bf78fdc10f71d8d9ceb9e690a,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=eebe2bcc-3064-4de1-a50e-cb18ece7307c</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -8359,14 +8407,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:49</sys_created_on>
         <sys_id>4225cb3cdb0b9810b7a7e5bd0b9619f7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 10:03:24</sys_updated_on>
+        <sys_updated_on>2020-09-10 08:01:08</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -8621,12 +8669,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
-    <sys_hub_action_output action="delete_multiple" query="model=4e25cb3cdb0b9810b7a7e5bd0b9619c8^sys_idNOT IN07250f3cdb0b9810b7a7e5bd0b9619df,36250f3cdb0b9810b7a7e5bd0b9619d9,3a250f3cdb0b9810b7a7e5bd0b9619a8,7e250f3cdb0b9810b7a7e5bd0b9619c6,8b250f3cdb0b9810b7a7e5bd0b9619e5,8b250f3cdb0b9810b7a7e5bd0b9619eb,8b250f3cdb0b9810b7a7e5bd0b9619f1,be250f3cdb0b9810b7a7e5bd0b9619ba,be250f3cdb0b9810b7a7e5bd0b9619c0,fe250f3cdb0b9810b7a7e5bd0b9619ae,fe250f3cdb0b9810b7a7e5bd0b9619b4"/>
+    <sys_hub_action_output action="delete_multiple" query="model=4e25cb3cdb0b9810b7a7e5bd0b9619c8^sys_idNOT IN07250f3cdb0b9810b7a7e5bd0b9619df,3a250f3cdb0b9810b7a7e5bd0b9619a8,55aef20fdbc3dc10b7a7e5bd0b9619d3,7e250f3cdb0b9810b7a7e5bd0b9619c6,8b250f3cdb0b9810b7a7e5bd0b9619e5,8b250f3cdb0b9810b7a7e5bd0b9619f1,be250f3cdb0b9810b7a7e5bd0b9619ba,be250f3cdb0b9810b7a7e5bd0b9619c0,f51f7e0fdbc3dc10b7a7e5bd0b961981,fe250f3cdb0b9810b7a7e5bd0b9619ae,fe250f3cdb0b9810b7a7e5bd0b9619b4"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=RouteRule,child_name=routeRule,child_type=object,child_type_label=Object,child_uiUniqueId=5d564406-0f15-458a-8f09-37327282bb68,co_type_name=FDaf9ca1613e031c101a18ff30c3bf1513,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceUiUniqueId=eebe2bcc-3064-4de1-a50e-cb18ece7307c,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=a75e366d-199c-4c5f-90f7-5966c8e80917</attributes>
+        <attributes>child_label=RouteRule,child_name=routeRule,child_type=object,child_type_label=Object,child_uiUniqueId=36e0dc83-17a2-40d4-b2e8-458eda826068,co_type_name=FDd32ac06bff8fdc104e08078b685ab66e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=a75e366d-199c-4c5f-90f7-5966c8e80917</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -8660,92 +8708,9 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>routeRules</label>
+        <label>Route Rules</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Create Route Table">4e25cb3cdb0b9810b7a7e5bd0b9619c8</model>
-        <model_id>4e25cb3cdb0b9810b7a7e5bd0b9619c8</model_id>
-        <model_table>sys_hub_action_type_snapshot</model_table>
-        <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
-        <next_element/>
-        <order>8</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-09-02 08:34:52</sys_created_on>
-        <sys_id>07250f3cdb0b9810b7a7e5bd0b9619df</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 10:03:26</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_action_output>
-    <sys_hub_action_output action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=b5ec3fc7-51af-4306-b92c-d657d556fa6d</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>id</element>
-        <element_prototype/>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_link/>
-        <internal_type display_value="String">string</internal_type>
-        <label>id</label>
-        <mandatory>false</mandatory>
-        <max_length>8000</max_length>
         <model display_value="Create Route Table">4e25cb3cdb0b9810b7a7e5bd0b9619c8</model>
         <model_id>4e25cb3cdb0b9810b7a7e5bd0b9619c8</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
@@ -8768,15 +8733,15 @@
         <sys_class_name>sys_hub_action_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
-        <sys_id>36250f3cdb0b9810b7a7e5bd0b9619d9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_id>07250f3cdb0b9810b7a7e5bd0b9619df</sys_id>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-10 08:01:10</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -8826,7 +8791,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>errormessage</label>
+        <label>Error Message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Create Route Table">4e25cb3cdb0b9810b7a7e5bd0b9619c8</model>
@@ -8852,14 +8817,97 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:51</sys_created_on>
         <sys_id>3a250f3cdb0b9810b7a7e5bd0b9619a8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:51</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:12:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=04be45e8-3ee5-49b4-b221-5de9df968404</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>networkid</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Network Id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Route Table">4e25cb3cdb0b9810b7a7e5bd0b9619c8</model>
+        <model_id>4e25cb3cdb0b9810b7a7e5bd0b9619c8</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
+        <next_element/>
+        <order>10</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-09 07:52:42</sys_created_on>
+        <sys_id>55aef20fdbc3dc10b7a7e5bd0b9619d3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:54:38</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -8909,7 +8957,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>lifecycleState</label>
+        <label>Lifecycle State</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Create Route Table">4e25cb3cdb0b9810b7a7e5bd0b9619c8</model>
@@ -8935,14 +8983,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
         <sys_id>7e250f3cdb0b9810b7a7e5bd0b9619c6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:12:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -8992,7 +9040,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>timeCreated</label>
+        <label>Time Created</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Create Route Table">4e25cb3cdb0b9810b7a7e5bd0b9619c8</model>
@@ -9000,7 +9048,7 @@
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
         <next_element/>
-        <order>9</order>
+        <order>8</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -9018,97 +9066,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
         <sys_id>8b250f3cdb0b9810b7a7e5bd0b9619e5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_action_output>
-    <sys_hub_action_output action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=04be45e8-3ee5-49b4-b221-5de9df968404</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>vcnid</element>
-        <element_prototype/>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_link/>
-        <internal_type display_value="String">string</internal_type>
-        <label>vcnId</label>
-        <mandatory>false</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Create Route Table">4e25cb3cdb0b9810b7a7e5bd0b9619c8</model>
-        <model_id>4e25cb3cdb0b9810b7a7e5bd0b9619c8</model_id>
-        <model_table>sys_hub_action_type_snapshot</model_table>
-        <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
-        <next_element/>
-        <order>10</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-09-02 08:34:52</sys_created_on>
-        <sys_id>8b250f3cdb0b9810b7a7e5bd0b9619eb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:54:38</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -9158,7 +9123,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>status</label>
+        <label>Status</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Create Route Table">4e25cb3cdb0b9810b7a7e5bd0b9619c8</model>
@@ -9166,7 +9131,7 @@
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
         <next_element/>
-        <order>11</order>
+        <order>9</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -9184,14 +9149,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
         <sys_id>8b250f3cdb0b9810b7a7e5bd0b9619f1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:54:38</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -9241,7 +9206,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>displayName</label>
+        <label>Display Name</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Create Route Table">4e25cb3cdb0b9810b7a7e5bd0b9619c8</model>
@@ -9267,14 +9232,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
         <sys_id>be250f3cdb0b9810b7a7e5bd0b9619ba</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:12:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -9324,7 +9289,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="JSON">json</internal_type>
-        <label>freeformTags</label>
+        <label>Freeform Tags</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
         <model display_value="Create Route Table">4e25cb3cdb0b9810b7a7e5bd0b9619c8</model>
@@ -9350,14 +9315,97 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
         <sys_id>be250f3cdb0b9810b7a7e5bd0b9619c0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:12:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=b5ec3fc7-51af-4306-b92c-d657d556fa6d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>routetableid</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Route Table Id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Route Table">4e25cb3cdb0b9810b7a7e5bd0b9619c8</model>
+        <model_id>4e25cb3cdb0b9810b7a7e5bd0b9619c8</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
+        <next_element/>
+        <order>11</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-09 07:54:38</sys_created_on>
+        <sys_id>f51f7e0fdbc3dc10b7a7e5bd0b961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:54:38</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -9407,7 +9455,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>compartmentId</label>
+        <label>Compartment Id</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Create Route Table">4e25cb3cdb0b9810b7a7e5bd0b9619c8</model>
@@ -9433,14 +9481,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
         <sys_id>fe250f3cdb0b9810b7a7e5bd0b9619ae</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:12:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -9490,7 +9538,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="JSON">json</internal_type>
-        <label>definedTags</label>
+        <label>Defined Tags</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
         <model display_value="Create Route Table">4e25cb3cdb0b9810b7a7e5bd0b9619c8</model>
@@ -9516,14 +9564,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
         <sys_id>fe250f3cdb0b9810b7a7e5bd0b9619b4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:12:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -10884,7 +10932,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=routerule,child_name=routerule,child_type=object,child_type_label=Object,child_uiUniqueId=25c608d9-9247-4044-a674-f1a459b29dad,co_type_name=FD2b9c616126031c102aa3d6262d79c3f5,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=6074a29d-2b16-4735-b37a-b8d89a80c27f</attributes>
+        <attributes>child_label=routerule,child_name=routerule,child_type=object,child_type_label=Object,child_uiUniqueId=2c952fae-5ab8-4349-9d10-b9e169edbc53,co_type_name=FD4f2ac06bcb8fdc1039e0b99edec1774f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=6074a29d-2b16-4735-b37a-b8d89a80c27f</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -10942,14 +10990,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:51</sys_created_on>
         <sys_id>62250f3cdb0b9810b7a7e5bd0b961981</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 10:03:25</sys_updated_on>
+        <sys_updated_on>2020-09-10 08:01:10</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -11702,12 +11750,35 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8^sys_idNOT IN3a250f3cdb0b9810b7a7e5bd0b9619ad,3a250f3cdb0b9810b7a7e5bd0b9619b3,4f250f3cdb0b9810b7a7e5bd0b9619dd,7e250f3cdb0b9810b7a7e5bd0b9619d7,b6250f3cdb0b9810b7a7e5bd0b9619c5,c3250f3cdb0b9810b7a7e5bd0b9619e4,c3250f3cdb0b9810b7a7e5bd0b9619ea,c3250f3cdb0b9810b7a7e5bd0b9619f0,c3250f3cdb0b9810b7a7e5bd0b9619f6,f6250f3cdb0b9810b7a7e5bd0b9619b9,f6250f3cdb0b9810b7a7e5bd0b9619bf"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8^sys_idNOT IN311f7e0fdbc3dc10b7a7e5bd0b961986,3a250f3cdb0b9810b7a7e5bd0b9619ad,3a250f3cdb0b9810b7a7e5bd0b9619b3,7e250f3cdb0b9810b7a7e5bd0b9619d7,9daef20fdbc3dc10b7a7e5bd0b9619d7,b6250f3cdb0b9810b7a7e5bd0b9619c5,c3250f3cdb0b9810b7a7e5bd0b9619e4,c3250f3cdb0b9810b7a7e5bd0b9619ea,c3250f3cdb0b9810b7a7e5bd0b9619f6,f6250f3cdb0b9810b7a7e5bd0b9619b9,f6250f3cdb0b9810b7a7e5bd0b9619bf"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>routetableid</element>
+        <help/>
+        <hint/>
+        <label>Route Table Id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-09 07:54:38</sys_created_on>
+        <sys_id>311f7e0fdbc3dc10b7a7e5bd0b961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:54:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>errormessage</element>
         <help/>
         <hint/>
-        <label>errormessage</label>
+        <label>Error Message</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
         <plural/>
@@ -11715,14 +11786,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
         <sys_id>3a250f3cdb0b9810b7a7e5bd0b9619ad</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:12:21</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -11730,7 +11801,7 @@
         <element>compartmentid</element>
         <help/>
         <hint/>
-        <label>compartmentId</label>
+        <label>Compartment Id</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
         <plural/>
@@ -11738,37 +11809,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
         <sys_id>3a250f3cdb0b9810b7a7e5bd0b9619b3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>id</element>
-        <help/>
-        <hint/>
-        <label>id</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-09-02 08:34:52</sys_created_on>
-        <sys_id>4f250f3cdb0b9810b7a7e5bd0b9619dd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:12:21</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -11776,7 +11824,7 @@
         <element>lifecyclestate</element>
         <help/>
         <hint/>
-        <label>lifecycleState</label>
+        <label>Lifecycle State</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
         <plural/>
@@ -11784,6 +11832,29 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
         <sys_id>7e250f3cdb0b9810b7a7e5bd0b9619d7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:12:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>networkid</element>
+        <help/>
+        <hint/>
+        <label>Network Id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-09 07:52:42</sys_created_on>
+        <sys_id>9daef20fdbc3dc10b7a7e5bd0b9619d7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -11791,7 +11862,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:52:42</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -11799,7 +11870,7 @@
         <element>freeformtags</element>
         <help/>
         <hint/>
-        <label>freeformTags</label>
+        <label>Freeform Tags</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
         <plural/>
@@ -11807,14 +11878,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
         <sys_id>b6250f3cdb0b9810b7a7e5bd0b9619c5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:12:21</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -11822,7 +11893,7 @@
         <element>routerules</element>
         <help/>
         <hint/>
-        <label>routeRules</label>
+        <label>Route Rules</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
         <plural/>
@@ -11830,14 +11901,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
         <sys_id>c3250f3cdb0b9810b7a7e5bd0b9619e4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:12:22</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -11845,7 +11916,7 @@
         <element>timecreated</element>
         <help/>
         <hint/>
-        <label>timeCreated</label>
+        <label>Time Created</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
         <plural/>
@@ -11853,37 +11924,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
         <sys_id>c3250f3cdb0b9810b7a7e5bd0b9619ea</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>vcnid</element>
-        <help/>
-        <hint/>
-        <label>vcnId</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-09-02 08:34:52</sys_created_on>
-        <sys_id>c3250f3cdb0b9810b7a7e5bd0b9619f0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:12:22</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -11891,7 +11939,7 @@
         <element>status</element>
         <help/>
         <hint/>
-        <label>status</label>
+        <label>Status</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
         <plural/>
@@ -11899,14 +11947,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
         <sys_id>c3250f3cdb0b9810b7a7e5bd0b9619f6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:12:22</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -11914,7 +11962,7 @@
         <element>definedtags</element>
         <help/>
         <hint/>
-        <label>definedTags</label>
+        <label>Defined Tags</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
         <plural/>
@@ -11922,14 +11970,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
         <sys_id>f6250f3cdb0b9810b7a7e5bd0b9619b9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:12:21</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -11937,7 +11985,7 @@
         <element>displayname</element>
         <help/>
         <hint/>
-        <label>displayName</label>
+        <label>Display Name</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_4e25cb3cdb0b9810b7a7e5bd0b9619c8</name>
         <plural/>
@@ -11945,14 +11993,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:34:52</sys_created_on>
         <sys_id>f6250f3cdb0b9810b7a7e5bd0b9619bf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-02 08:34:52</sys_updated_on>
+        <sys_updated_on>2020-09-09 07:12:21</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
