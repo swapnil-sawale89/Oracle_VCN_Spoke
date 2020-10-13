@@ -9,11 +9,11 @@
         <category display_value="Security List Management">9938d72edbfe5410b7a7e5bd0b96190a</category>
         <copied_from>0f48d72edbfe5410b7a7e5bd0b9619c4</copied_from>
         <copied_from_name>Create Security List</copied_from_name>
-        <description>&lt;p&gt;Updates the specified security list's display name or rules. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -The OCID of compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Security List ID&lt;/b&gt; -The security list's Oracle Cloud ID (OCID).&lt;/li&gt; &lt;li&gt;&lt;b&gt;Egress Security Rules&lt;/b&gt; -Rules for allowing egress IP packets.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Ingress Security Rules&lt;/b&gt; -Rules for allowing ingress IP packets.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -The OCID of the Compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Defined Tags&lt;/b&gt; -Defined tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; -A user-friendly name.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Egress Security Rules&lt;/b&gt; -Rules for allowing egress IP packets.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Freeform Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Ingress Security Rules&lt;/b&gt; -Rules for allowing ingress IP packets.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Lifecycle state&lt;/b&gt; -The security list's current state.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -The OCID of the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Security List ID&lt;/b&gt; -The security list's Oracle Cloud ID (OCID).&lt;/li&gt; &lt;li&gt;&lt;b&gt;Time Created&lt;/b&gt; -The date and time the security list was created&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
+        <description>&lt;p&gt;Updates the specified security list's display name or rules. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Security List ID&lt;/b&gt; -Security list's Oracle Cloud ID (OCID).&lt;/li&gt; &lt;li&gt;&lt;b&gt;Egress Security Rules&lt;/b&gt; -Rules for allowing egress IP packets.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Ingress Security Rules&lt;/b&gt; -Rules for allowing ingress IP packets.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the Compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Defined Tags&lt;/b&gt; -Defined tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; -User-friendly name.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Egress Security Rules&lt;/b&gt; -Rules for allowing egress IP packets.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Freeform Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Ingress Security Rules&lt;/b&gt; -Rules for allowing ingress IP packets.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Lifecycle state&lt;/b&gt; -Security list's current state.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -OCID of the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Security List ID&lt;/b&gt; -Security list's Oracle Cloud ID (OCID).&lt;/li&gt; &lt;li&gt;&lt;b&gt;Time Created&lt;/b&gt; -Date and time the security list was created&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>update_security_list</internal_name>
         <label_cache>[{"name":"{{action.vcnid}}","label":"action➛vcnId","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Network Id","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action.ingress_security_rules}}","label":"action➛Ingress Security Rules","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.Ingress_Security_Rule}}","label":"action➛Ingress Security Rules➛Ingress Security Rule","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.protocol}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛protocol","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.source}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛source","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.tcpOptions}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛tcpOptions","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.tcpOptions.TCP_Option}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛tcpOptions➛TCP Option","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.tcpOptions.Destination_Port_Range}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛tcpOptions➛Destination Port Range","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.tcpOptions.destinationPortRange}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛tcpOptions➛destinationPortRange","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.tcpOptions.destinationPortRange.min}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛tcpOptions➛destinationPortRange➛min","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.tcpOptions.destinationPortRange.max}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛tcpOptions➛destinationPortRange➛max","type":"action","ref":""},{"name":"{{action.egressSecurityRules.Egress_Security_Rule}}","label":"action➛Egress Security Rules➛Egress Security Rule","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule.protocol}}","label":"action➛Egress Security Rules➛egressSecurityRule➛protocol","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule.source}}","label":"action➛Egress Security Rules➛egressSecurityRule➛source","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule.tcpOptions}}","label":"action➛Egress Security Rules➛egressSecurityRule➛tcpOptions","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule.tcpOptions.destinationPortRange}}","label":"action➛Egress Security Rules➛egressSecurityRule➛tcpOptions➛destinationPortRange","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule.tcpOptions.destinationPortRange.min}}","label":"action➛Egress Security Rules➛egressSecurityRule➛tcpOptions➛destinationPortRange➛min","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule.tcpOptions.destinationPortRange.max}}","label":"action➛Egress Security Rules➛egressSecurityRule➛tcpOptions➛destinationPortRange➛max","type":"action","ref":""},{"name":"{{action.compartmentid}}","label":"action➛compartmentId","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{action.freeformtags}}","label":"action➛Free Form Tags","type":"action","ref":""},{"name":"{{action.freeformtags.tags}}","label":"action➛freeformTags➛tags","type":"action","ref":""},{"name":"{{action.egressSecurityRules}}","label":"action➛Egress Security Rules","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRules11}}","label":"action➛Egress Security Rules➛egressSecurityRules","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule}}","label":"action➛Egress Security Rules➛egressSecurityRule","type":"action","ref":""},{"name":"{{action.ingressSecurityRules}}","label":"action➛Ingress Security Rules","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule}}","label":"action➛Ingress Security Rules➛ingressSecurityRule","type":"action","ref":""},{"name":"{{action.freeformtags.Name}}","label":"action➛Free Form Tags➛Name","type":"action","ref":""},{"name":"{{action.freeformtags.name}}","label":"action➛Free Form Tags➛name","type":"action","ref":""},{"name":"{{action.freeformtags.value}}","label":"action➛Free Form Tags➛value","type":"action","ref":""},{"name":"{{action.security_list_id}}","label":"action➛Security List Id","type":"action","ref":""},{"name":"{{action.securitylistid}}","label":"action➛Security List ID","type":"action","ref":""},{"name":"{{action.free_form_tags}}","label":"action➛Free Form Tags","type":"action","ref":""},{"name":"{{action.free_form_tags.name}}","label":"action➛Free Form Tags➛name","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule.destination}}","label":"action➛Egress Security Rules➛egressSecurityRule➛destination","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule._}}","label":"action➛Egress Security Rules➛egressSecurityRule","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule.isStateless}}","label":"action➛Egress Security Rules➛egressSecurityRule➛isStateless","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.isStateless}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛isStateless","type":"action","ref":""},{"name":"{{step[7368a4be-756e-409b-91dd-1db5b238f0fc].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[7368a4be-756e-409b-91dd-1db5b238f0fc].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":""},{"name":"{{step[881f8c3d-ac54-4533-ba81-0582841cdfef].status_code}}","label":"step➛Update Security Lists➛Status Code","type":"step","ref":""},{"name":"{{step[881f8c3d-ac54-4533-ba81-0582841cdfef].response_body}}","label":"step➛Update Security Lists➛Response Body","type":"step","ref":""},{"name":"{{step[7368a4be-756e-409b-91dd-1db5b238f0fc].payloadtest}}","label":"step➛Pre Processing➛securityListId","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46]._}}","label":"step➛Post Processing➛","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].compartment_id}}","label":"step➛Post Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].compartmentid}}","label":"step➛Post Processing➛compartmentid","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].displayname}}","label":"step➛Post Processing➛displayname","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].id}}","label":"step➛Post Processing➛id","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].lifecyclestate}}","label":"step➛Post Processing➛lifecyclestate","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].timecreated}}","label":"step➛Post Processing➛timecreated","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].vcnid}}","label":"step➛Post Processing➛vcnid","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules}}","label":"step➛Post Processing➛ingressSecurityRules","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.ingresssecurityrule_child1}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛ingressSecurityRule_child1","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.protocol}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛protocol","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.ingresssecurityrule_child2}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛ingressSecurityRule_child2","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.destination}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛destination","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.ingresssecurityrule_child3}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛ingressSecurityRule_child3","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.tcpOptions}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛tcpOptions","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.tcpOptions.tcpoptions_child1}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛tcpOptions➛tcpOptions_child1","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.tcpOptions.min}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛tcpOptions➛min","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.tcpOptions.tcpoptions_child2}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛tcpOptions➛tcpOptions_child2","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.tcpOptions.max}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛tcpOptions➛max","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules}}","label":"step➛Post Processing➛egressSecurityRules","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.egresssecurityrule_child1}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛egressSecurityRule_child1","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.protocol}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛protocol","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.egresssecurityrule_child2}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛egressSecurityRule_child2","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.destination}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛destination","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.egresssecurityrule_child3}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛egressSecurityRule_child3","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.tcpOptions}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛tcpOptions","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.tcpOptions.tcpoptions_child1}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛tcpOptions➛tcpOptions_child1","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.tcpOptions.min}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛tcpOptions➛min","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.tcpOptions.tcpoptions_child2}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛tcpOptions➛tcpOptions_child2","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.tcpOptions.max}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛tcpOptions➛max","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.tcpOptions.tcpoptions_child}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛tcpOptions➛tcpOptions_child","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].errormessage}}","label":"step➛Post Processing➛errormessage","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[7368a4be-756e-409b-91dd-1db5b238f0fc].securitylistid}}","label":"step➛Pre Processing➛SecurityListId","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].responsebody}}","label":"step➛Post Processing➛responsebody","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].freeformtags}}","label":"step➛Post Processing➛freeformtags","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].definedtags}}","label":"step➛Post Processing➛definedtags","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.isStateless}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛isStateless","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.source}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛source","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.isStateless}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛isStateless","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.sourceType}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛sourceType","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.sourceType}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛sourceType","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>1caf9bd5dbf7d81020c17a2faa96195c</latest_snapshot>
+        <latest_snapshot>10471ecedbfb1c1020c17a2faa9619da</latest_snapshot>
         <master_snapshot>cbcacb70db4b9810b7a7e5bd0b961962</master_snapshot>
         <name>Update Security List</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6001e6f4dbc79810b7a7e5bd0b96194d</sys_id>
-        <sys_mod_count>72</sys_mod_count>
+        <sys_mod_count>77</sys_mod_count>
         <sys_name>Update Security List</sys_name>
         <sys_overrides/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_6001e6f4dbc79810b7a7e5bd0b96194d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:38</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:52</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1825,7 +1825,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=ingressSecurityRule,child_name=ingressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=76f982ca-e52b-46a4-8799-a26bb7f12b7d,co_type_name=FDa08cd4d3ebb2d4109d39a5d6969088fb,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=61499d4d-3124-4110-a91d-f216eba669e1</attributes>
+        <attributes>child_label=ingressSecurityRule,child_name=ingressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=ed25738a-fc86-454e-adca-bd578497700d,co_type_name=FDa08cd4d3ebb2d4109d39a5d6969088fb,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=61499d4d-3124-4110-a91d-f216eba669e1</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1883,14 +1883,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 05:56:56</sys_created_on>
         <sys_id>a1012af4dbc79810b7a7e5bd0b961951</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:25</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2311,7 +2311,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=egressSecurityRule,child_name=egressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=a0accd60-2fc0-4954-a12d-edd8400cf2e1,co_type_name=FD6c8cd4d3c1b2d41085b78547bef8cefc,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b604db37-5f66-4628-b8ad-028afd6953fe</attributes>
+        <attributes>child_label=egressSecurityRule,child_name=egressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=e717fb41-7337-4138-a5c1-0054f12f9465,co_type_name=FD6c8cd4d3c1b2d41085b78547bef8cefc,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b604db37-5f66-4628-b8ad-028afd6953fe</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2369,14 +2369,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 05:56:56</sys_created_on>
         <sys_id>e5012af4dbc79810b7a7e5bd0b961957</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:25</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2478,9 +2478,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-11 06:25:56</sys_created_on>
         <sys_id>aead5395dbf7d81020c17a2faa961915</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:24</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:39</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=aead5395dbf7d81020c17a2faa961915"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2501,7 +2501,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=egressSecurityRule,child_name=egressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=9e0dfa13-cd04-468b-9c65-75163eb773e6,co_type_name=FD7eb2bfaa88329410a3da07bbd031a80b,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=77985b33-8ad7-4d90-924c-41fb66327cd3</attributes>
+        <attributes>child_label=egressSecurityRule,child_name=egressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=cab5b3f5-f5f2-41b4-92cf-1a7abd9b5744,co_type_name=FD7eb2bfaa88329410a3da07bbd031a80b,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=77985b33-8ad7-4d90-924c-41fb66327cd3</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2559,14 +2559,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 05:56:54</sys_created_on>
         <sys_id>7801e6f4dbc79810b7a7e5bd0b961967</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:24</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2663,7 +2663,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=ingressSecurityRule,child_name=ingressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=d7c23f61-febe-40d1-9123-f2d7ddd35af1,co_type_name=FDfab2bfaa333294103f0d5b510a7a5a0d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=3ca24ca8-f77c-4df7-9398-e1fb2f562e16</attributes>
+        <attributes>child_label=ingressSecurityRule,child_name=ingressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=01e55903-4c81-4612-b3f8-e78afb744e65,co_type_name=FDfab2bfaa333294103f0d5b510a7a5a0d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=3ca24ca8-f77c-4df7-9398-e1fb2f562e16</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2721,14 +2721,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 05:56:54</sys_created_on>
         <sys_id>fc01e6f4dbc79810b7a7e5bd0b96196d</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:24</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3077,7 +3077,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=ingressSecurityRule,child_name=ingressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=391969fa-810c-4cf7-8abf-c907ec4f043f,co_type_name=FDb88c18d354b2d410ca3187a0756b4565,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=793e4348-4061-4bc2-9377-da6812bf9936</attributes>
+        <attributes>child_label=ingressSecurityRule,child_name=ingressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=68182e66-c633-4df4-8906-942107a70a40,co_type_name=FDb88c18d354b2d410ca3187a0756b4565,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=793e4348-4061-4bc2-9377-da6812bf9936</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -3137,14 +3137,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 05:56:57</sys_created_on>
         <sys_id>6d012af4dbc79810b7a7e5bd0b9619ac</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:26</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3326,7 +3326,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=egressSecurityRule,child_name=egressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=ec485136-f8c7-459b-992f-187abb236bcf,co_type_name=FD388c18d3cdb2d4105ee9908f7337a167,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=407683ad-fb99-4d33-8697-c61a02b5560e</attributes>
+        <attributes>child_label=egressSecurityRule,child_name=egressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=937eb5af-4f44-4876-988c-dea333019854,co_type_name=FD388c18d3cdb2d4105ee9908f7337a167,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=407683ad-fb99-4d33-8697-c61a02b5560e</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -3386,14 +3386,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 05:56:57</sys_created_on>
         <sys_id>a5012af4dbc79810b7a7e5bd0b9619b3</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:26</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5353,7 +5353,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=ingressSecurityRule,child_name=ingressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=76f982ca-e52b-46a4-8799-a26bb7f12b7d,co_type_name=FDa08cd4d3ebb2d4109d39a5d6969088fb,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=61499d4d-3124-4110-a91d-f216eba669e1</attributes>
+        <attributes>child_label=ingressSecurityRule,child_name=ingressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=ed25738a-fc86-454e-adca-bd578497700d,co_type_name=FDa08cd4d3ebb2d4109d39a5d6969088fb,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=61499d4d-3124-4110-a91d-f216eba669e1</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5411,14 +5411,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 05:56:56</sys_created_on>
         <sys_id>a1012af4dbc79810b7a7e5bd0b961951</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:25</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5839,7 +5839,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=egressSecurityRule,child_name=egressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=a0accd60-2fc0-4954-a12d-edd8400cf2e1,co_type_name=FD6c8cd4d3c1b2d41085b78547bef8cefc,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b604db37-5f66-4628-b8ad-028afd6953fe</attributes>
+        <attributes>child_label=egressSecurityRule,child_name=egressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=e717fb41-7337-4138-a5c1-0054f12f9465,co_type_name=FD6c8cd4d3c1b2d41085b78547bef8cefc,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b604db37-5f66-4628-b8ad-028afd6953fe</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5897,14 +5897,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 05:56:56</sys_created_on>
         <sys_id>e5012af4dbc79810b7a7e5bd0b961957</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:25</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -6312,17 +6312,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Update Security List">6001e6f4dbc79810b7a7e5bd0b96194d</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8dda4f70db4b9810b7a7e5bd0b961983","name":"plan"}}</plan>
-        <snapshot>1caf9bd5dbf7d81020c17a2faa96195c</snapshot>
+        <snapshot>10471ecedbfb1c1020c17a2faa9619da</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:59:35</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8dda4f70db4b9810b7a7e5bd0b961983</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:43</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:56</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -6333,7 +6333,7 @@
         <category display_value="Security List Management">9938d72edbfe5410b7a7e5bd0b96190a</category>
         <copied_from/>
         <copied_from_name/>
-        <description>&lt;p&gt;Updates the specified security list's display name or rules. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -The OCID of compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Security List ID&lt;/b&gt; -The security list's Oracle Cloud ID (OCID).&lt;/li&gt; &lt;li&gt;&lt;b&gt;Egress Security Rules&lt;/b&gt; -Rules for allowing egress IP packets.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Ingress Security Rules&lt;/b&gt; -Rules for allowing ingress IP packets.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -The OCID of the Compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Defined Tags&lt;/b&gt; -Defined tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; -A user-friendly name.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Egress Security Rules&lt;/b&gt; -Rules for allowing egress IP packets.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Freeform Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Ingress Security Rules&lt;/b&gt; -Rules for allowing ingress IP packets.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Lifecycle state&lt;/b&gt; -The security list's current state.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -The OCID of the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Security List ID&lt;/b&gt; -The security list's Oracle Cloud ID (OCID).&lt;/li&gt; &lt;li&gt;&lt;b&gt;Time Created&lt;/b&gt; -The date and time the security list was created&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
+        <description>&lt;p&gt;Updates the specified security list's display name or rules. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Security List ID&lt;/b&gt; -Security list's Oracle Cloud ID (OCID).&lt;/li&gt; &lt;li&gt;&lt;b&gt;Egress Security Rules&lt;/b&gt; -Rules for allowing egress IP packets.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Ingress Security Rules&lt;/b&gt; -Rules for allowing ingress IP packets.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the Compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Defined Tags&lt;/b&gt; -Defined tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; -User-friendly name.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Egress Security Rules&lt;/b&gt; -Rules for allowing egress IP packets.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Freeform Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Ingress Security Rules&lt;/b&gt; -Rules for allowing ingress IP packets.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Lifecycle state&lt;/b&gt; -Security list's current state.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -OCID of the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Security List ID&lt;/b&gt; -Security list's Oracle Cloud ID (OCID).&lt;/li&gt; &lt;li&gt;&lt;b&gt;Time Created&lt;/b&gt; -Date and time the security list was created&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <internal_name>update_security_list</internal_name>
         <label_cache>[{"name":"{{action.vcnid}}","label":"action➛vcnId","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Network Id","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action.ingress_security_rules}}","label":"action➛Ingress Security Rules","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.Ingress_Security_Rule}}","label":"action➛Ingress Security Rules➛Ingress Security Rule","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.protocol}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛protocol","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.source}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛source","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.tcpOptions}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛tcpOptions","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.tcpOptions.TCP_Option}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛tcpOptions➛TCP Option","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.tcpOptions.Destination_Port_Range}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛tcpOptions➛Destination Port Range","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.tcpOptions.destinationPortRange}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛tcpOptions➛destinationPortRange","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.tcpOptions.destinationPortRange.min}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛tcpOptions➛destinationPortRange➛min","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.tcpOptions.destinationPortRange.max}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛tcpOptions➛destinationPortRange➛max","type":"action","ref":""},{"name":"{{action.egressSecurityRules.Egress_Security_Rule}}","label":"action➛Egress Security Rules➛Egress Security Rule","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule.protocol}}","label":"action➛Egress Security Rules➛egressSecurityRule➛protocol","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule.source}}","label":"action➛Egress Security Rules➛egressSecurityRule➛source","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule.tcpOptions}}","label":"action➛Egress Security Rules➛egressSecurityRule➛tcpOptions","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule.tcpOptions.destinationPortRange}}","label":"action➛Egress Security Rules➛egressSecurityRule➛tcpOptions➛destinationPortRange","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule.tcpOptions.destinationPortRange.min}}","label":"action➛Egress Security Rules➛egressSecurityRule➛tcpOptions➛destinationPortRange➛min","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule.tcpOptions.destinationPortRange.max}}","label":"action➛Egress Security Rules➛egressSecurityRule➛tcpOptions➛destinationPortRange➛max","type":"action","ref":""},{"name":"{{action.compartmentid}}","label":"action➛compartmentId","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{action.freeformtags}}","label":"action➛Free Form Tags","type":"action","ref":""},{"name":"{{action.freeformtags.tags}}","label":"action➛freeformTags➛tags","type":"action","ref":""},{"name":"{{action.egressSecurityRules}}","label":"action➛Egress Security Rules","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRules11}}","label":"action➛Egress Security Rules➛egressSecurityRules","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule}}","label":"action➛Egress Security Rules➛egressSecurityRule","type":"action","ref":""},{"name":"{{action.ingressSecurityRules}}","label":"action➛Ingress Security Rules","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule}}","label":"action➛Ingress Security Rules➛ingressSecurityRule","type":"action","ref":""},{"name":"{{action.freeformtags.Name}}","label":"action➛Free Form Tags➛Name","type":"action","ref":""},{"name":"{{action.freeformtags.name}}","label":"action➛Free Form Tags➛name","type":"action","ref":""},{"name":"{{action.freeformtags.value}}","label":"action➛Free Form Tags➛value","type":"action","ref":""},{"name":"{{action.security_list_id}}","label":"action➛Security List Id","type":"action","ref":""},{"name":"{{action.securitylistid}}","label":"action➛Security List ID","type":"action","ref":""},{"name":"{{action.free_form_tags}}","label":"action➛Free Form Tags","type":"action","ref":""},{"name":"{{action.free_form_tags.name}}","label":"action➛Free Form Tags➛name","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule.destination}}","label":"action➛Egress Security Rules➛egressSecurityRule➛destination","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule._}}","label":"action➛Egress Security Rules➛egressSecurityRule","type":"action","ref":""},{"name":"{{action.egressSecurityRules.egressSecurityRule.isStateless}}","label":"action➛Egress Security Rules➛egressSecurityRule➛isStateless","type":"action","ref":""},{"name":"{{action.ingressSecurityRules.ingressSecurityRule.isStateless}}","label":"action➛Ingress Security Rules➛ingressSecurityRule➛isStateless","type":"action","ref":""},{"name":"{{step[7368a4be-756e-409b-91dd-1db5b238f0fc].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[7368a4be-756e-409b-91dd-1db5b238f0fc].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":""},{"name":"{{step[881f8c3d-ac54-4533-ba81-0582841cdfef].status_code}}","label":"step➛Update Security Lists➛Status Code","type":"step","ref":""},{"name":"{{step[881f8c3d-ac54-4533-ba81-0582841cdfef].response_body}}","label":"step➛Update Security Lists➛Response Body","type":"step","ref":""},{"name":"{{step[7368a4be-756e-409b-91dd-1db5b238f0fc].payloadtest}}","label":"step➛Pre Processing➛securityListId","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46]._}}","label":"step➛Post Processing➛","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].compartment_id}}","label":"step➛Post Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].compartmentid}}","label":"step➛Post Processing➛compartmentid","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].displayname}}","label":"step➛Post Processing➛displayname","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].id}}","label":"step➛Post Processing➛id","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].lifecyclestate}}","label":"step➛Post Processing➛lifecyclestate","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].timecreated}}","label":"step➛Post Processing➛timecreated","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].vcnid}}","label":"step➛Post Processing➛vcnid","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules}}","label":"step➛Post Processing➛ingressSecurityRules","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.ingresssecurityrule_child1}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛ingressSecurityRule_child1","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.protocol}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛protocol","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.ingresssecurityrule_child2}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛ingressSecurityRule_child2","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.destination}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛destination","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.ingresssecurityrule_child3}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛ingressSecurityRule_child3","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.tcpOptions}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛tcpOptions","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.tcpOptions.tcpoptions_child1}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛tcpOptions➛tcpOptions_child1","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.tcpOptions.min}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛tcpOptions➛min","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.tcpOptions.tcpoptions_child2}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛tcpOptions➛tcpOptions_child2","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.tcpOptions.max}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛tcpOptions➛max","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules}}","label":"step➛Post Processing➛egressSecurityRules","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.egresssecurityrule_child1}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛egressSecurityRule_child1","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.protocol}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛protocol","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.egresssecurityrule_child2}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛egressSecurityRule_child2","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.destination}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛destination","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.egresssecurityrule_child3}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛egressSecurityRule_child3","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.tcpOptions}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛tcpOptions","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.tcpOptions.tcpoptions_child1}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛tcpOptions➛tcpOptions_child1","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.tcpOptions.min}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛tcpOptions➛min","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.tcpOptions.tcpoptions_child2}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛tcpOptions➛tcpOptions_child2","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.tcpOptions.max}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛tcpOptions➛max","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.tcpOptions.tcpoptions_child}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛tcpOptions➛tcpOptions_child","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].errormessage}}","label":"step➛Post Processing➛errormessage","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[7368a4be-756e-409b-91dd-1db5b238f0fc].securitylistid}}","label":"step➛Pre Processing➛SecurityListId","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].responsebody}}","label":"step➛Post Processing➛responsebody","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].freeformtags}}","label":"step➛Post Processing➛freeformtags","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].definedtags}}","label":"step➛Post Processing➛definedtags","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.isStateless}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛isStateless","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.source}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛source","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.isStateless}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛isStateless","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].ingresssecurityrules.ingressSecurityRule.sourceType}}","label":"step➛Post Processing➛ingressSecurityRules➛ingressSecurityRule➛sourceType","type":"step","ref":""},{"name":"{{step[24346b1c-591b-4f77-a004-fa862c657d46].egresssecurityrules.egressSecurityRule.sourceType}}","label":"step➛Post Processing➛egressSecurityRules➛egressSecurityRule➛sourceType","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -6348,7 +6348,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cbcacb70db4b9810b7a7e5bd0b961962</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -6356,7 +6356,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:30:50</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:50</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -7178,7 +7178,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=ingressSecurityRule,child_name=ingressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=76f982ca-e52b-46a4-8799-a26bb7f12b7d,co_type_name=FDa9af1fd566f7d810c6e048c1eb336838,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=61499d4d-3124-4110-a91d-f216eba669e1</attributes>
+        <attributes>child_label=ingressSecurityRule,child_name=ingressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=ed25738a-fc86-454e-adca-bd578497700d,co_type_name=FDbd479ecea7fb1c1028e6730d7928895f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=61499d4d-3124-4110-a91d-f216eba669e1</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -7236,14 +7236,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:59:30</sys_created_on>
         <sys_id>2bca0f70db4b9810b7a7e5bd0b961918</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:37</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -7583,7 +7583,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=egressSecurityRule,child_name=egressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=a0accd60-2fc0-4954-a12d-edd8400cf2e1,co_type_name=FDf5af1fd54af7d81034f8687bd85c713a,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b604db37-5f66-4628-b8ad-028afd6953fe</attributes>
+        <attributes>child_label=egressSecurityRule,child_name=egressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=e717fb41-7337-4138-a5c1-0054f12f9465,co_type_name=FDf9479ece26fb1c100f283db33e81f661,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b604db37-5f66-4628-b8ad-028afd6953fe</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -7641,14 +7641,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:59:30</sys_created_on>
         <sys_id>6fca0f70db4b9810b7a7e5bd0b96191e</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:37</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -8800,9 +8800,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-11 06:30:51</sys_created_on>
         <sys_id>2ece13d5dbf7d81020c17a2faa961971</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:36</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:50</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2ece13d5dbf7d81020c17a2faa961971"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -8823,7 +8823,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=egressSecurityRule,child_name=egressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=9e0dfa13-cd04-468b-9c65-75163eb773e6,co_type_name=FDd9afdbd5a5f7d810844b729d250aa6de,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=77985b33-8ad7-4d90-924c-41fb66327cd3</attributes>
+        <attributes>child_label=egressSecurityRule,child_name=egressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=cab5b3f5-f5f2-41b4-92cf-1a7abd9b5744,co_type_name=FDe9479ecefbfb1c1081f70e5a5210651e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=77985b33-8ad7-4d90-924c-41fb66327cd3</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -8881,14 +8881,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:59:27</sys_created_on>
         <sys_id>8fcacb70db4b9810b7a7e5bd0b961979</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:36</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:50</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -8985,7 +8985,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=ingressSecurityRule,child_name=ingressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=d7c23f61-febe-40d1-9123-f2d7ddd35af1,co_type_name=FD19afdbd53df7d810f3aac03a0a2e28e0,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=3ca24ca8-f77c-4df7-9398-e1fb2f562e16</attributes>
+        <attributes>child_label=ingressSecurityRule,child_name=ingressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=01e55903-4c81-4612-b3f8-e78afb744e65,co_type_name=FDe5479ece13fb1c1085f74adf632c4320,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=3ca24ca8-f77c-4df7-9398-e1fb2f562e16</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -9043,14 +9043,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:59:27</sys_created_on>
         <sys_id>c3cacb70db4b9810b7a7e5bd0b961980</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:36</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:50</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -9565,7 +9565,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=egressSecurityRule,child_name=egressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=ec485136-f8c7-459b-992f-187abb236bcf,co_type_name=FD31af1fd590f7d8107cb655d2012a3461,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=407683ad-fb99-4d33-8697-c61a02b5560e</attributes>
+        <attributes>child_label=egressSecurityRule,child_name=egressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=937eb5af-4f44-4876-988c-dea333019854,co_type_name=FD35479ecedefb1c1042a789f7f8512288,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=407683ad-fb99-4d33-8697-c61a02b5560e</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -9625,14 +9625,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:59:31</sys_created_on>
         <sys_id>bbca0f70db4b9810b7a7e5bd0b961961</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:38</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -9980,7 +9980,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=ingressSecurityRule,child_name=ingressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=391969fa-810c-4cf7-8abf-c907ec4f043f,co_type_name=FDf1af1fd560f7d810bbc4c9b962e88c5f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=793e4348-4061-4bc2-9377-da6812bf9936</attributes>
+        <attributes>child_label=ingressSecurityRule,child_name=ingressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=68182e66-c633-4df4-8906-942107a70a40,co_type_name=FDf5479ecea1fb1c100b99c882e255d986,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=793e4348-4061-4bc2-9377-da6812bf9936</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -10040,14 +10040,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:59:30</sys_created_on>
         <sys_id>fbca0f70db4b9810b7a7e5bd0b96194e</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:37</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -10706,7 +10706,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=ingressSecurityRule,child_name=ingressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=76f982ca-e52b-46a4-8799-a26bb7f12b7d,co_type_name=FDa9af1fd566f7d810c6e048c1eb336838,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=61499d4d-3124-4110-a91d-f216eba669e1</attributes>
+        <attributes>child_label=ingressSecurityRule,child_name=ingressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=ed25738a-fc86-454e-adca-bd578497700d,co_type_name=FDbd479ecea7fb1c1028e6730d7928895f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=61499d4d-3124-4110-a91d-f216eba669e1</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -10764,14 +10764,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:59:30</sys_created_on>
         <sys_id>2bca0f70db4b9810b7a7e5bd0b961918</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:37</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -11111,7 +11111,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=egressSecurityRule,child_name=egressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=a0accd60-2fc0-4954-a12d-edd8400cf2e1,co_type_name=FDf5af1fd54af7d81034f8687bd85c713a,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b604db37-5f66-4628-b8ad-028afd6953fe</attributes>
+        <attributes>child_label=egressSecurityRule,child_name=egressSecurityRule,child_type=object,child_type_label=Object,child_uiUniqueId=e717fb41-7337-4138-a5c1-0054f12f9465,co_type_name=FDf9479ece26fb1c100f283db33e81f661,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b604db37-5f66-4628-b8ad-028afd6953fe</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -11169,14 +11169,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:59:30</sys_created_on>
         <sys_id>6fca0f70db4b9810b7a7e5bd0b96191e</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:34:37</sys_updated_on>
+        <sys_updated_on>2020-10-13 09:13:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

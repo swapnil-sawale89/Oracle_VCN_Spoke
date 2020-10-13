@@ -61,11 +61,13 @@ OracleVirtualCloudNetworkUtils.prototype = {
     createPayload: function(obj, keys) {
         var payload = {};
         keys.forEach(function(key) {
+			gs.info(("KEY : "+key+" Data Type:"+typeof obj[key]));
 			if (obj[key] && typeof obj[key] == 'string') {
                 payload[key] = obj[key];
             }
 			else if (obj[key] && typeof obj[key] == 'object' && obj[key].length > 0){
-				var value = obj[key].trim;
+				gs.info(("KEY : "+obj[key]));
+				var value = obj[key];
 				if(value){
 					payload[key] = obj[key];
 				}
@@ -188,13 +190,13 @@ OracleVirtualCloudNetworkUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-20 09:41:31</sys_created_on>
         <sys_id>3f961cf0db76541020c17a2faa9619af</sys_id>
-        <sys_mod_count>59</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name>OracleVirtualCloudNetworkUtils</sys_name>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_script_include_3f961cf0db76541020c17a2faa9619af</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:32:21</sys_updated_on>
+        <sys_updated_on>2020-10-13 16:30:24</sys_updated_on>
     </sys_script_include>
 </record_update>

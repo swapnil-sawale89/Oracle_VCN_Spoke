@@ -9,11 +9,11 @@
         <category display_value="Subnet Management">a3d19996dbb25410b7a7e5bd0b96191d</category>
         <copied_from>96cfd616db765410b7a7e5bd0b961985</copied_from>
         <copied_from_name>Update Subnet</copied_from_name>
-        <description>&lt;p&gt;Gets the specified subnet's information.&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -The OCID of the compartment of the subnet.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Subnet ID&lt;/b&gt; -The subnet's Oracle ID (OCID).&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment Id&lt;/b&gt; -The OCID of the compartment to contain the subnet.&lt;/li&gt; &lt;li&gt;&lt;b&gt;CIDR Block&lt;/b&gt; -The CIDR IP address range of the subnet. &lt;/li&gt; &lt;li&gt;&lt;b&gt;Defined Tags&lt;/b&gt; -Defined tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Dhcp Options ID&lt;/b&gt; -The OCID of the set of DHCP options that the subnet uses.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Free Form Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Lifecycle State&lt;/b&gt; -The VCN's current state.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -The OCID of the VCN the subnet is in.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Prohibit Public IP on VNIC&lt;/b&gt; -Whether VNICs within this subnet can have public IP addresses.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Security List IDs&lt;/b&gt; -The OCIDs of the security list or lists that the subnet uses.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Route Table ID&lt;/b&gt; -The OCID of the route table that the subnet uses.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Subnet ID&lt;/b&gt; -The subnet's Oracle ID (OCID).&lt;/li&gt; &lt;li&gt;&lt;b&gt;Time Created&lt;/b&gt; -The date and time the subnet was created.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Virtual Router IP&lt;/b&gt; -The IP address of the virtual router.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Virtual Router Mac&lt;/b&gt; -The MAC address of the virtual router.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
+        <description>&lt;p&gt;Gets the specified subnet's information.&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment of the subnet.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Subnet ID&lt;/b&gt; -OCID of subnet.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment Id&lt;/b&gt; -OCID of the compartment to contain the subnet.&lt;/li&gt; &lt;li&gt;&lt;b&gt;CIDR Block&lt;/b&gt; -CIDR IP address range of the subnet. &lt;/li&gt; &lt;li&gt;&lt;b&gt;Defined Tags&lt;/b&gt; -Defined tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Dhcp Options ID&lt;/b&gt; -OCID of the set of DHCP options that the subnet uses.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; - User-friendly name.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Free Form Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Lifecycle State&lt;/b&gt; -VCN's current state.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -OCID of the VCN the subnet is in.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Prohibit Public IP on VNIC&lt;/b&gt; -Option to specify if subnet can have public IP addresses.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Security List IDs&lt;/b&gt; -OCIDs of the security list or lists that the subnet uses.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Route Table ID&lt;/b&gt; -OCID of the route table that the subnet uses.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Subnet ID&lt;/b&gt; -Subnet's Oracle ID (OCID).&lt;/li&gt; &lt;li&gt;&lt;b&gt;Time Created&lt;/b&gt; -Date and time the subnet was created.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Virtual Router IP&lt;/b&gt; -IP address of the virtual router.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Virtual Router Mac&lt;/b&gt; -MAC address of the virtual router.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>get_subnet</internal_name>
         <label_cache>[{"name":"{{action.cidr_block}}","label":"action➛CIDR Block","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Subnet Ids","type":"action","ref":""},{"name":"{{action.availability_domain}}","label":"action➛Availability Domain","type":"action","ref":""},{"name":"{{action.dhcpoptionsid}}","label":"action➛dhcpOptionsId","type":"action","ref":""},{"name":"{{action.dhcp_options_id}}","label":"action➛Dhcp Options Id","type":"action","ref":""},{"name":"{{action.displayname}}","label":"action➛DisplayName","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action.dns_label}}","label":"action➛DNS Label","type":"action","ref":""},{"name":"{{action.ipv6_cidr_block}}","label":"action➛IPV6 CIDR Block","type":"action","ref":""},{"name":"{{action.prohibit_publicip_on_vnic}}","label":"action➛Prohibit PublicIp On Vnic","type":"action","ref":""},{"name":"{{action.prohibit_public_ip_on_vnic}}","label":"action➛Prohibit Public Ip on VNIC","type":"action","ref":""},{"name":"{{action.routetable_id}}","label":"action➛RouteTable Id","type":"action","ref":""},{"name":"{{action.security_list_ids}}","label":"action➛Security List Ids","type":"action","ref":""},{"name":"{{action.freeform_tags}}","label":"action➛Freeform Tags","type":"action","ref":""},{"name":"{{action.defined_tags}}","label":"action➛Defined Tags","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags}}","label":"action➛Freeform Tags➛Tags","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags.Name}}","label":"action➛Freeform Tags➛Tags➛Name","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags.Value}}","label":"action➛Freeform Tags➛Tags➛Value","type":"action","ref":""},{"name":"{{action.security_list_ids.Security_List_Id}}","label":"action➛Security List Ids➛Security List Id","type":"action","ref":""},{"name":"{{action.subnet_id}}","label":"action➛Subnet ID","type":"action","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].payload}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[88602dda-a9ad-4966-9921-346344880197].status_code}}","label":"step➛Get Subnet➛Status Code","type":"step","ref":""},{"name":"{{step[88602dda-a9ad-4966-9921-346344880197].response_body}}","label":"step➛Get Subnet➛Response Body","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].availabilitydomain}}","label":"step➛Post Processing➛availabilityDomain","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].cidrblock}}","label":"step➛Post Processing➛cidrBlock","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].compartmentid}}","label":"step➛Post Processing➛compartmentId","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].dhcpoptionsid}}","label":"step➛Post Processing➛dhcpOptionsId","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].displayname}}","label":"step➛Post Processing➛displayName","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].id}}","label":"step➛Post Processing➛id","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].lifecyclestate}}","label":"step➛Post Processing➛lifecycleState","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].routetableid}}","label":"step➛Post Processing➛routeTableId","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].securitylistids}}","label":"step➛Post Processing➛securityListIds","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].timecreated}}","label":"step➛Post Processing➛timeCreated","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].vcnid}}","label":"step➛Post Processing➛vcnId","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].virtualrouterip}}","label":"step➛Post Processing➛virtualRouterIp","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].virtualroutermac}}","label":"step➛Post Processing➛virtualRouterMac","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].subnetdomainname}}","label":"step➛Post Processing➛subnetDomainName","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].ipv6publiccidrblock}}","label":"step➛Post Processing➛ipv6PublicCidrBlock","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].ipv6virtualrouterip}}","label":"step➛Post Processing➛ipv6VirtualRouterIp","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].ipv6cidrblock}}","label":"step➛Post Processing➛ipv6CidrBlock","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].prohibitpubliciponvnic}}","label":"step➛Post Processing➛prohibitPublicIpOnVnic","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].definedtags}}","label":"step➛Post Processing➛definedTags","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].dnslabel}}","label":"step➛Post Processing➛dnsLabel","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].freeformtags}}","label":"step➛Post Processing➛freeformTags","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].errormessage}}","label":"step➛Post Processing➛errormessage","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].securitylistids.securityListId}}","label":"step➛Post Processing➛securityListIds➛securityListId","type":"step","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].networkid}}","label":"step➛Pre Processing➛subnetid","type":"step","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].subnetid}}","label":"step➛Pre Processing➛subnetid","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>ab72eb59dbf7d81020c17a2faa961962</latest_snapshot>
+        <latest_snapshot>3b5b84dadbff1c1020c17a2faa961960</latest_snapshot>
         <master_snapshot>3ea603fcdb0b9810b7a7e5bd0b961922</master_snapshot>
         <name>Get Subnet</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2ca996a6db7e5410b7a7e5bd0b961941</sys_id>
-        <sys_mod_count>61</sys_mod_count>
+        <sys_mod_count>66</sys_mod_count>
         <sys_name>Get Subnet</sys_name>
         <sys_overrides/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_2ca996a6db7e5410b7a7e5bd0b961941</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:47:09</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:41:12</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1567,7 +1567,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=securityListId,child_name=securityListId,child_type=string,child_type_label=String,child_uiUniqueId=cf82860d-bd8f-4a84-b620-8806f36ed68f,co_type_name=FDc54ffd66613e5410e39535b2ee3725cd,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=f603ea05-dcd7-4a8f-8819-c9d1ddaea5d3</attributes>
+        <attributes>child_label=securityListId,child_name=securityListId,child_type=string,child_type_label=String,child_uiUniqueId=499bb065-652c-451e-9612-56d1ecf4b028,co_type_name=FDc54ffd66613e5410e39535b2ee3725cd,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=f603ea05-dcd7-4a8f-8819-c9d1ddaea5d3</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1625,14 +1625,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 05:38:22</sys_created_on>
         <sys_id>d1a9d6a6db7e5410b7a7e5bd0b961931</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:46:55</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:40:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2785,9 +2785,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-08 04:25:31</sys_created_on>
         <sys_id>e1556718db3b581020c17a2faa9619a6</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:46:54</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:40:58</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e1556718db3b581020c17a2faa9619a6"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
@@ -2879,9 +2879,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-08 04:51:53</sys_created_on>
         <sys_id>eb5b2fd8db3b581020c17a2faa961952</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:46:54</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:40:58</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=eb5b2fd8db3b581020c17a2faa961952"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3318,7 +3318,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=Security List Ids,child_name=securityListIds,child_type=string,child_type_label=String,child_uiUniqueId=c44edd8f-16cf-49dd-b6a7-57724f49269c,co_type_name=FD194f31a63d3e5410446ca3138d41e70d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=5f4346ba-38a0-458d-88bb-5fb309a634f0</attributes>
+        <attributes>child_label=Security List Ids,child_name=securityListIds,child_type=string,child_type_label=String,child_uiUniqueId=07da731b-d058-4ec3-99a2-8f44bf441c17,co_type_name=FD194f31a63d3e5410446ca3138d41e70d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=5f4346ba-38a0-458d-88bb-5fb309a634f0</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -3378,14 +3378,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 05:38:24</sys_created_on>
         <sys_id>75a9d6a6db7e5410b7a7e5bd0b9619ae</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:46:56</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:40:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5582,7 +5582,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=securityListId,child_name=securityListId,child_type=string,child_type_label=String,child_uiUniqueId=cf82860d-bd8f-4a84-b620-8806f36ed68f,co_type_name=FDc54ffd66613e5410e39535b2ee3725cd,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=f603ea05-dcd7-4a8f-8819-c9d1ddaea5d3</attributes>
+        <attributes>child_label=securityListId,child_name=securityListId,child_type=string,child_type_label=String,child_uiUniqueId=499bb065-652c-451e-9612-56d1ecf4b028,co_type_name=FDc54ffd66613e5410e39535b2ee3725cd,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=f603ea05-dcd7-4a8f-8819-c9d1ddaea5d3</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5640,14 +5640,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 05:38:22</sys_created_on>
         <sys_id>d1a9d6a6db7e5410b7a7e5bd0b961931</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:46:55</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:40:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -7196,17 +7196,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Get Subnet">2ca996a6db7e5410b7a7e5bd0b961941</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"85b6c3fcdb0b9810b7a7e5bd0b96195a","name":"plan"}}</plan>
-        <snapshot>ab72eb59dbf7d81020c17a2faa961962</snapshot>
+        <snapshot>3b5b84dadbff1c1020c17a2faa961960</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:41:34</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>85b6c3fcdb0b9810b7a7e5bd0b96195a</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:47:14</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:41:17</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -7217,7 +7217,7 @@
         <category display_value="Subnet Management">a3d19996dbb25410b7a7e5bd0b96191d</category>
         <copied_from/>
         <copied_from_name/>
-        <description>&lt;p&gt;Gets the specified subnet's information.&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -The OCID of the compartment of the subnet.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Subnet ID&lt;/b&gt; -The subnet's Oracle ID (OCID).&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment Id&lt;/b&gt; -The OCID of the compartment to contain the subnet.&lt;/li&gt; &lt;li&gt;&lt;b&gt;CIDR Block&lt;/b&gt; -The CIDR IP address range of the subnet. &lt;/li&gt; &lt;li&gt;&lt;b&gt;Defined Tags&lt;/b&gt; -Defined tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Dhcp Options ID&lt;/b&gt; -The OCID of the set of DHCP options that the subnet uses.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Free Form Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Lifecycle State&lt;/b&gt; -The VCN's current state.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -The OCID of the VCN the subnet is in.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Prohibit Public IP on VNIC&lt;/b&gt; -Whether VNICs within this subnet can have public IP addresses.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Security List IDs&lt;/b&gt; -The OCIDs of the security list or lists that the subnet uses.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Route Table ID&lt;/b&gt; -The OCID of the route table that the subnet uses.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Subnet ID&lt;/b&gt; -The subnet's Oracle ID (OCID).&lt;/li&gt; &lt;li&gt;&lt;b&gt;Time Created&lt;/b&gt; -The date and time the subnet was created.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Virtual Router IP&lt;/b&gt; -The IP address of the virtual router.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Virtual Router Mac&lt;/b&gt; -The MAC address of the virtual router.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
+        <description>&lt;p&gt;Gets the specified subnet's information.&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment of the subnet.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Subnet ID&lt;/b&gt; -OCID of subnet.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment Id&lt;/b&gt; -OCID of the compartment to contain the subnet.&lt;/li&gt; &lt;li&gt;&lt;b&gt;CIDR Block&lt;/b&gt; -CIDR IP address range of the subnet. &lt;/li&gt; &lt;li&gt;&lt;b&gt;Defined Tags&lt;/b&gt; -Defined tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Dhcp Options ID&lt;/b&gt; -OCID of the set of DHCP options that the subnet uses.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; - User-friendly name.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Free Form Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Lifecycle State&lt;/b&gt; -VCN's current state.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -OCID of the VCN the subnet is in.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Prohibit Public IP on VNIC&lt;/b&gt; -Option to specify if subnet can have public IP addresses.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Security List IDs&lt;/b&gt; -OCIDs of the security list or lists that the subnet uses.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Route Table ID&lt;/b&gt; -OCID of the route table that the subnet uses.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Subnet ID&lt;/b&gt; -Subnet's Oracle ID (OCID).&lt;/li&gt; &lt;li&gt;&lt;b&gt;Time Created&lt;/b&gt; -Date and time the subnet was created.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Virtual Router IP&lt;/b&gt; -IP address of the virtual router.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Virtual Router Mac&lt;/b&gt; -MAC address of the virtual router.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <internal_name>get_subnet</internal_name>
         <label_cache>[{"name":"{{action.cidr_block}}","label":"action➛CIDR Block","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Subnet Ids","type":"action","ref":""},{"name":"{{action.availability_domain}}","label":"action➛Availability Domain","type":"action","ref":""},{"name":"{{action.dhcpoptionsid}}","label":"action➛dhcpOptionsId","type":"action","ref":""},{"name":"{{action.dhcp_options_id}}","label":"action➛Dhcp Options Id","type":"action","ref":""},{"name":"{{action.displayname}}","label":"action➛DisplayName","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action.dns_label}}","label":"action➛DNS Label","type":"action","ref":""},{"name":"{{action.ipv6_cidr_block}}","label":"action➛IPV6 CIDR Block","type":"action","ref":""},{"name":"{{action.prohibit_publicip_on_vnic}}","label":"action➛Prohibit PublicIp On Vnic","type":"action","ref":""},{"name":"{{action.prohibit_public_ip_on_vnic}}","label":"action➛Prohibit Public Ip on VNIC","type":"action","ref":""},{"name":"{{action.routetable_id}}","label":"action➛RouteTable Id","type":"action","ref":""},{"name":"{{action.security_list_ids}}","label":"action➛Security List Ids","type":"action","ref":""},{"name":"{{action.freeform_tags}}","label":"action➛Freeform Tags","type":"action","ref":""},{"name":"{{action.defined_tags}}","label":"action➛Defined Tags","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags}}","label":"action➛Freeform Tags➛Tags","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags.Name}}","label":"action➛Freeform Tags➛Tags➛Name","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags.Value}}","label":"action➛Freeform Tags➛Tags➛Value","type":"action","ref":""},{"name":"{{action.security_list_ids.Security_List_Id}}","label":"action➛Security List Ids➛Security List Id","type":"action","ref":""},{"name":"{{action.subnet_id}}","label":"action➛Subnet ID","type":"action","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].payload}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[88602dda-a9ad-4966-9921-346344880197].status_code}}","label":"step➛Get Subnet➛Status Code","type":"step","ref":""},{"name":"{{step[88602dda-a9ad-4966-9921-346344880197].response_body}}","label":"step➛Get Subnet➛Response Body","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].availabilitydomain}}","label":"step➛Post Processing➛availabilityDomain","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].cidrblock}}","label":"step➛Post Processing➛cidrBlock","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].compartmentid}}","label":"step➛Post Processing➛compartmentId","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].dhcpoptionsid}}","label":"step➛Post Processing➛dhcpOptionsId","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].displayname}}","label":"step➛Post Processing➛displayName","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].id}}","label":"step➛Post Processing➛id","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].lifecyclestate}}","label":"step➛Post Processing➛lifecycleState","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].routetableid}}","label":"step➛Post Processing➛routeTableId","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].securitylistids}}","label":"step➛Post Processing➛securityListIds","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].timecreated}}","label":"step➛Post Processing➛timeCreated","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].vcnid}}","label":"step➛Post Processing➛vcnId","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].virtualrouterip}}","label":"step➛Post Processing➛virtualRouterIp","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].virtualroutermac}}","label":"step➛Post Processing➛virtualRouterMac","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].subnetdomainname}}","label":"step➛Post Processing➛subnetDomainName","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].ipv6publiccidrblock}}","label":"step➛Post Processing➛ipv6PublicCidrBlock","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].ipv6virtualrouterip}}","label":"step➛Post Processing➛ipv6VirtualRouterIp","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].ipv6cidrblock}}","label":"step➛Post Processing➛ipv6CidrBlock","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].prohibitpubliciponvnic}}","label":"step➛Post Processing➛prohibitPublicIpOnVnic","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].definedtags}}","label":"step➛Post Processing➛definedTags","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].dnslabel}}","label":"step➛Post Processing➛dnsLabel","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].freeformtags}}","label":"step➛Post Processing➛freeformTags","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].errormessage}}","label":"step➛Post Processing➛errormessage","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].securitylistids.securityListId}}","label":"step➛Post Processing➛securityListIds➛securityListId","type":"step","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].networkid}}","label":"step➛Pre Processing➛subnetid","type":"step","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].subnetid}}","label":"step➛Pre Processing➛subnetid","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -7232,7 +7232,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3ea603fcdb0b9810b7a7e5bd0b961922</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -7240,7 +7240,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:47:06</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:41:09</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -8368,7 +8368,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=securityListId,child_name=securityListId,child_type=string,child_type_label=String,child_uiUniqueId=cf82860d-bd8f-4a84-b620-8806f36ed68f,co_type_name=FDb8826f592df7d8102f5189e2d7d7010d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=f603ea05-dcd7-4a8f-8819-c9d1ddaea5d3</attributes>
+        <attributes>child_label=securityListId,child_name=securityListId,child_type=string,child_type_label=String,child_uiUniqueId=499bb065-652c-451e-9612-56d1ecf4b028,co_type_name=FD156bc4da17ff1c10fef6f8031a372cfa,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=f603ea05-dcd7-4a8f-8819-c9d1ddaea5d3</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -8426,14 +8426,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:41:27</sys_created_on>
         <sys_id>5fa603fcdb0b9810b7a7e5bd0b9619be</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:47:07</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:41:11</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -9881,9 +9881,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-08 04:53:01</sys_created_on>
         <sys_id>50abe31cdb3b581020c17a2faa961964</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:47:06</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:41:09</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=50abe31cdb3b581020c17a2faa961964"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
@@ -9975,9 +9975,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-08 04:53:01</sys_created_on>
         <sys_id>14abe31cdb3b581020c17a2faa961982</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:47:06</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:41:09</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=14abe31cdb3b581020c17a2faa961982"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -10995,7 +10995,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=Security List Ids,child_name=securityListIds,child_type=string,child_type_label=String,child_uiUniqueId=c44edd8f-16cf-49dd-b6a7-57724f49269c,co_type_name=FDc1826f59bcf7d81040edd7f5a8461944,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=5f4346ba-38a0-458d-88bb-5fb309a634f0</attributes>
+        <attributes>child_label=Security List Ids,child_name=securityListIds,child_type=string,child_type_label=String,child_uiUniqueId=07da731b-d058-4ec3-99a2-8f44bf441c17,co_type_name=FD216b08da22ff1c1055d0ed677ec75e24,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=5f4346ba-38a0-458d-88bb-5fb309a634f0</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -11055,14 +11055,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:41:28</sys_created_on>
         <sys_id>7ba643fcdb0b9810b7a7e5bd0b96193b</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:47:08</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:41:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -12273,7 +12273,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=securityListId,child_name=securityListId,child_type=string,child_type_label=String,child_uiUniqueId=cf82860d-bd8f-4a84-b620-8806f36ed68f,co_type_name=FDb8826f592df7d8102f5189e2d7d7010d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=f603ea05-dcd7-4a8f-8819-c9d1ddaea5d3</attributes>
+        <attributes>child_label=securityListId,child_name=securityListId,child_type=string,child_type_label=String,child_uiUniqueId=499bb065-652c-451e-9612-56d1ecf4b028,co_type_name=FD156bc4da17ff1c10fef6f8031a372cfa,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=f603ea05-dcd7-4a8f-8819-c9d1ddaea5d3</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -12331,14 +12331,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:41:27</sys_created_on>
         <sys_id>5fa603fcdb0b9810b7a7e5bd0b9619be</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:47:07</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:41:11</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

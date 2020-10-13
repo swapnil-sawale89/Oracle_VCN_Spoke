@@ -9,11 +9,11 @@
         <category display_value="VCN Management">6e7fd728dbf2541020c17a2faa96199f</category>
         <copied_from>d9df9b28dbf2541020c17a2faa9619ac</copied_from>
         <copied_from_name>Create Network</copied_from_name>
-        <description>&lt;p&gt;Updates a virtual cloud network (VCN).&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -The OCID of the compartment contains the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -The OCID of the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Free Form Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;CIDR Block&lt;/b&gt; -The CIDR IP address block of the VCN. &lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -The OCID of the compartment to contain the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Defined Tags&lt;/b&gt; -Defined tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Dhcp Options ID&lt;/b&gt; -The OCID for the VCN's default set of DHCP options.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; -The display name of VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Free Form Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Lifecycle State&lt;/b&gt; -The VCN's current state.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -The OCID for VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Route Table ID&lt;/b&gt; -The OCID for the VCN's default route table.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Security ID&lt;/b&gt; -The OCID for the VCN's default security list.&lt;/li&gt; &lt;li&gt;&lt;b&gt;VCN Domain Name&lt;/b&gt; -The OCID for the VCN's default security list.&lt;/li&gt; &lt;li&gt;&lt;b&gt;DNS Label&lt;/b&gt; -The OCID for the VCN's default security list.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Time Created&lt;/b&gt; -The date and time the VCN was created.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
+        <description>&lt;p&gt;Updates a virtual cloud network (VCN).&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment contains the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; - User-friendly name.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -OCID of the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Free Form Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;CIDR Block&lt;/b&gt; -CIDR IP address block of the VCN. &lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment to contain the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Defined Tags&lt;/b&gt; -Defined tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;DHCP Options ID&lt;/b&gt; -OCID for the VCN's default set of DHCP options.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; -Display name of VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Free Form Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Lifecycle State&lt;/b&gt; -VCN's current state.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -OCID for VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Route Table ID&lt;/b&gt; -OCID for the VCN's default route table.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Security ID&lt;/b&gt; -OCID for the VCN's default security list.&lt;/li&gt; &lt;li&gt;&lt;b&gt;VCN Domain Name&lt;/b&gt; -OCID for the VCN's default security list.&lt;/li&gt; &lt;li&gt;&lt;b&gt;DNS Label&lt;/b&gt; -OCID for the VCN's default security list.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Time Created&lt;/b&gt; -Date and time the VCN was created.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>update_network</internal_name>
         <label_cache>[{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action.cidr_block}}","label":"action➛CIDR Block","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.default_dhcp_options_id}}","label":"action➛Default Dhcp Options Id","type":"action","ref":""},{"name":"{{action.default_route_table_id}}","label":"action➛Default Route Table Id","type":"action","ref":""},{"name":"{{action.default_securitylist_id}}","label":"action➛Default SecurityList Id","type":"action","ref":""},{"name":"{{action.default_security_list_id}}","label":"action➛Default Security List Id","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.defined_tags}}","label":"action➛Defined Tags","type":"action","ref":""},{"name":"{{action.free_form_tags}}","label":"action➛Free Form Tags","type":"action","ref":""},{"name":"{{action.free_form_tags._}}","label":"action➛Free Form Tags","type":"action","ref":""},{"name":"{{action.free_form_tags.test}}","label":"action➛Free Form Tags➛Tags➛test","type":"action","ref":""},{"name":"{{action.free_form_tags.tag}}","label":"action➛Free Form Tags➛Tags","type":"action","ref":""},{"name":"{{action.free_form_tags.tag.name}}","label":"action➛Free Form Tags➛Tags➛name","type":"action","ref":""},{"name":"{{action.free_form_tags.tag.value}}","label":"action➛Free Form Tags➛Tags➛value","type":"action","ref":""},{"name":"{{action.free_form_tags.name}}","label":"action➛Free Form Tags➛name","type":"action","ref":""},{"name":"{{action.free_form_tags.value}}","label":"action➛Free Form Tags➛value","type":"action","ref":""},{"name":"{{action.defined_tags.tag}}","label":"action➛Defined Tags➛tag","type":"action","ref":""},{"name":"{{action.defined_tags.tag.name}}","label":"action➛Defined Tags➛tag➛name","type":"action","ref":""},{"name":"{{action.defined_tags.tag.value}}","label":"action➛Defined Tags➛tag➛value","type":"action","ref":""},{"name":"{{action.freeform_tags}}","label":"action➛Freeform Tags","type":"action","ref":""},{"name":"{{action.freeform_tags._}}","label":"action➛FreeForm Tags","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags}}","label":"action➛Freeform Tags➛Tags➛Tags","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags.Name}}","label":"action➛Freeform Tags➛Tags➛Name","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags.Value}}","label":"action➛Freeform Tags➛Tags➛Value","type":"action","ref":""},{"name":"{{step[1818fb6e-96a9-46d3-816c-bdf1809d448b].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[1818fb6e-96a9-46d3-816c-bdf1809d448b].payload}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[b3f5e8de-d268-4168-927f-25c4752403f6].status_code}}","label":"step➛Update Network➛Status Code","type":"step","ref":""},{"name":"{{step[b3f5e8de-d268-4168-927f-25c4752403f6].response_body}}","label":"step➛Update Network➛Response Body","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].defaultsecuritylistid}}","label":"step➛Post Processing➛Default Security List Id","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].display_name}}","label":"step➛Post Processing➛Display Name","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].displayname}}","label":"step➛Post Processing➛Display Name","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].cidrblock}}","label":"step➛Post Processing➛CIDR Block","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31]._}}","label":"step➛Post Processing➛Time Created","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].compartmentid}}","label":"step➛Post Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].compartmentid4}}","label":"step➛Post Processing➛CompartmentId","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].network_id}}","label":"step➛Post Processing➛Network Id","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].default_dhcp_options_id}}","label":"step➛Post Processing➛Default Dhcp Options Id","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].variabledefaultsecuritylistid}}","label":"step➛Post Processing➛variabledefaultSecurityListId","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].variable8}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].id}}","label":"step➛Post Processing➛Network Id","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].defaultroutetableid8}}","label":"step➛Post Processing➛defaultroutetableid","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].defaultroutetableid}}","label":"step➛Post Processing➛Default Route Table Id","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].lifecycle_state}}","label":"step➛Post Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].lifecyclestate}}","label":"step➛Post Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].free_form_ta}}","label":"step➛Post Processing➛Free Form Ta","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].free_form_tags}}","label":"step➛Post Processing➛Free Form Tags","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].freeformtags}}","label":"step➛Post Processing➛Free Form Tags","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].response_body}}","label":"step➛Post Processing➛Response Body","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].responsebody}}","label":"step➛Post Processing➛Response Body","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].defaultdhcpoptionsid}}","label":"step➛Post Processing➛Default Dhcp Options Id","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].errormessage}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].defined_tags1}}","label":"step➛Post Processing➛Defined Tags1","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].definedtags}}","label":"step➛Post Processing➛Defined Tags","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].error_messagw}}","label":"step➛Post Processing➛Error Messagw","type":"step","ref":""},{"name":"{{step[1818fb6e-96a9-46d3-816c-bdf1809d448b].networkid}}","label":"step➛Pre Processing➛networkId","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].dns_label}}","label":"step➛Post Processing➛DNS Label","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].dnslabel}}","label":"step➛Post Processing➛DNS Label","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].vcn_domain_name}}","label":"step➛Post Processing➛VCN Domain Name","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].vcndomainname}}","label":"step➛Post Processing➛VCN Domain Name","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].timecreated}}","label":"step➛Post Processing➛Time Created","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>ccabe86cdbbb581020c17a2faa96195b</latest_snapshot>
+        <latest_snapshot>7a8e889edbff1c1020c17a2faa9619a7</latest_snapshot>
         <master_snapshot>6dd102d2db365410b7a7e5bd0b961940</master_snapshot>
         <name>Update Network</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ece20978dbb6541020c17a2faa9619bd</sys_id>
-        <sys_mod_count>83</sys_mod_count>
+        <sys_mod_count>95</sys_mod_count>
         <sys_name>Update Network</sys_name>
         <sys_overrides/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_ece20978dbb6541020c17a2faa9619bd</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 09:32:45</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:55:03</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -2916,9 +2916,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-08 04:06:30</sys_created_on>
         <sys_id>b6f06f14db3b581020c17a2faa96193b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 09:32:30</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:54:49</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b6f06f14db3b581020c17a2faa96193b"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3020,7 +3020,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=Tags,child_name=Tags,child_type=object,child_type_label=Object,child_uiUniqueId=62f72dfe-109b-441b-884f-2ff7f11d9e7d,co_type_name=FDa02b35defcf25410393271f3e4a16d8c,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=d67947fb-4f22-4d48-8bcc-45c187d96c0e</attributes>
+        <attributes>child_label=Tags,child_name=Tags,child_type=object,child_type_label=Object,child_uiUniqueId=346923e3-53ec-4457-b44c-bd8479dfeb26,co_type_name=FDa02b35defcf25410393271f3e4a16d8c,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=d67947fb-4f22-4d48-8bcc-45c187d96c0e</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -3078,14 +3078,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 08:46:35</sys_created_on>
         <sys_id>ec2b35dedbf25410b7a7e5bd0b961991</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 09:32:30</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:54:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3302,7 +3302,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>Dhcp Options ID</label>
+        <label>DHCP Options ID</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Update Network">ece20978dbb6541020c17a2faa9619bd</model>
@@ -3328,14 +3328,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-30 09:51:17</sys_created_on>
         <sys_id>1f2367b9db6f141020c17a2faa96199b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-01 08:11:50</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:53:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -7215,7 +7215,7 @@
         <element>dhcpoptionsid</element>
         <help/>
         <hint/>
-        <label>Dhcp Options ID</label>
+        <label>DHCP Options ID</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_ece20978dbb6541020c17a2faa9619bd</name>
         <plural/>
@@ -7223,14 +7223,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-30 09:51:17</sys_created_on>
         <sys_id>932367b9db6f141020c17a2faa9619a0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-30 09:51:17</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:53:49</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -7284,17 +7284,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Update Network">ece20978dbb6541020c17a2faa9619bd</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"e7d182d2db365410b7a7e5bd0b961997","name":"plan"}}</plan>
-        <snapshot>ccabe86cdbbb581020c17a2faa96195b</snapshot>
+        <snapshot>7a8e889edbff1c1020c17a2faa9619a7</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:16:01</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e7d182d2db365410b7a7e5bd0b961997</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 09:32:50</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:55:09</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -7305,7 +7305,7 @@
         <category display_value="VCN Management">6e7fd728dbf2541020c17a2faa96199f</category>
         <copied_from/>
         <copied_from_name/>
-        <description>&lt;p&gt;Updates a virtual cloud network (VCN).&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -The OCID of the compartment contains the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -The OCID of the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Free Form Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;CIDR Block&lt;/b&gt; -The CIDR IP address block of the VCN. &lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -The OCID of the compartment to contain the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Defined Tags&lt;/b&gt; -Defined tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Dhcp Options ID&lt;/b&gt; -The OCID for the VCN's default set of DHCP options.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; -The display name of VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Free Form Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Lifecycle State&lt;/b&gt; -The VCN's current state.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -The OCID for VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Route Table ID&lt;/b&gt; -The OCID for the VCN's default route table.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Security ID&lt;/b&gt; -The OCID for the VCN's default security list.&lt;/li&gt; &lt;li&gt;&lt;b&gt;VCN Domain Name&lt;/b&gt; -The OCID for the VCN's default security list.&lt;/li&gt; &lt;li&gt;&lt;b&gt;DNS Label&lt;/b&gt; -The OCID for the VCN's default security list.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Time Created&lt;/b&gt; -The date and time the VCN was created.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
+        <description>&lt;p&gt;Updates a virtual cloud network (VCN).&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment contains the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; - User-friendly name.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -OCID of the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Free Form Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;CIDR Block&lt;/b&gt; -CIDR IP address block of the VCN. &lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment to contain the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Defined Tags&lt;/b&gt; -Defined tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;DHCP Options ID&lt;/b&gt; -OCID for the VCN's default set of DHCP options.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Display Name&lt;/b&gt; -Display name of VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Free Form Tags&lt;/b&gt; -Free-form tags for this resource.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Lifecycle State&lt;/b&gt; -VCN's current state.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -OCID for VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Route Table ID&lt;/b&gt; -OCID for the VCN's default route table.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Security ID&lt;/b&gt; -OCID for the VCN's default security list.&lt;/li&gt; &lt;li&gt;&lt;b&gt;VCN Domain Name&lt;/b&gt; -OCID for the VCN's default security list.&lt;/li&gt; &lt;li&gt;&lt;b&gt;DNS Label&lt;/b&gt; -OCID for the VCN's default security list.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Time Created&lt;/b&gt; -Date and time the VCN was created.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <internal_name>update_network</internal_name>
         <label_cache>[{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action.cidr_block}}","label":"action➛CIDR Block","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.default_dhcp_options_id}}","label":"action➛Default Dhcp Options Id","type":"action","ref":""},{"name":"{{action.default_route_table_id}}","label":"action➛Default Route Table Id","type":"action","ref":""},{"name":"{{action.default_securitylist_id}}","label":"action➛Default SecurityList Id","type":"action","ref":""},{"name":"{{action.default_security_list_id}}","label":"action➛Default Security List Id","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.defined_tags}}","label":"action➛Defined Tags","type":"action","ref":""},{"name":"{{action.free_form_tags}}","label":"action➛Free Form Tags","type":"action","ref":""},{"name":"{{action.free_form_tags._}}","label":"action➛Free Form Tags","type":"action","ref":""},{"name":"{{action.free_form_tags.test}}","label":"action➛Free Form Tags➛Tags➛test","type":"action","ref":""},{"name":"{{action.free_form_tags.tag}}","label":"action➛Free Form Tags➛Tags","type":"action","ref":""},{"name":"{{action.free_form_tags.tag.name}}","label":"action➛Free Form Tags➛Tags➛name","type":"action","ref":""},{"name":"{{action.free_form_tags.tag.value}}","label":"action➛Free Form Tags➛Tags➛value","type":"action","ref":""},{"name":"{{action.free_form_tags.name}}","label":"action➛Free Form Tags➛name","type":"action","ref":""},{"name":"{{action.free_form_tags.value}}","label":"action➛Free Form Tags➛value","type":"action","ref":""},{"name":"{{action.defined_tags.tag}}","label":"action➛Defined Tags➛tag","type":"action","ref":""},{"name":"{{action.defined_tags.tag.name}}","label":"action➛Defined Tags➛tag➛name","type":"action","ref":""},{"name":"{{action.defined_tags.tag.value}}","label":"action➛Defined Tags➛tag➛value","type":"action","ref":""},{"name":"{{action.freeform_tags}}","label":"action➛Freeform Tags","type":"action","ref":""},{"name":"{{action.freeform_tags._}}","label":"action➛FreeForm Tags","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags}}","label":"action➛Freeform Tags➛Tags➛Tags","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags.Name}}","label":"action➛Freeform Tags➛Tags➛Name","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags.Value}}","label":"action➛Freeform Tags➛Tags➛Value","type":"action","ref":""},{"name":"{{step[1818fb6e-96a9-46d3-816c-bdf1809d448b].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[1818fb6e-96a9-46d3-816c-bdf1809d448b].payload}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[b3f5e8de-d268-4168-927f-25c4752403f6].status_code}}","label":"step➛Update Network➛Status Code","type":"step","ref":""},{"name":"{{step[b3f5e8de-d268-4168-927f-25c4752403f6].response_body}}","label":"step➛Update Network➛Response Body","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].defaultsecuritylistid}}","label":"step➛Post Processing➛Default Security List Id","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].display_name}}","label":"step➛Post Processing➛Display Name","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].displayname}}","label":"step➛Post Processing➛Display Name","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].cidrblock}}","label":"step➛Post Processing➛CIDR Block","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31]._}}","label":"step➛Post Processing➛Time Created","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].compartmentid}}","label":"step➛Post Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].compartmentid4}}","label":"step➛Post Processing➛CompartmentId","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].network_id}}","label":"step➛Post Processing➛Network Id","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].default_dhcp_options_id}}","label":"step➛Post Processing➛Default Dhcp Options Id","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].variabledefaultsecuritylistid}}","label":"step➛Post Processing➛variabledefaultSecurityListId","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].variable8}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].id}}","label":"step➛Post Processing➛Network Id","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].defaultroutetableid8}}","label":"step➛Post Processing➛defaultroutetableid","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].defaultroutetableid}}","label":"step➛Post Processing➛Default Route Table Id","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].lifecycle_state}}","label":"step➛Post Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].lifecyclestate}}","label":"step➛Post Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].free_form_ta}}","label":"step➛Post Processing➛Free Form Ta","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].free_form_tags}}","label":"step➛Post Processing➛Free Form Tags","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].freeformtags}}","label":"step➛Post Processing➛Free Form Tags","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].response_body}}","label":"step➛Post Processing➛Response Body","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].responsebody}}","label":"step➛Post Processing➛Response Body","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].defaultdhcpoptionsid}}","label":"step➛Post Processing➛Default Dhcp Options Id","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].errormessage}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].defined_tags1}}","label":"step➛Post Processing➛Defined Tags1","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].definedtags}}","label":"step➛Post Processing➛Defined Tags","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].error_messagw}}","label":"step➛Post Processing➛Error Messagw","type":"step","ref":""},{"name":"{{step[1818fb6e-96a9-46d3-816c-bdf1809d448b].networkid}}","label":"step➛Pre Processing➛networkId","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].dns_label}}","label":"step➛Post Processing➛DNS Label","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].dnslabel}}","label":"step➛Post Processing➛DNS Label","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].vcn_domain_name}}","label":"step➛Post Processing➛VCN Domain Name","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].vcndomainname}}","label":"step➛Post Processing➛VCN Domain Name","type":"step","ref":""},{"name":"{{step[b90521db-3469-4aef-a05f-47d99af09e31].timecreated}}","label":"step➛Post Processing➛Time Created","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -7320,7 +7320,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6dd102d2db365410b7a7e5bd0b961940</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -7328,7 +7328,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 09:32:43</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:55:01</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -10174,9 +10174,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-08 04:12:54</sys_created_on>
         <sys_id>a8726394db3b581020c17a2faa9619f3</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 09:32:43</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:55:01</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a8726394db3b581020c17a2faa9619f3"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -10278,7 +10278,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=Tags,child_name=Tags,child_type=object,child_type_label=Object,child_uiUniqueId=62f72dfe-109b-441b-884f-2ff7f11d9e7d,co_type_name=FDd1ab2c6c51bb5810fb0ca40395361eb2,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=d67947fb-4f22-4d48-8bcc-45c187d96c0e</attributes>
+        <attributes>child_label=Tags,child_name=Tags,child_type=object,child_type_label=Object,child_uiUniqueId=346923e3-53ec-4457-b44c-bd8479dfeb26,co_type_name=FD4c9ec89ef2ff1c1091c5eb2e557750fc,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=d67947fb-4f22-4d48-8bcc-45c187d96c0e</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -10336,14 +10336,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:15:52</sys_created_on>
         <sys_id>e5d102d2db365410b7a7e5bd0b961950</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 09:32:43</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:55:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -10892,7 +10892,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>Dhcp Options ID</label>
+        <label>DHCP Options ID</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Update Network">6dd102d2db365410b7a7e5bd0b961940</model>
@@ -10918,14 +10918,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-30 09:51:44</sys_created_on>
         <sys_id>8243abb9db6f141020c17a2faa96190e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-01 08:14:06</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:55:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -14322,7 +14322,7 @@
         <element>dhcpoptionsid</element>
         <help/>
         <hint/>
-        <label>Dhcp Options ID</label>
+        <label>DHCP Options ID</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_6dd102d2db365410b7a7e5bd0b961940</name>
         <plural/>
@@ -14330,14 +14330,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-30 09:51:44</sys_created_on>
         <sys_id>8643abb9db6f141020c17a2faa961912</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-30 09:51:44</sys_updated_on>
+        <sys_updated_on>2020-10-13 17:55:03</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
