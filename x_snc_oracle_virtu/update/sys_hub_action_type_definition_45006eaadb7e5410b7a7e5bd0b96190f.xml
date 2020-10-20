@@ -12,10 +12,10 @@
         <description>&lt;p&gt;Lists the subnets in the specified VCN and the specified compartment. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment contains the subnets.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Output&lt;/b&gt; - List of subnets in the specified compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Subnet Detailed List&lt;/b&gt; - List of subnets with details in the specified compartment.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>lookup_subnets</internal_name>
-        <label_cache>[{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment ID","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.limit}}","label":"action➛Limit","type":"action","ref":""},{"name":"{{action.page}}","label":"action➛Page","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action.sort_by}}","label":"action➛Sort By","type":"action","ref":""},{"name":"{{action.sort_order}}","label":"action➛Sort Order","type":"action","ref":""},{"name":"{{action.lifecycle_state}}","label":"action➛Lifecycle State","type":"action","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartmentid}}","label":"step➛Pre Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartmentid1}}","label":"step➛Pre Processing➛CompartmentId","type":"step","ref":""},{"name":"{{step[8b7a7100-38c0-4908-885f-00e201cd1661].response_body}}","label":"step➛Lookup Subnets➛Response Body","type":"step","ref":""},{"name":"{{step[8b7a7100-38c0-4908-885f-00e201cd1661].status_code}}","label":"step➛Lookup Subnets➛Status Code","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3]._}}","label":"step➛Post Processing➛","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].error_message}}","label":"step➛Post Processing➛error_message","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].documents}}","label":"step➛Post Processing➛documents","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].network_id}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].limit}}","label":"step➛Pre Processing➛Limit","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].page}}","label":"step➛Pre Processing➛Page","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].display_name}}","label":"step➛Pre Processing➛Display Name","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].displayname}}","label":"step➛Pre Processing➛Display Name","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].sort_by}}","label":"step➛Pre Processing➛Sort By","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].sortby}}","label":"step➛Pre Processing➛Sort By","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].sortorder}}","label":"step➛Pre Processing➛Sort Order","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].lifecycle_state}}","label":"step➛Pre Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].lifecyclestate}}","label":"step➛Pre Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].networkid}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].subnetlist}}","label":"step➛Post Processing➛subnetlist","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].subnetlist.subnetlist4}}","label":"step➛Post Processing➛subnetlist➛subnetlist","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].subnetlist.subnetlist}}","label":"step➛Post Processing➛subnetlist➛subnetlist","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>368d085edbff1c1020c17a2faa961938</latest_snapshot>
+        <label_cache>[{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment ID","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.limit}}","label":"action➛Limit","type":"action","ref":""},{"name":"{{action.page}}","label":"action➛Page","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action.sort_by}}","label":"action➛Sort By","type":"action","ref":""},{"name":"{{action.sort_order}}","label":"action➛Sort Order","type":"action","ref":""},{"name":"{{action.lifecycle_state}}","label":"action➛Lifecycle State","type":"action","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartmentid}}","label":"step➛Pre Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartmentid1}}","label":"step➛Pre Processing➛CompartmentId","type":"step","ref":""},{"name":"{{step[8b7a7100-38c0-4908-885f-00e201cd1661].response_body}}","label":"step➛Look Up Subnets➛Response Body","type":"step","ref":""},{"name":"{{step[8b7a7100-38c0-4908-885f-00e201cd1661].status_code}}","label":"step➛Look Up Subnets➛Status Code","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3]._}}","label":"step➛Post Processing➛","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].error_message}}","label":"step➛Post Processing➛error_message","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].documents}}","label":"step➛Post Processing➛documents","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].network_id}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].limit}}","label":"step➛Pre Processing➛Limit","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].page}}","label":"step➛Pre Processing➛Page","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].display_name}}","label":"step➛Pre Processing➛Display Name","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].displayname}}","label":"step➛Pre Processing➛Display Name","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].sort_by}}","label":"step➛Pre Processing➛Sort By","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].sortby}}","label":"step➛Pre Processing➛Sort By","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].sortorder}}","label":"step➛Pre Processing➛Sort Order","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].lifecycle_state}}","label":"step➛Pre Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].lifecyclestate}}","label":"step➛Pre Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].networkid}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].subnetlist}}","label":"step➛Post Processing➛subnetlist","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].subnetlist.subnetlist4}}","label":"step➛Post Processing➛subnetlist➛subnetlist","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].subnetlist.subnetlist}}","label":"step➛Post Processing➛subnetlist➛subnetlist","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>1c9d1680db88205020c17a2faa961988</latest_snapshot>
         <master_snapshot>b0ad0f34db4b9810b7a7e5bd0b9619a0</master_snapshot>
-        <name>Lookup Subnets</name>
+        <name>Look Up Subnets</name>
         <natlang/>
         <outputs/>
         <outputs/>
@@ -26,15 +26,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>45006eaadb7e5410b7a7e5bd0b96190f</sys_id>
-        <sys_mod_count>82</sys_mod_count>
-        <sys_name>Lookup Subnets</sys_name>
+        <sys_mod_count>87</sys_mod_count>
+        <sys_name>Look Up Subnets</sys_name>
         <sys_overrides/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_45006eaadb7e5410b7a7e5bd0b96190f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-13 17:50:37</sys_updated_on>
+        <sys_updated_on>2020-10-19 14:49:14</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -103,14 +103,14 @@
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=45006eaadb7e5410b7a7e5bd0b96190f^sys_idNOT IN89006eaadb7e5410b7a7e5bd0b96193c,95006eaadb7e5410b7a7e5bd0b961954,c1006eaadb7e5410b7a7e5bd0b961927"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Lookup Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action>
+        <action display_value="Look Up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action>
         <cid>8b7a7100-38c0-4908-885f-00e201cd1661</cid>
         <extended_inputs/>
         <extended_outputs/>
         <icon/>
         <inputs/>
         <inputs/>
-        <label>Lookup Subnets</label>
+        <label>Look Up Subnets</label>
         <order>2</order>
         <outputs/>
         <section/>
@@ -118,10 +118,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 06:06:13</sys_created_on>
         <sys_id>89006eaadb7e5410b7a7e5bd0b96193c</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 04:49:53</sys_updated_on>
+        <sys_updated_on>2020-10-19 14:48:56</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=89006eaadb7e5410b7a7e5bd0b96193c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -425,7 +425,7 @@
         <label>Credential Value</label>
         <mandatory>false</mandatory>
         <max_length>255</max_length>
-        <model display_value="Lookup Subnets">89006eaadb7e5410b7a7e5bd0b96193c</model>
+        <model display_value="Look Up Subnets">89006eaadb7e5410b7a7e5bd0b96193c</model>
         <model_id>89006eaadb7e5410b7a7e5bd0b96193c</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_89006eaadb7e5410b7a7e5bd0b96193c</name>
@@ -468,7 +468,7 @@
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Lookup Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action>
+        <action display_value="Look Up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action>
         <cid>cf703277-754d-4242-afee-d673089d93e3</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -847,7 +847,7 @@ if(inputs.status == '200') {
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=subnetlist,child_name=subnetlist,child_type=object,child_type_label=Object,child_uiUniqueId=83b7dcad-e2c9-4b1b-935e-ce82cdfdc31c,co_type_name=FD17751dfc9df39810d2c8d019de8cbee4,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=aab2e192-58c1-4867-953c-965857b24b77</attributes>
+        <attributes>child_label=subnetlist,child_name=subnetlist,child_type=object,child_type_label=Object,child_uiUniqueId=3df142ef-4c5f-4ff3-946a-693f98919de9,co_type_name=FD17751dfc9df39810d2c8d019de8cbee4,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=aab2e192-58c1-4867-953c-965857b24b77</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -905,14 +905,14 @@ if(inputs.status == '200') {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-09 07:14:01</sys_created_on>
         <sys_id>2f751dfcdbf3981020c17a2faa9619eb</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-13 17:50:30</sys_updated_on>
+        <sys_updated_on>2020-10-19 14:49:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1087,7 +1087,7 @@ if(inputs.status == '200') {
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Lookup Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action>
+        <action display_value="Look Up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action>
         <cid>2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -1498,7 +1498,7 @@ if(inputs.status == '200') {
         <label>Compartment ID</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Lookup Subnets">45006eaadb7e5410b7a7e5bd0b96190f</model>
+        <model display_value="Look Up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</model>
         <model_id>45006eaadb7e5410b7a7e5bd0b96190f</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_45006eaadb7e5410b7a7e5bd0b96190f</name>
@@ -1582,7 +1582,7 @@ if(inputs.status == '200') {
         <label>Status</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Lookup Subnets">45006eaadb7e5410b7a7e5bd0b96190f</model>
+        <model display_value="Look Up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</model>
         <model_id>45006eaadb7e5410b7a7e5bd0b96190f</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_45006eaadb7e5410b7a7e5bd0b96190f</name>
@@ -1665,7 +1665,7 @@ if(inputs.status == '200') {
         <label>Error Message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Lookup Subnets">45006eaadb7e5410b7a7e5bd0b96190f</model>
+        <model display_value="Look Up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</model>
         <model_id>45006eaadb7e5410b7a7e5bd0b96190f</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_45006eaadb7e5410b7a7e5bd0b96190f</name>
@@ -1711,7 +1711,7 @@ if(inputs.status == '200') {
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=subnetlist,child_name=subnetlist,child_type=object,child_type_label=Object,child_uiUniqueId=08ff399e-0da2-4fcf-b914-24bb2744b92b,co_type_name=FD6f751dfc56f398104193c016a0226bf7,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=d57e74c9-e935-4eaa-aee4-f585c0b85584</attributes>
+        <attributes>child_label=subnetlist,child_name=subnetlist,child_type=object,child_type_label=Object,child_uiUniqueId=c0565aee-3d63-4433-bbc5-0062489c9625,co_type_name=FD6f751dfc56f398104193c016a0226bf7,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=d57e74c9-e935-4eaa-aee4-f585c0b85584</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1748,7 +1748,7 @@ if(inputs.status == '200') {
         <label>Subnet Detailed List</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Lookup Subnets">45006eaadb7e5410b7a7e5bd0b96190f</model>
+        <model display_value="Look Up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</model>
         <model_id>45006eaadb7e5410b7a7e5bd0b96190f</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_45006eaadb7e5410b7a7e5bd0b96190f</name>
@@ -1771,14 +1771,14 @@ if(inputs.status == '200') {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-09 07:14:01</sys_created_on>
         <sys_id>2f751dfcdbf3981020c17a2faa9619fd</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-13 17:50:31</sys_updated_on>
+        <sys_updated_on>2020-10-19 14:49:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1831,7 +1831,7 @@ if(inputs.status == '200') {
         <label>Output</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="Lookup Subnets">45006eaadb7e5410b7a7e5bd0b96190f</model>
+        <model display_value="Look Up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</model>
         <model_id>45006eaadb7e5410b7a7e5bd0b96190f</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_45006eaadb7e5410b7a7e5bd0b96190f</name>
@@ -1875,14 +1875,14 @@ if(inputs.status == '200') {
     </sys_hub_action_output>
     <sys_hub_step_instance action="delete_multiple" query="action=45006eaadb7e5410b7a7e5bd0b96190f^sys_idNOT IN89006eaadb7e5410b7a7e5bd0b96193c,95006eaadb7e5410b7a7e5bd0b961954,c1006eaadb7e5410b7a7e5bd0b961927"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Lookup Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action>
+        <action display_value="Look Up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action>
         <cid>8b7a7100-38c0-4908-885f-00e201cd1661</cid>
         <extended_inputs/>
         <extended_outputs/>
         <icon/>
         <inputs/>
         <inputs/>
-        <label>Lookup Subnets</label>
+        <label>Look Up Subnets</label>
         <order>2</order>
         <outputs/>
         <section/>
@@ -1890,10 +1890,10 @@ if(inputs.status == '200') {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 06:06:13</sys_created_on>
         <sys_id>89006eaadb7e5410b7a7e5bd0b96193c</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 04:49:53</sys_updated_on>
+        <sys_updated_on>2020-10-19 14:48:56</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=89006eaadb7e5410b7a7e5bd0b96193c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2197,7 +2197,7 @@ if(inputs.status == '200') {
         <label>Credential Value</label>
         <mandatory>false</mandatory>
         <max_length>255</max_length>
-        <model display_value="Lookup Subnets">89006eaadb7e5410b7a7e5bd0b96193c</model>
+        <model display_value="Look Up Subnets">89006eaadb7e5410b7a7e5bd0b96193c</model>
         <model_id>89006eaadb7e5410b7a7e5bd0b96193c</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_89006eaadb7e5410b7a7e5bd0b96193c</name>
@@ -2240,7 +2240,7 @@ if(inputs.status == '200') {
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Lookup Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action>
+        <action display_value="Look Up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action>
         <cid>cf703277-754d-4242-afee-d673089d93e3</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -2619,7 +2619,7 @@ if(inputs.status == '200') {
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=subnetlist,child_name=subnetlist,child_type=object,child_type_label=Object,child_uiUniqueId=83b7dcad-e2c9-4b1b-935e-ce82cdfdc31c,co_type_name=FD17751dfc9df39810d2c8d019de8cbee4,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=aab2e192-58c1-4867-953c-965857b24b77</attributes>
+        <attributes>child_label=subnetlist,child_name=subnetlist,child_type=object,child_type_label=Object,child_uiUniqueId=3df142ef-4c5f-4ff3-946a-693f98919de9,co_type_name=FD17751dfc9df39810d2c8d019de8cbee4,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=aab2e192-58c1-4867-953c-965857b24b77</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2677,14 +2677,14 @@ if(inputs.status == '200') {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-09 07:14:01</sys_created_on>
         <sys_id>2f751dfcdbf3981020c17a2faa9619eb</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-13 17:50:30</sys_updated_on>
+        <sys_updated_on>2020-10-19 14:49:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2859,7 +2859,7 @@ if(inputs.status == '200') {
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Lookup Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action>
+        <action display_value="Look Up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action>
         <cid>2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -3371,19 +3371,19 @@ if(inputs.status == '200') {
     </sys_documentation>
     <sys_hub_action_plan action="delete_multiple" query="action_id=45006eaadb7e5410b7a7e5bd0b96190f^sys_idNOT IN71ad4f34db4b9810b7a7e5bd0b9619dc"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
-        <action_id display_value="Lookup Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action_id>
+        <action_id display_value="Look Up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"71ad4f34db4b9810b7a7e5bd0b9619dc","name":"plan"}}</plan>
-        <snapshot>368d085edbff1c1020c17a2faa961938</snapshot>
+        <snapshot>1c9d1680db88205020c17a2faa961988</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:11:56</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>71ad4f34db4b9810b7a7e5bd0b9619dc</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-13 17:50:40</sys_updated_on>
+        <sys_updated_on>2020-10-19 14:49:16</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -3396,20 +3396,20 @@ if(inputs.status == '200') {
         <copied_from_name/>
         <description>&lt;p&gt;Lists the subnets in the specified VCN and the specified compartment. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment contains the subnets.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Output&lt;/b&gt; - List of subnets in the specified compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Subnet Detailed List&lt;/b&gt; - List of subnets with details in the specified compartment.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <internal_name>lookup_subnets</internal_name>
-        <label_cache>[{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment ID","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.limit}}","label":"action➛Limit","type":"action","ref":""},{"name":"{{action.page}}","label":"action➛Page","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action.sort_by}}","label":"action➛Sort By","type":"action","ref":""},{"name":"{{action.sort_order}}","label":"action➛Sort Order","type":"action","ref":""},{"name":"{{action.lifecycle_state}}","label":"action➛Lifecycle State","type":"action","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartmentid}}","label":"step➛Pre Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartmentid1}}","label":"step➛Pre Processing➛CompartmentId","type":"step","ref":""},{"name":"{{step[8b7a7100-38c0-4908-885f-00e201cd1661].response_body}}","label":"step➛Lookup Subnets➛Response Body","type":"step","ref":""},{"name":"{{step[8b7a7100-38c0-4908-885f-00e201cd1661].status_code}}","label":"step➛Lookup Subnets➛Status Code","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3]._}}","label":"step➛Post Processing➛","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].error_message}}","label":"step➛Post Processing➛error_message","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].documents}}","label":"step➛Post Processing➛documents","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].network_id}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].limit}}","label":"step➛Pre Processing➛Limit","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].page}}","label":"step➛Pre Processing➛Page","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].display_name}}","label":"step➛Pre Processing➛Display Name","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].displayname}}","label":"step➛Pre Processing➛Display Name","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].sort_by}}","label":"step➛Pre Processing➛Sort By","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].sortby}}","label":"step➛Pre Processing➛Sort By","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].sortorder}}","label":"step➛Pre Processing➛Sort Order","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].lifecycle_state}}","label":"step➛Pre Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].lifecyclestate}}","label":"step➛Pre Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].networkid}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].subnetlist}}","label":"step➛Post Processing➛subnetlist","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].subnetlist.subnetlist4}}","label":"step➛Post Processing➛subnetlist➛subnetlist","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].subnetlist.subnetlist}}","label":"step➛Post Processing➛subnetlist➛subnetlist","type":"step","ref":""}]</label_cache>
+        <label_cache>[{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment ID","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.limit}}","label":"action➛Limit","type":"action","ref":""},{"name":"{{action.page}}","label":"action➛Page","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action.sort_by}}","label":"action➛Sort By","type":"action","ref":""},{"name":"{{action.sort_order}}","label":"action➛Sort Order","type":"action","ref":""},{"name":"{{action.lifecycle_state}}","label":"action➛Lifecycle State","type":"action","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartmentid}}","label":"step➛Pre Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].compartmentid1}}","label":"step➛Pre Processing➛CompartmentId","type":"step","ref":""},{"name":"{{step[8b7a7100-38c0-4908-885f-00e201cd1661].response_body}}","label":"step➛Look Up Subnets➛Response Body","type":"step","ref":""},{"name":"{{step[8b7a7100-38c0-4908-885f-00e201cd1661].status_code}}","label":"step➛Look Up Subnets➛Status Code","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3]._}}","label":"step➛Post Processing➛","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].error_message}}","label":"step➛Post Processing➛error_message","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].documents}}","label":"step➛Post Processing➛documents","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].network_id}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].limit}}","label":"step➛Pre Processing➛Limit","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].page}}","label":"step➛Pre Processing➛Page","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].display_name}}","label":"step➛Pre Processing➛Display Name","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].displayname}}","label":"step➛Pre Processing➛Display Name","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].sort_by}}","label":"step➛Pre Processing➛Sort By","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].sortby}}","label":"step➛Pre Processing➛Sort By","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].sortorder}}","label":"step➛Pre Processing➛Sort Order","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].lifecycle_state}}","label":"step➛Pre Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].lifecyclestate}}","label":"step➛Pre Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4].networkid}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].subnetlist}}","label":"step➛Post Processing➛subnetlist","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].subnetlist.subnetlist4}}","label":"step➛Post Processing➛subnetlist➛subnetlist","type":"step","ref":""},{"name":"{{step[cf703277-754d-4242-afee-d673089d93e3].subnetlist.subnetlist}}","label":"step➛Post Processing➛subnetlist➛subnetlist","type":"step","ref":""}]</label_cache>
         <master>true</master>
-        <name>Lookup Subnets</name>
+        <name>Look Up Subnets</name>
         <natlang/>
         <outputs/>
         <outputs/>
-        <parent_action display_value="Lookup Subnets">45006eaadb7e5410b7a7e5bd0b96190f</parent_action>
+        <parent_action display_value="Look Up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:11:52</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b0ad0f34db4b9810b7a7e5bd0b9619a0</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3417,7 +3417,7 @@ if(inputs.status == '200') {
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-13 17:50:36</sys_updated_on>
+        <sys_updated_on>2020-10-19 14:49:12</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -3486,14 +3486,14 @@ if(inputs.status == '200') {
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=b0ad0f34db4b9810b7a7e5bd0b9619a0^sys_idNOT IN09ad0f34db4b9810b7a7e5bd0b9619ca,b0ad0f34db4b9810b7a7e5bd0b9619b5,c1ad0f34db4b9810b7a7e5bd0b9619e2"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Lookup Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</action>
+        <action display_value="Look Up Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</action>
         <cid>8b7a7100-38c0-4908-885f-00e201cd1661</cid>
         <extended_inputs/>
         <extended_outputs/>
         <icon/>
         <inputs/>
         <inputs/>
-        <label>Lookup Subnets</label>
+        <label>Look Up Subnets</label>
         <order>2</order>
         <outputs/>
         <section/>
@@ -3501,10 +3501,10 @@ if(inputs.status == '200') {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:11:52</sys_created_on>
         <sys_id>09ad0f34db4b9810b7a7e5bd0b9619ca</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 04:50:11</sys_updated_on>
+        <sys_updated_on>2020-10-19 14:49:13</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=09ad0f34db4b9810b7a7e5bd0b9619ca"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3808,7 +3808,7 @@ if(inputs.status == '200') {
         <label>Credential Value</label>
         <mandatory>false</mandatory>
         <max_length>255</max_length>
-        <model display_value="Lookup Subnets">09ad0f34db4b9810b7a7e5bd0b9619ca</model>
+        <model display_value="Look Up Subnets">09ad0f34db4b9810b7a7e5bd0b9619ca</model>
         <model_id>09ad0f34db4b9810b7a7e5bd0b9619ca</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_09ad0f34db4b9810b7a7e5bd0b9619ca</name>
@@ -3851,7 +3851,7 @@ if(inputs.status == '200') {
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Lookup Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</action>
+        <action display_value="Look Up Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</action>
         <cid>2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -4223,7 +4223,7 @@ if(inputs.status == '200') {
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Lookup Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</action>
+        <action display_value="Look Up Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</action>
         <cid>cf703277-754d-4242-afee-d673089d93e3</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -4764,7 +4764,7 @@ if(inputs.status == '200') {
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=subnetlist,child_name=subnetlist,child_type=object,child_type_label=Object,child_uiUniqueId=83b7dcad-e2c9-4b1b-935e-ce82cdfdc31c,co_type_name=FD278d085e99ff1c106198cef54677a6f8,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=aab2e192-58c1-4867-953c-965857b24b77</attributes>
+        <attributes>child_label=subnetlist,child_name=subnetlist,child_type=object,child_type_label=Object,child_uiUniqueId=3df142ef-4c5f-4ff3-946a-693f98919de9,co_type_name=FDb49d568076882050fdf1d48d6a6f6b55,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=aab2e192-58c1-4867-953c-965857b24b77</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -4822,14 +4822,14 @@ if(inputs.status == '200') {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-09 07:25:44</sys_created_on>
         <sys_id>cb28d570db37981020c17a2faa96198c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-13 17:50:37</sys_updated_on>
+        <sys_updated_on>2020-10-19 14:49:13</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4881,7 +4881,7 @@ if(inputs.status == '200') {
         <label>Compartment ID</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Lookup Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</model>
+        <model display_value="Look Up Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</model>
         <model_id>b0ad0f34db4b9810b7a7e5bd0b9619a0</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_b0ad0f34db4b9810b7a7e5bd0b9619a0</name>
@@ -4965,7 +4965,7 @@ if(inputs.status == '200') {
         <label>Output</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="Lookup Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</model>
+        <model display_value="Look Up Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</model>
         <model_id>b0ad0f34db4b9810b7a7e5bd0b9619a0</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_b0ad0f34db4b9810b7a7e5bd0b9619a0</name>
@@ -5048,7 +5048,7 @@ if(inputs.status == '200') {
         <label>Error Message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Lookup Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</model>
+        <model display_value="Look Up Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</model>
         <model_id>b0ad0f34db4b9810b7a7e5bd0b9619a0</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_b0ad0f34db4b9810b7a7e5bd0b9619a0</name>
@@ -5094,7 +5094,7 @@ if(inputs.status == '200') {
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=subnetlist,child_name=subnetlist,child_type=object,child_type_label=Object,child_uiUniqueId=08ff399e-0da2-4fcf-b914-24bb2744b92b,co_type_name=FD6b8d485ef9ff1c10b4a65b54252f0809,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=d57e74c9-e935-4eaa-aee4-f585c0b85584</attributes>
+        <attributes>child_label=subnetlist,child_name=subnetlist,child_type=object,child_type_label=Object,child_uiUniqueId=c0565aee-3d63-4433-bbc5-0062489c9625,co_type_name=FDc99d568050882050d9e63100f2e40566,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=d57e74c9-e935-4eaa-aee4-f585c0b85584</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5131,7 +5131,7 @@ if(inputs.status == '200') {
         <label>Subnet Detailed List</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Lookup Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</model>
+        <model display_value="Look Up Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</model>
         <model_id>b0ad0f34db4b9810b7a7e5bd0b9619a0</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_b0ad0f34db4b9810b7a7e5bd0b9619a0</name>
@@ -5154,14 +5154,14 @@ if(inputs.status == '200') {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-09 07:25:44</sys_created_on>
         <sys_id>cb28d570db37981020c17a2faa9619aa</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-13 17:50:37</sys_updated_on>
+        <sys_updated_on>2020-10-19 14:49:13</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5214,7 +5214,7 @@ if(inputs.status == '200') {
         <label>Status</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Lookup Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</model>
+        <model display_value="Look Up Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</model>
         <model_id>b0ad0f34db4b9810b7a7e5bd0b9619a0</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_b0ad0f34db4b9810b7a7e5bd0b9619a0</name>
@@ -5258,14 +5258,14 @@ if(inputs.status == '200') {
     </sys_hub_action_output>
     <sys_hub_step_instance action="delete_multiple" query="action=b0ad0f34db4b9810b7a7e5bd0b9619a0^sys_idNOT IN09ad0f34db4b9810b7a7e5bd0b9619ca,b0ad0f34db4b9810b7a7e5bd0b9619b5,c1ad0f34db4b9810b7a7e5bd0b9619e2"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Lookup Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</action>
+        <action display_value="Look Up Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</action>
         <cid>8b7a7100-38c0-4908-885f-00e201cd1661</cid>
         <extended_inputs/>
         <extended_outputs/>
         <icon/>
         <inputs/>
         <inputs/>
-        <label>Lookup Subnets</label>
+        <label>Look Up Subnets</label>
         <order>2</order>
         <outputs/>
         <section/>
@@ -5273,10 +5273,10 @@ if(inputs.status == '200') {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:11:52</sys_created_on>
         <sys_id>09ad0f34db4b9810b7a7e5bd0b9619ca</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 04:50:11</sys_updated_on>
+        <sys_updated_on>2020-10-19 14:49:13</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=09ad0f34db4b9810b7a7e5bd0b9619ca"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5580,7 +5580,7 @@ if(inputs.status == '200') {
         <label>Credential Value</label>
         <mandatory>false</mandatory>
         <max_length>255</max_length>
-        <model display_value="Lookup Subnets">09ad0f34db4b9810b7a7e5bd0b9619ca</model>
+        <model display_value="Look Up Subnets">09ad0f34db4b9810b7a7e5bd0b9619ca</model>
         <model_id>09ad0f34db4b9810b7a7e5bd0b9619ca</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_09ad0f34db4b9810b7a7e5bd0b9619ca</name>
@@ -5623,7 +5623,7 @@ if(inputs.status == '200') {
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Lookup Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</action>
+        <action display_value="Look Up Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</action>
         <cid>2f35ce9b-f78c-4c82-8879-b2ec9d30e2b4</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -5995,7 +5995,7 @@ if(inputs.status == '200') {
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Lookup Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</action>
+        <action display_value="Look Up Subnets">b0ad0f34db4b9810b7a7e5bd0b9619a0</action>
         <cid>cf703277-754d-4242-afee-d673089d93e3</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -6536,7 +6536,7 @@ if(inputs.status == '200') {
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=subnetlist,child_name=subnetlist,child_type=object,child_type_label=Object,child_uiUniqueId=83b7dcad-e2c9-4b1b-935e-ce82cdfdc31c,co_type_name=FD278d085e99ff1c106198cef54677a6f8,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=aab2e192-58c1-4867-953c-965857b24b77</attributes>
+        <attributes>child_label=subnetlist,child_name=subnetlist,child_type=object,child_type_label=Object,child_uiUniqueId=3df142ef-4c5f-4ff3-946a-693f98919de9,co_type_name=FDb49d568076882050fdf1d48d6a6f6b55,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=aab2e192-58c1-4867-953c-965857b24b77</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -6594,14 +6594,14 @@ if(inputs.status == '200') {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-09 07:25:44</sys_created_on>
         <sys_id>cb28d570db37981020c17a2faa96198c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-13 17:50:37</sys_updated_on>
+        <sys_updated_on>2020-10-19 14:49:13</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
