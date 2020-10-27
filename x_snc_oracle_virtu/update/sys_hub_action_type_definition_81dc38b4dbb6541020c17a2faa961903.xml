@@ -9,11 +9,11 @@
         <category display_value="VCN Management">6e7fd728dbf2541020c17a2faa96199f</category>
         <copied_from/>
         <copied_from_name/>
-        <description>&lt;p&gt;Delete a virtual cloud network (VCN).&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment contains the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -OCID of the VCN.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
+        <description>&lt;p&gt;Delete a virtual cloud network (VCN).&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Tenancy ID&lt;/b&gt; -OCID of the tenancy.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment contains the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -OCID of the VCN.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>delete_network</internal_name>
-        <label_cache>[{"name":"{{action.network_id}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment ID","type":"action","ref":""},{"name":"{{step[61a1cfab-c390-4022-b807-43ef4208a943].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[61a1cfab-c390-4022-b807-43ef4208a943].network_id}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].status_code}}","label":"step➛Delete Network➛Status Code","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].error_code}}","label":"step➛Delete Network➛Error Code","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].response_body}}","label":"step➛Delete Network➛Response Body","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].response_headers}}","label":"step➛Delete Network➛Response Headers","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].errormessage}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>74cd3f82dbff1c1020c17a2faa9619cc</latest_snapshot>
+        <label_cache>[{"name":"{{action.network_id}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment ID","type":"action","ref":""},{"name":"{{action.tenancy_id}}","label":"action➛Tenancy ID","type":"action","ref":""},{"name":"{{step[61a1cfab-c390-4022-b807-43ef4208a943].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[61a1cfab-c390-4022-b807-43ef4208a943].network_id}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].status_code}}","label":"step➛Delete Network➛Status Code","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].error_code}}","label":"step➛Delete Network➛Error Code","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].response_body}}","label":"step➛Delete Network➛Response Body","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].response_headers}}","label":"step➛Delete Network➛Response Headers","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].errormessage}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>081e052edb44201020c17a2faa961998</latest_snapshot>
         <master_snapshot>9422c6d2db365410b7a7e5bd0b961911</master_snapshot>
         <name>Delete Network</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>81dc38b4dbb6541020c17a2faa961903</sys_id>
-        <sys_mod_count>53</sys_mod_count>
+        <sys_mod_count>61</sys_mod_count>
         <sys_name>Delete Network</sys_name>
         <sys_overrides/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_81dc38b4dbb6541020c17a2faa961903</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-13 16:41:40</sys_updated_on>
+        <sys_updated_on>2020-10-27 03:26:43</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1193,12 +1193,120 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=81dc38b4dbb6541020c17a2faa961903^sys_idNOT IN32d2a794db3b581020c17a2faa96191f,f6d2a794db3b581020c17a2faa96199e"/>
+    <sys_hub_action_input action="delete_multiple" query="model=81dc38b4dbb6541020c17a2faa961903^sys_idNOT IN40fc45eadb44201020c17a2faa961902,dcfc45eadb44201020c17a2faa961932,f6d2a794db3b581020c17a2faa96199e"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a4b616bd-7e1c-4831-bde9-51a8ac68281d</attributes>
+        <attributes>dynamic=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a4b616bd-7e1c-4831-bde9-51a8ac68281d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table>ocid1.tenancy.oc1..aaaaaaaatk6fnxw324trjilvekrte2le4xac5paw3f26spozkgnat435tpwq</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>compartment_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Compartment ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Delete Network">81dc38b4dbb6541020c17a2faa961903</model>
+        <model_id>81dc38b4dbb6541020c17a2faa961903</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-27 03:21:43</sys_created_on>
+        <sys_id>40fc45eadb44201020c17a2faa961902</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 03:26:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=40fc45eadb44201020c17a2faa961902^sys_idNOT IN14fc45eadb44201020c17a2faa96190e"/>
+    <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
+        <action_input display_value="">40fc45eadb44201020c17a2faa961902</action_input>
+        <action_inputs/>
+        <action_type display_value="Look up Compartments">5d1c61eedb0b1c105be372143996195e</action_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-27 03:21:44</sys_created_on>
+        <sys_id>14fc45eadb44201020c17a2faa96190e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+    </sys_hub_action_input_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=14fc45eadb44201020c17a2faa96190e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>14fc45eadb44201020c17a2faa96190e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-27 03:21:44</sys_created_on>
+        <sys_id>10fc45eadb44201020c17a2faa961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 03:21:44</sys_updated_on>
+        <value>{{action.tenancy_id}}</value>
+        <variable display_value="">251c61eedb0b1c105be3721439961963</variable>
+    </sys_variable_value>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=9c1dde84-5ce0-4a27-96a9-9bc67e776540</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1222,7 +1330,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>compartment_id</element>
+        <element>tenancy_id</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -1230,7 +1338,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Compartment ID</label>
+        <label>Tenancy ID</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Delete Network">81dc38b4dbb6541020c17a2faa961903</model>
@@ -1254,16 +1362,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-08 04:14:41</sys_created_on>
-        <sys_id>32d2a794db3b581020c17a2faa96191f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2020-10-27 03:21:44</sys_created_on>
+        <sys_id>dcfc45eadb44201020c17a2faa961932</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 04:14:41</sys_updated_on>
+        <sys_updated_on>2020-10-27 03:23:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1319,7 +1427,7 @@
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
         <next_element/>
-        <order>2</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1337,14 +1445,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-08 04:14:41</sys_created_on>
         <sys_id>f6d2a794db3b581020c17a2faa96199e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 04:15:57</sys_updated_on>
+        <sys_updated_on>2020-10-27 03:23:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1364,9 +1472,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-08 04:14:41</sys_created_on>
         <sys_id>fed2a794db3b581020c17a2faa9619a5</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-13 16:41:34</sys_updated_on>
+        <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fed2a794db3b581020c17a2faa9619a5"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1375,13 +1483,27 @@
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-08 04:14:41</sys_created_on>
-        <sys_id>3ad2a794db3b581020c17a2faa9619a6</sys_id>
+        <sys_created_on>2020-10-27 03:21:44</sys_created_on>
+        <sys_id>54fc45eadb44201020c17a2faa961932</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 04:14:41</sys_updated_on>
+        <sys_updated_on>2020-10-27 03:21:44</sys_updated_on>
+        <value>{{action.tenancy_id}}</value>
+        <variable display_value="">4b552374db04a05020c17a2faa96193e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>fed2a794db3b581020c17a2faa9619a5</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-27 03:21:44</sys_created_on>
+        <sys_id>90fc45eadb44201020c17a2faa961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 03:21:44</sys_updated_on>
         <value>{{action.compartment_id}}</value>
-        <variable display_value="">23f8fc46db7a1410b7a7e5bd0b961947</variable>
+        <variable display_value="">42119189db08a05020c17a2faa96194d</variable>
     </sys_variable_value>
     <sys_hub_action_output action="delete_multiple" query="model=81dc38b4dbb6541020c17a2faa961903^sys_idNOT IN32604538dbb6541020c17a2faa961999,6cabdd4adbba1410b7a7e5bd0b96190d"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -2678,7 +2800,30 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903^sys_idNOT IN7ed2a794db3b581020c17a2faa961923,7ed2a794db3b581020c17a2faa9619a4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903^sys_idNOT IN54fc45eadb44201020c17a2faa961937,58fc45eadb44201020c17a2faa96190c,7ed2a794db3b581020c17a2faa9619a4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>tenancy_id</element>
+        <help/>
+        <hint/>
+        <label>Tenancy ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-27 03:21:44</sys_created_on>
+        <sys_id>54fc45eadb44201020c17a2faa961937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 03:21:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>compartment_id</element>
         <help/>
@@ -2689,8 +2834,8 @@
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-08 04:14:41</sys_created_on>
-        <sys_id>7ed2a794db3b581020c17a2faa961923</sys_id>
+        <sys_created_on>2020-10-27 03:21:44</sys_created_on>
+        <sys_id>58fc45eadb44201020c17a2faa96190c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -2698,7 +2843,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 04:14:41</sys_updated_on>
+        <sys_updated_on>2020-10-27 03:21:44</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2725,7 +2870,351 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903^sys_idNOT INbad2a794db3b581020c17a2faa9619a1,99236b94db3b581020c17a2faa961961,59236b94db3b581020c17a2faa961962,19236b94db3b581020c17a2faa961963,d5236b94db3b581020c17a2faa961964,95236b94db3b581020c17a2faa961965,55236b94db3b581020c17a2faa961966,15236b94db3b581020c17a2faa961967,d1236b94db3b581020c17a2faa961968,d5236b94db3b581020c17a2faa96198e,95236b94db3b581020c17a2faa96198f,55236b94db3b581020c17a2faa961990,15236b94db3b581020c17a2faa961991,d1236b94db3b581020c17a2faa961992,91236b94db3b581020c17a2faa961993,51236b94db3b581020c17a2faa961994"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903^sys_idNOT INc8fc45eadb44201020c17a2faa961908,740e812edb44201020c17a2faa96196d,3c0e812edb44201020c17a2faa96196e,f80e812edb44201020c17a2faa96196f,890e812edb44201020c17a2faa961970,490e812edb44201020c17a2faa961971,090e812edb44201020c17a2faa961972,c50e812edb44201020c17a2faa961973,850e812edb44201020c17a2faa961974,450e812edb44201020c17a2faa961975,050e812edb44201020c17a2faa961976,c10e812edb44201020c17a2faa961977,810e812edb44201020c17a2faa961978,410e812edb44201020c17a2faa961979,010e812edb44201020c17a2faa96197a,cd0e812edb44201020c17a2faa96197a,8d0e812edb44201020c17a2faa96197b,4d0e812edb44201020c17a2faa96197c,bad2a794db3b581020c17a2faa9619a1,450e812edb44201020c17a2faa961983,4d0e812edb44201020c17a2faa961984,0d0e812edb44201020c17a2faa961985,c90e812edb44201020c17a2faa961986,99236b94db3b581020c17a2faa961961,59236b94db3b581020c17a2faa961962,19236b94db3b581020c17a2faa961963,d5236b94db3b581020c17a2faa961964,95236b94db3b581020c17a2faa961965,55236b94db3b581020c17a2faa961966,15236b94db3b581020c17a2faa961967,d1236b94db3b581020c17a2faa961968,d5236b94db3b581020c17a2faa96198e,95236b94db3b581020c17a2faa96198f,55236b94db3b581020c17a2faa961990,15236b94db3b581020c17a2faa961991,d1236b94db3b581020c17a2faa961992,91236b94db3b581020c17a2faa961993,51236b94db3b581020c17a2faa961994"/>
+    <sys_choice field="compartment_id" table="var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c8fc45eadb44201020c17a2faa961908</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:34</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>childCompart</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>740e812edb44201020c17a2faa96196d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:34</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaamzvswdu4fhz7wq7hpbarwcfnnbhxs7czf73ta3wuvdx5ow6varaq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DemoCompart</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3c0e812edb44201020c17a2faa96196e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:34</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaatofwymyfle3yvscz6hppsxeixkzaajbbh23vrmac7tiq6bgnfjxa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>firstcchild</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f80e812edb44201020c17a2faa96196f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:34</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaapqe3tgbh7squq7tsiu6qnhqqjaxblxwuewgmrhs3pm3ogeox77fq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>firstChild2</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>890e812edb44201020c17a2faa961970</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaqnwgtlvd7eryorvsdv5adcboz7lpnjal6grsmtdy3urq3nhqvqsa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>firstChild3</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>490e812edb44201020c17a2faa961971</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaespz3pd6niecpfb66cffamglsajmb4hbqyrc5wczp7e5awva4vpq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ManagedCompartmentForPaaS</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>6</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>090e812edb44201020c17a2faa961972</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaamp7hb6zt23i6gmubnwh5unv4d3dubzc5qmvulwru2mfv2yaowtka</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OEBSCompartment</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>7</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c50e812edb44201020c17a2faa961973</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaa4nkls3xk62jkgrejhyicih3lxvvwn4mxkk2ciowz5pe6fnx35w4a</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OraclePeoplesoft</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>8</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>850e812edb44201020c17a2faa961974</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaeyed3awlhalpojmsy654xd3aorpgik6jbnexffanxgzthhrsrhgq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Test</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>9</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>450e812edb44201020c17a2faa961975</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaayav6ugvkkobbdodd4pafvuuwwjpt2dn2tf65vowzpk6nzmtmuhwa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Test</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>10</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>050e812edb44201020c17a2faa961976</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaqg2wwxirhs6in2sxspfpuy2d7i3q7h7bwikcwm5fnasyng2cksya</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>test1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>11</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c10e812edb44201020c17a2faa961977</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaghamclblapafyyb73s3lcxph7frdi2fb3mv42k3axhoy6l6jxala</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TestDemo</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>12</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>810e812edb44201020c17a2faa961978</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaxyigcsel4zzdivith54e4zdy2elpxad22ju2asukhi67kio2av3q</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>testvcncompartment.l1yRJWfH</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>13</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>410e812edb44201020c17a2faa961979</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaalrzyse7tvxht6rmb2ammrnpkcvq3gc6obqt7d3x34fqttyqk3aja</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TYest</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>14</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>010e812edb44201020c17a2faa96197a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaq6qter23zdyb6jxbj6l2opsg4log5ccabg5xi5pxdnzk3qbdqr7a</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>updatedcompartmentikkwk</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>15</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cd0e812edb44201020c17a2faa96197a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaywibrz34p5aqbbhqakni5t6ijdqqko2oeeaiqq5x5mceri4z2xfq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>updateFirst</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>16</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8d0e812edb44201020c17a2faa96197b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaannt3vcuagzduizhriulgotium2g32564pcx4i4wcuekdmzgpvzna</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VCNSpokeTest</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>17</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4d0e812edb44201020c17a2faa96197c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaayjki42ewm2jqirhac6yb2m7t4h7ryneyphqintqv2djxcko6sela</value>
+        </sys_choice>
+    </sys_choice>
     <sys_choice field="network_id" table="var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -2741,9 +3230,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>bad2a794db3b581020c17a2faa9619a1</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:07</sys_updated_on>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
             <value/>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -2756,14 +3245,14 @@
             <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
             <sequence>1</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-08 04:15:57</sys_created_on>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>99236b94db3b581020c17a2faa961961</sys_id>
+            <sys_id>450e812edb44201020c17a2faa961983</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:07</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa6ucxmayvjvvtiek5ia3sgqjmmpirdw4q37yd2ll35uyq</value>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaua2cs5n7gjgfzgpngbjxsy2lcw2onws3nkr4ojm5pdtq</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -2775,14 +3264,14 @@
             <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
             <sequence>2</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-08 04:15:57</sys_created_on>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>59236b94db3b581020c17a2faa961962</sys_id>
+            <sys_id>4d0e812edb44201020c17a2faa961984</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:07</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa6qrfaan7zuughp3ohjuslbxbq7s22t3c4xq25qhwnchq</value>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaadeoayedblfram73ivk7bbxvcddxudzv4g2yxm643c4lq</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -2794,14 +3283,14 @@
             <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
             <sequence>3</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-08 04:15:57</sys_created_on>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>19236b94db3b581020c17a2faa961963</sys_id>
+            <sys_id>0d0e812edb44201020c17a2faa961985</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:07</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaqxk24qq6zt2w5mknczhjrt4dotsddrg5giksec4l7m7a</value>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaamugz6uap7zkkv3mylh24w5iop3xzihzd3msoycwmkhza</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -2813,14 +3302,14 @@
             <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
             <sequence>4</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-08 04:15:57</sys_created_on>
+            <sys_created_on>2020-10-27 03:26:26</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d5236b94db3b581020c17a2faa961964</sys_id>
+            <sys_id>c90e812edb44201020c17a2faa961986</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:07</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaau5pen53bxiqrp4x2se26kee7uyps6enkyz3we62pippa</value>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaatf3ucp5vt3isqiv2itlppjasj6qcl5a76gst2djy3sxa</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -2835,11 +3324,11 @@
             <sys_created_on>2020-10-08 04:15:57</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>95236b94db3b581020c17a2faa961965</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>99236b94db3b581020c17a2faa961961</sys_id>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:07</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaam6arfehfkfqqgseuc2ggp7xwfmtebm6iyutlwtihd3cq</value>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa6ucxmayvjvvtiek5ia3sgqjmmpirdw4q37yd2ll35uyq</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -2854,11 +3343,11 @@
             <sys_created_on>2020-10-08 04:15:57</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>55236b94db3b581020c17a2faa961966</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>59236b94db3b581020c17a2faa961962</sys_id>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:07</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaerpc2tusxskw7rgghwpt2arzc33caz3ta7vcaw7qvisa</value>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa6qrfaan7zuughp3ohjuslbxbq7s22t3c4xq25qhwnchq</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -2873,18 +3362,18 @@
             <sys_created_on>2020-10-08 04:15:57</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>15236b94db3b581020c17a2faa961967</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>19236b94db3b581020c17a2faa961963</sys_id>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:07</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa7lxnuq2rf5hhbhh5juj24dyainysog4cvw2hm3we6sma</value>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaqxk24qq6zt2w5mknczhjrt4dotsddrg5giksec4l7m7a</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>network_id</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Testupdtact</label>
+            <label>networkCA11</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
             <sequence>8</sequence>
@@ -2892,18 +3381,18 @@
             <sys_created_on>2020-10-08 04:15:57</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d1236b94db3b581020c17a2faa961968</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>d5236b94db3b581020c17a2faa961964</sys_id>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:07</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa3wt3oesrxljzqok6tld5glrdzqvk3lnxuclmzhcbpnaa</value>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaau5pen53bxiqrp4x2se26kee7uyps6enkyz3we62pippa</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>network_id</element>
             <hint/>
             <inactive>false</inactive>
-            <label>TestVCNCreateAction_update</label>
+            <label>networkCA11</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
             <sequence>9</sequence>
@@ -2911,18 +3400,18 @@
             <sys_created_on>2020-10-08 04:15:57</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d5236b94db3b581020c17a2faa96198e</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>95236b94db3b581020c17a2faa961965</sys_id>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:07</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaxia4vmwv72xil3wwmgqbmkmnwwo5ahfuu5ncc4dcxglq</value>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaam6arfehfkfqqgseuc2ggp7xwfmtebm6iyutlwtihd3cq</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>network_id</element>
             <hint/>
             <inactive>false</inactive>
-            <label>TestVCNCreateAction_update</label>
+            <label>networkCA11</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
             <sequence>10</sequence>
@@ -2930,11 +3419,11 @@
             <sys_created_on>2020-10-08 04:15:57</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>95236b94db3b581020c17a2faa96198f</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>55236b94db3b581020c17a2faa961966</sys_id>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:07</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaekj7zzvzhklmt65iczets6uxnrx7moatgtkaokmjb3oq</value>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaerpc2tusxskw7rgghwpt2arzc33caz3ta7vcaw7qvisa</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -2949,10 +3438,86 @@
             <sys_created_on>2020-10-08 04:15:57</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>55236b94db3b581020c17a2faa961990</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>15236b94db3b581020c17a2faa961967</sys_id>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:07</sys_updated_on>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa7lxnuq2rf5hhbhh5juj24dyainysog4cvw2hm3we6sma</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>network_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Testupdtact</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>12</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-08 04:15:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d1236b94db3b581020c17a2faa961968</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa3wt3oesrxljzqok6tld5glrdzqvk3lnxuclmzhcbpnaa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>network_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TestVCNCreateAction_update</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>13</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-08 04:15:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d5236b94db3b581020c17a2faa96198e</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaxia4vmwv72xil3wwmgqbmkmnwwo5ahfuu5ncc4dcxglq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>network_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TestVCNCreateAction_update</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>14</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-08 04:15:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>95236b94db3b581020c17a2faa96198f</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaekj7zzvzhklmt65iczets6uxnrx7moatgtkaokmjb3oq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>network_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>networkCA11</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
+            <sequence>15</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-08 04:15:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>55236b94db3b581020c17a2faa961990</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
             <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa2qg7gteqoffamdrio7wbw7tllzrzguzopqlsozu4hdga</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -2963,15 +3528,15 @@
             <label>TestNetwork_Swapnil</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
-            <sequence>12</sequence>
+            <sequence>16</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-10-08 04:15:57</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>15236b94db3b581020c17a2faa961991</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:07</sys_updated_on>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
             <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa7rej5irwnmp3ne7kr6xuumesege3atjcvb2zwqxiewpa</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -2982,15 +3547,15 @@
             <label>networkCA11</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
-            <sequence>13</sequence>
+            <sequence>17</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-10-08 04:15:57</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>d1236b94db3b581020c17a2faa961992</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:07</sys_updated_on>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
             <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa5vmeghi3fsal252xsiqvhsggs2qpbxjbm3ypvhd47tja</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3001,15 +3566,15 @@
             <label>networkCA11</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
-            <sequence>14</sequence>
+            <sequence>18</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-10-08 04:15:57</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>91236b94db3b581020c17a2faa961993</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:07</sys_updated_on>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
             <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaprls5qarmnz6bu6b37eka5lcdqlgnyl4vjhuu7n2r4va</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3020,15 +3585,15 @@
             <label>vcn-20200923-1240</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_81dc38b4dbb6541020c17a2faa961903</name>
-            <sequence>15</sequence>
+            <sequence>19</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-10-08 04:15:57</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>51236b94db3b581020c17a2faa961994</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:07</sys_updated_on>
+            <sys_updated_on>2020-10-27 03:26:35</sys_updated_on>
             <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaswh547vrn42ouf6t4iomxulolmiwmrmp652kb5bbrowq</value>
         </sys_choice>
     </sys_choice>
@@ -3083,17 +3648,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Delete Network">81dc38b4dbb6541020c17a2faa961903</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"d1220ad2db365410b7a7e5bd0b96192c","name":"plan"}}</plan>
-        <snapshot>74cd3f82dbff1c1020c17a2faa9619cc</snapshot>
+        <snapshot>081e052edb44201020c17a2faa961998</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:17:13</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d1220ad2db365410b7a7e5bd0b96192c</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-13 16:41:43</sys_updated_on>
+        <sys_updated_on>2020-10-27 03:26:46</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -3104,9 +3669,9 @@
         <category display_value="VCN Management">6e7fd728dbf2541020c17a2faa96199f</category>
         <copied_from/>
         <copied_from_name/>
-        <description>&lt;p&gt;Delete a virtual cloud network (VCN).&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment contains the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -OCID of the VCN.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
+        <description>&lt;p&gt;Delete a virtual cloud network (VCN).&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Tenancy ID&lt;/b&gt; -OCID of the tenancy.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment contains the VCN.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -OCID of the VCN.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <internal_name>delete_network</internal_name>
-        <label_cache>[{"name":"{{action.network_id}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment ID","type":"action","ref":""},{"name":"{{step[61a1cfab-c390-4022-b807-43ef4208a943].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[61a1cfab-c390-4022-b807-43ef4208a943].network_id}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].status_code}}","label":"step➛Delete Network➛Status Code","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].error_code}}","label":"step➛Delete Network➛Error Code","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].response_body}}","label":"step➛Delete Network➛Response Body","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].response_headers}}","label":"step➛Delete Network➛Response Headers","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].errormessage}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""}]</label_cache>
+        <label_cache>[{"name":"{{action.network_id}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment ID","type":"action","ref":""},{"name":"{{action.tenancy_id}}","label":"action➛Tenancy ID","type":"action","ref":""},{"name":"{{step[61a1cfab-c390-4022-b807-43ef4208a943].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[61a1cfab-c390-4022-b807-43ef4208a943].network_id}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].status_code}}","label":"step➛Delete Network➛Status Code","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].error_code}}","label":"step➛Delete Network➛Error Code","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].response_body}}","label":"step➛Delete Network➛Response Body","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].response_headers}}","label":"step➛Delete Network➛Response Headers","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].errormessage}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""}]</label_cache>
         <master>true</master>
         <name>Delete Network</name>
         <natlang/>
@@ -3119,7 +3684,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9422c6d2db365410b7a7e5bd0b961911</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3127,7 +3692,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-13 16:41:39</sys_updated_on>
+        <sys_updated_on>2020-10-27 03:26:41</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -4238,12 +4803,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=9422c6d2db365410b7a7e5bd0b961911^sys_idNOT IN85332f94db3b581020c17a2faa961918,9d332f94db3b581020c17a2faa961927"/>
+    <sys_hub_action_input action="delete_multiple" query="model=9422c6d2db365410b7a7e5bd0b961911^sys_idNOT IN7c1e452edb44201020c17a2faa961946,9d332f94db3b581020c17a2faa961927,f81e452edb44201020c17a2faa961962"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a4b616bd-7e1c-4831-bde9-51a8ac68281d</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=9c1dde84-5ce0-4a27-96a9-9bc67e776540</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -4267,7 +4832,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>compartment_id</element>
+        <element>tenancy_id</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -4275,7 +4840,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Compartment ID</label>
+        <label>Tenancy ID</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Delete Network">9422c6d2db365410b7a7e5bd0b961911</model>
@@ -4299,8 +4864,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-08 04:16:13</sys_created_on>
-        <sys_id>85332f94db3b581020c17a2faa961918</sys_id>
+        <sys_created_on>2020-10-27 03:26:41</sys_created_on>
+        <sys_id>7c1e452edb44201020c17a2faa961946</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -4308,7 +4873,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 04:16:13</sys_updated_on>
+        <sys_updated_on>2020-10-27 03:26:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4364,7 +4929,7 @@
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
         <next_element/>
-        <order>2</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -4382,14 +4947,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-08 04:16:13</sys_created_on>
         <sys_id>9d332f94db3b581020c17a2faa961927</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 04:16:14</sys_updated_on>
+        <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4409,24 +4974,146 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-08 04:16:14</sys_created_on>
         <sys_id>95332f94db3b581020c17a2faa96194c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-13 16:41:39</sys_updated_on>
+        <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=95332f94db3b581020c17a2faa96194c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>95332f94db3b581020c17a2faa96194c</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+        <sys_id>091e452edb44201020c17a2faa961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+        <value>{{action.compartment_id}}</value>
+        <variable display_value="">42119189db08a05020c17a2faa96194d</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_input_action_instance</document>
         <document_key>95332f94db3b581020c17a2faa96194c</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-08 04:16:14</sys_created_on>
-        <sys_id>dd332f94db3b581020c17a2faa96194c</sys_id>
+        <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+        <sys_id>c91e452edb44201020c17a2faa961993</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 04:16:14</sys_updated_on>
-        <value>{{action.compartment_id}}</value>
-        <variable display_value="">23f8fc46db7a1410b7a7e5bd0b961947</variable>
+        <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+        <value>{{action.tenancy_id}}</value>
+        <variable display_value="">4b552374db04a05020c17a2faa96193e</variable>
+    </sys_variable_value>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>dynamic=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a4b616bd-7e1c-4831-bde9-51a8ac68281d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table>ocid1.tenancy.oc1..aaaaaaaatk6fnxw324trjilvekrte2le4xac5paw3f26spozkgnat435tpwq</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>compartment_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Compartment ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Delete Network">9422c6d2db365410b7a7e5bd0b961911</model>
+        <model_id>9422c6d2db365410b7a7e5bd0b961911</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+        <sys_id>f81e452edb44201020c17a2faa961962</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f81e452edb44201020c17a2faa961962^sys_idNOT INf81e452edb44201020c17a2faa96197c"/>
+    <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
+        <action_input display_value="">f81e452edb44201020c17a2faa961962</action_input>
+        <action_inputs/>
+        <action_type display_value="Look up Compartments">5d1c61eedb0b1c105be372143996195e</action_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+        <sys_id>f81e452edb44201020c17a2faa96197c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+    </sys_hub_action_input_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f81e452edb44201020c17a2faa96197c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>f81e452edb44201020c17a2faa96197c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+        <sys_id>341e452edb44201020c17a2faa96197d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+        <value>{{action.tenancy_id}}</value>
+        <variable display_value="">251c61eedb0b1c105be3721439961963</variable>
     </sys_variable_value>
     <sys_hub_action_output action="delete_multiple" query="model=9422c6d2db365410b7a7e5bd0b961911^sys_idNOT IN2822c6d2db365410b7a7e5bd0b96198d,ec22c6d2db365410b7a7e5bd0b961993"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -5675,7 +6362,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911^sys_idNOT IN15332f94db3b581020c17a2faa96194b,c1332f94db3b581020c17a2faa96191d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911^sys_idNOT IN15332f94db3b581020c17a2faa96194b,b01e452edb44201020c17a2faa961958,b41e452edb44201020c17a2faa96197b"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>network_id</element>
         <help/>
@@ -5700,6 +6387,29 @@
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
+        <element>tenancy_id</element>
+        <help/>
+        <hint/>
+        <label>Tenancy ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-27 03:26:41</sys_created_on>
+        <sys_id>b01e452edb44201020c17a2faa961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 03:26:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
         <element>compartment_id</element>
         <help/>
         <hint/>
@@ -5709,8 +6419,8 @@
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-08 04:16:13</sys_created_on>
-        <sys_id>c1332f94db3b581020c17a2faa96191d</sys_id>
+        <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+        <sys_id>b41e452edb44201020c17a2faa96197b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -5718,11 +6428,355 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-08 04:16:13</sys_updated_on>
+        <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911^sys_idNOT IN51332f94db3b581020c17a2faa96192b,51332f94db3b581020c17a2faa96192d,d5332f94db3b581020c17a2faa96193a,95332f94db3b581020c17a2faa96193b,55332f94db3b581020c17a2faa96193c,15332f94db3b581020c17a2faa96193d,d1332f94db3b581020c17a2faa96193e,91332f94db3b581020c17a2faa96193f,51332f94db3b581020c17a2faa961940,11332f94db3b581020c17a2faa961941,dd332f94db3b581020c17a2faa961941,9d332f94db3b581020c17a2faa961942,5d332f94db3b581020c17a2faa961943,1d332f94db3b581020c17a2faa961944,d9332f94db3b581020c17a2faa961945,99332f94db3b581020c17a2faa961946"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911^sys_idNOT IN7c1e452edb44201020c17a2faa961965,7c1e452edb44201020c17a2faa961967,3c1e452edb44201020c17a2faa961968,f81e452edb44201020c17a2faa961969,b81e452edb44201020c17a2faa96196a,781e452edb44201020c17a2faa96196b,381e452edb44201020c17a2faa96196c,f41e452edb44201020c17a2faa96196d,b41e452edb44201020c17a2faa96196e,741e452edb44201020c17a2faa96196f,341e452edb44201020c17a2faa961970,f01e452edb44201020c17a2faa961971,b01e452edb44201020c17a2faa961972,701e452edb44201020c17a2faa961973,301e452edb44201020c17a2faa961974,fc1e452edb44201020c17a2faa961974,bc1e452edb44201020c17a2faa961975,7c1e452edb44201020c17a2faa961976,51332f94db3b581020c17a2faa96192b,c51e452edb44201020c17a2faa961980,cd1e452edb44201020c17a2faa961981,8d1e452edb44201020c17a2faa961982,4d1e452edb44201020c17a2faa961983,51332f94db3b581020c17a2faa96192d,d5332f94db3b581020c17a2faa96193a,95332f94db3b581020c17a2faa96193b,55332f94db3b581020c17a2faa96193c,15332f94db3b581020c17a2faa96193d,d1332f94db3b581020c17a2faa96193e,91332f94db3b581020c17a2faa96193f,51332f94db3b581020c17a2faa961940,11332f94db3b581020c17a2faa961941,dd332f94db3b581020c17a2faa961941,9d332f94db3b581020c17a2faa961942,5d332f94db3b581020c17a2faa961943,1d332f94db3b581020c17a2faa961944,d9332f94db3b581020c17a2faa961945,99332f94db3b581020c17a2faa961946"/>
+    <sys_choice field="compartment_id" table="var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7c1e452edb44201020c17a2faa961965</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>childCompart</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7c1e452edb44201020c17a2faa961967</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaamzvswdu4fhz7wq7hpbarwcfnnbhxs7czf73ta3wuvdx5ow6varaq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DemoCompart</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3c1e452edb44201020c17a2faa961968</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaatofwymyfle3yvscz6hppsxeixkzaajbbh23vrmac7tiq6bgnfjxa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>firstcchild</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f81e452edb44201020c17a2faa961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaapqe3tgbh7squq7tsiu6qnhqqjaxblxwuewgmrhs3pm3ogeox77fq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>firstChild2</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b81e452edb44201020c17a2faa96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaqnwgtlvd7eryorvsdv5adcboz7lpnjal6grsmtdy3urq3nhqvqsa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>firstChild3</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>781e452edb44201020c17a2faa96196b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaespz3pd6niecpfb66cffamglsajmb4hbqyrc5wczp7e5awva4vpq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ManagedCompartmentForPaaS</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>6</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>381e452edb44201020c17a2faa96196c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaamp7hb6zt23i6gmubnwh5unv4d3dubzc5qmvulwru2mfv2yaowtka</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OEBSCompartment</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>7</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f41e452edb44201020c17a2faa96196d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaa4nkls3xk62jkgrejhyicih3lxvvwn4mxkk2ciowz5pe6fnx35w4a</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OraclePeoplesoft</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>8</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b41e452edb44201020c17a2faa96196e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaeyed3awlhalpojmsy654xd3aorpgik6jbnexffanxgzthhrsrhgq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Test</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>9</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>741e452edb44201020c17a2faa96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaayav6ugvkkobbdodd4pafvuuwwjpt2dn2tf65vowzpk6nzmtmuhwa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Test</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>10</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>341e452edb44201020c17a2faa961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaqg2wwxirhs6in2sxspfpuy2d7i3q7h7bwikcwm5fnasyng2cksya</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>test1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>11</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f01e452edb44201020c17a2faa961971</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaghamclblapafyyb73s3lcxph7frdi2fb3mv42k3axhoy6l6jxala</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TestDemo</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>12</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b01e452edb44201020c17a2faa961972</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaxyigcsel4zzdivith54e4zdy2elpxad22ju2asukhi67kio2av3q</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>testvcncompartment.l1yRJWfH</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>13</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>701e452edb44201020c17a2faa961973</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaalrzyse7tvxht6rmb2ammrnpkcvq3gc6obqt7d3x34fqttyqk3aja</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TYest</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>14</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>301e452edb44201020c17a2faa961974</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaq6qter23zdyb6jxbj6l2opsg4log5ccabg5xi5pxdnzk3qbdqr7a</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>updatedcompartmentikkwk</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>15</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fc1e452edb44201020c17a2faa961974</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaywibrz34p5aqbbhqakni5t6ijdqqko2oeeaiqq5x5mceri4z2xfq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>updateFirst</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>16</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bc1e452edb44201020c17a2faa961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaannt3vcuagzduizhriulgotium2g32564pcx4i4wcuekdmzgpvzna</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartment_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VCNSpokeTest</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>17</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7c1e452edb44201020c17a2faa961976</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaayjki42ewm2jqirhac6yb2m7t4h7ryneyphqintqv2djxcko6sela</value>
+        </sys_choice>
+    </sys_choice>
     <sys_choice field="network_id" table="var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -5753,14 +6807,14 @@
             <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
             <sequence>1</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-08 04:16:13</sys_created_on>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>51332f94db3b581020c17a2faa96192d</sys_id>
+            <sys_id>c51e452edb44201020c17a2faa961980</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:13</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa6ucxmayvjvvtiek5ia3sgqjmmpirdw4q37yd2ll35uyq</value>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaua2cs5n7gjgfzgpngbjxsy2lcw2onws3nkr4ojm5pdtq</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -5772,14 +6826,14 @@
             <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
             <sequence>2</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-08 04:16:13</sys_created_on>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d5332f94db3b581020c17a2faa96193a</sys_id>
+            <sys_id>cd1e452edb44201020c17a2faa961981</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:13</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa6qrfaan7zuughp3ohjuslbxbq7s22t3c4xq25qhwnchq</value>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaadeoayedblfram73ivk7bbxvcddxudzv4g2yxm643c4lq</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -5791,14 +6845,14 @@
             <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
             <sequence>3</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-08 04:16:13</sys_created_on>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>95332f94db3b581020c17a2faa96193b</sys_id>
+            <sys_id>8d1e452edb44201020c17a2faa961982</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:13</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaqxk24qq6zt2w5mknczhjrt4dotsddrg5giksec4l7m7a</value>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaamugz6uap7zkkv3mylh24w5iop3xzihzd3msoycwmkhza</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -5810,14 +6864,14 @@
             <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
             <sequence>4</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-08 04:16:13</sys_created_on>
+            <sys_created_on>2020-10-27 03:26:42</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>55332f94db3b581020c17a2faa96193c</sys_id>
+            <sys_id>4d1e452edb44201020c17a2faa961983</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:13</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaau5pen53bxiqrp4x2se26kee7uyps6enkyz3we62pippa</value>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaatf3ucp5vt3isqiv2itlppjasj6qcl5a76gst2djy3sxa</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -5832,11 +6886,11 @@
             <sys_created_on>2020-10-08 04:16:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>15332f94db3b581020c17a2faa96193d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>51332f94db3b581020c17a2faa96192d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:13</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaam6arfehfkfqqgseuc2ggp7xwfmtebm6iyutlwtihd3cq</value>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa6ucxmayvjvvtiek5ia3sgqjmmpirdw4q37yd2ll35uyq</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -5851,11 +6905,11 @@
             <sys_created_on>2020-10-08 04:16:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d1332f94db3b581020c17a2faa96193e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>d5332f94db3b581020c17a2faa96193a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:13</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaerpc2tusxskw7rgghwpt2arzc33caz3ta7vcaw7qvisa</value>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa6qrfaan7zuughp3ohjuslbxbq7s22t3c4xq25qhwnchq</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -5870,18 +6924,18 @@
             <sys_created_on>2020-10-08 04:16:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>91332f94db3b581020c17a2faa96193f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>95332f94db3b581020c17a2faa96193b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:13</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa7lxnuq2rf5hhbhh5juj24dyainysog4cvw2hm3we6sma</value>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaqxk24qq6zt2w5mknczhjrt4dotsddrg5giksec4l7m7a</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>network_id</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Testupdtact</label>
+            <label>networkCA11</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
             <sequence>8</sequence>
@@ -5889,18 +6943,18 @@
             <sys_created_on>2020-10-08 04:16:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>51332f94db3b581020c17a2faa961940</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>55332f94db3b581020c17a2faa96193c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:13</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa3wt3oesrxljzqok6tld5glrdzqvk3lnxuclmzhcbpnaa</value>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaau5pen53bxiqrp4x2se26kee7uyps6enkyz3we62pippa</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>network_id</element>
             <hint/>
             <inactive>false</inactive>
-            <label>TestVCNCreateAction_update</label>
+            <label>networkCA11</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
             <sequence>9</sequence>
@@ -5908,18 +6962,18 @@
             <sys_created_on>2020-10-08 04:16:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>11332f94db3b581020c17a2faa961941</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>15332f94db3b581020c17a2faa96193d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:13</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaxia4vmwv72xil3wwmgqbmkmnwwo5ahfuu5ncc4dcxglq</value>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaam6arfehfkfqqgseuc2ggp7xwfmtebm6iyutlwtihd3cq</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>network_id</element>
             <hint/>
             <inactive>false</inactive>
-            <label>TestVCNCreateAction_update</label>
+            <label>networkCA11</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
             <sequence>10</sequence>
@@ -5927,11 +6981,11 @@
             <sys_created_on>2020-10-08 04:16:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>dd332f94db3b581020c17a2faa961941</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>d1332f94db3b581020c17a2faa96193e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:13</sys_updated_on>
-            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaekj7zzvzhklmt65iczets6uxnrx7moatgtkaokmjb3oq</value>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaerpc2tusxskw7rgghwpt2arzc33caz3ta7vcaw7qvisa</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -5946,10 +7000,86 @@
             <sys_created_on>2020-10-08 04:16:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>9d332f94db3b581020c17a2faa961942</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>91332f94db3b581020c17a2faa96193f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:13</sys_updated_on>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa7lxnuq2rf5hhbhh5juj24dyainysog4cvw2hm3we6sma</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>network_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Testupdtact</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>12</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-08 04:16:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>51332f94db3b581020c17a2faa961940</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa3wt3oesrxljzqok6tld5glrdzqvk3lnxuclmzhcbpnaa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>network_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TestVCNCreateAction_update</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>13</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-08 04:16:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>11332f94db3b581020c17a2faa961941</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaxia4vmwv72xil3wwmgqbmkmnwwo5ahfuu5ncc4dcxglq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>network_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TestVCNCreateAction_update</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>14</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-08 04:16:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dd332f94db3b581020c17a2faa961941</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
+            <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaekj7zzvzhklmt65iczets6uxnrx7moatgtkaokmjb3oq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>network_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>networkCA11</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
+            <sequence>15</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-08 04:16:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9d332f94db3b581020c17a2faa961942</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
             <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa2qg7gteqoffamdrio7wbw7tllzrzguzopqlsozu4hdga</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -5960,15 +7090,15 @@
             <label>TestNetwork_Swapnil</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
-            <sequence>12</sequence>
+            <sequence>16</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-10-08 04:16:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>5d332f94db3b581020c17a2faa961943</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:13</sys_updated_on>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
             <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa7rej5irwnmp3ne7kr6xuumesege3atjcvb2zwqxiewpa</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -5979,15 +7109,15 @@
             <label>networkCA11</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
-            <sequence>13</sequence>
+            <sequence>17</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-10-08 04:16:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>1d332f94db3b581020c17a2faa961944</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:13</sys_updated_on>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
             <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaa5vmeghi3fsal252xsiqvhsggs2qpbxjbm3ypvhd47tja</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -5998,15 +7128,15 @@
             <label>networkCA11</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
-            <sequence>14</sequence>
+            <sequence>18</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-10-08 04:16:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>d9332f94db3b581020c17a2faa961945</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:13</sys_updated_on>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
             <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaprls5qarmnz6bu6b37eka5lcdqlgnyl4vjhuu7n2r4va</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -6017,15 +7147,15 @@
             <label>vcn-20200923-1240</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_9422c6d2db365410b7a7e5bd0b961911</name>
-            <sequence>15</sequence>
+            <sequence>19</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-10-08 04:16:14</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>99332f94db3b581020c17a2faa961946</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-08 04:16:14</sys_updated_on>
+            <sys_updated_on>2020-10-27 03:26:42</sys_updated_on>
             <value>ocid1.vcn.oc1.ap-mumbai-1.amaaaaaahfetuqaaswh547vrn42ouf6t4iomxulolmiwmrmp652kb5bbrowq</value>
         </sys_choice>
     </sys_choice>

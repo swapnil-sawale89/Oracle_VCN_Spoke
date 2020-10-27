@@ -9,11 +9,11 @@
         <category display_value="Security List Management">9938d72edbfe5410b7a7e5bd0b96190a</category>
         <copied_from>11f9805bdb72d410b7a7e5bd0b961919</copied_from>
         <copied_from_name>Get Security LIst</copied_from_name>
-        <description>&lt;p&gt;Lists the security lists in the specified VCN and compartment. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Output&lt;/b&gt; - Lists the security lists in the specified VCN and compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Securitylist Detailed List&lt;/b&gt; - Detailed list of the security lists in the specified VCN and compartment.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
+        <description>&lt;p&gt;Lists the security lists in the specified VCN and compartment. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Tenancy ID&lt;/b&gt; -OCID of the tenanacy.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Output&lt;/b&gt; - Lists the security lists in the specified VCN and compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Securitylist Detailed List&lt;/b&gt; - Detailed list of the security lists in the specified VCN and compartment.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>lookup_security_list</internal_name>
-        <label_cache>[{"name":"{{action.security_list_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{action.compartmentid}}","label":"action➛Compartment ID","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Network Id","type":"action","ref":""},{"name":"{{action.networkid}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.limit}}","label":"action➛Limit","type":"action","ref":""},{"name":"{{action.page}}","label":"action➛Page","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.sort_by}}","label":"action➛Sort By","type":"action","ref":""},{"name":"{{action.sort_order}}","label":"action➛Sort Order","type":"action","ref":""},{"name":"{{action.lifecycle_state}}","label":"action➛Lifecycle State","type":"action","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].securitylistid}}","label":"step➛Pre Processing➛compartmentId","type":"step","ref":""},{"name":"{{step[f4b623a6-df22-40f7-b8da-99956b0d3750].status_code}}","label":"step➛Look Up Security List➛Status Code","type":"step","ref":""},{"name":"{{step[f4b623a6-df22-40f7-b8da-99956b0d3750].response_body}}","label":"step➛Look Up Security List➛Response Body","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].compartmentid}}","label":"step➛Pre Processing➛compartmentid","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].displayname}}","label":"step➛Pre Processing➛displayname","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].id}}","label":"step➛Pre Processing➛id","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].lifecyclestate}}","label":"step➛Pre Processing➛lifecyclestate","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].timecreated}}","label":"step➛Pre Processing➛timecreated","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].vcnid}}","label":"step➛Pre Processing➛vcnid","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].ingresssecurityrules}}","label":"step➛Pre Processing➛ingressSecurityRules","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].egresssecurityrules}}","label":"step➛Pre Processing➛egressSecurityRules","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].status}}","label":"step➛Pre Processing➛status","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].errormessage}}","label":"step➛Pre Processing➛errormessage","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].ingresssecurityrules.ingressSecurityRule}}","label":"step➛Pre Processing➛ingressSecurityRules➛ingressSecurityRule","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].egresssecurityrules.egressSecurityRule}}","label":"step➛Pre Processing➛egressSecurityRules➛egressSecurityRule","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].compartmentid}}","label":"step➛Pre Processing➛CompartmentId","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].document}}","label":"step➛Pre Processing➛document","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].documents}}","label":"step➛Pre Processing➛documents","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].networkid}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].limit}}","label":"step➛Pre Processing➛Limit","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].page}}","label":"step➛Pre Processing➛page","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].display_name}}","label":"step➛Pre Processing➛Display Name","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].sort_by}}","label":"step➛Pre Processing➛Sort By","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].lifecycle_state}}","label":"step➛Pre Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].compartment_id}}","label":"step➛Pre Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].network_id}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].documents.document}}","label":"step➛Pre Processing➛documents➛document","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].choicedocument}}","label":"step➛Pre Processing➛choicedocument","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>6a64f158db00605020c17a2faa9619c8</latest_snapshot>
+        <label_cache>[{"name":"{{action.security_list_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{action.compartmentid}}","label":"action➛Compartment ID","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Network Id","type":"action","ref":""},{"name":"{{action.networkid}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.limit}}","label":"action➛Limit","type":"action","ref":""},{"name":"{{action.page}}","label":"action➛Page","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.sort_by}}","label":"action➛Sort By","type":"action","ref":""},{"name":"{{action.sort_order}}","label":"action➛Sort Order","type":"action","ref":""},{"name":"{{action.lifecycle_state}}","label":"action➛Lifecycle State","type":"action","ref":""},{"name":"{{action.tenancy_id}}","label":"action➛Tenancy ID","type":"action","ref":""},{"name":"{{action.tenancyid}}","label":"action➛Tenancy ID","type":"action","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].securitylistid}}","label":"step➛Pre Processing➛compartmentId","type":"step","ref":""},{"name":"{{step[f4b623a6-df22-40f7-b8da-99956b0d3750].status_code}}","label":"step➛Look Up Security List➛Status Code","type":"step","ref":""},{"name":"{{step[f4b623a6-df22-40f7-b8da-99956b0d3750].response_body}}","label":"step➛Look Up Security List➛Response Body","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].compartmentid}}","label":"step➛Pre Processing➛compartmentid","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].displayname}}","label":"step➛Pre Processing➛displayname","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].id}}","label":"step➛Pre Processing➛id","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].lifecyclestate}}","label":"step➛Pre Processing➛lifecyclestate","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].timecreated}}","label":"step➛Pre Processing➛timecreated","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].vcnid}}","label":"step➛Pre Processing➛vcnid","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].ingresssecurityrules}}","label":"step➛Pre Processing➛ingressSecurityRules","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].egresssecurityrules}}","label":"step➛Pre Processing➛egressSecurityRules","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].status}}","label":"step➛Pre Processing➛status","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].errormessage}}","label":"step➛Pre Processing➛errormessage","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].ingresssecurityrules.ingressSecurityRule}}","label":"step➛Pre Processing➛ingressSecurityRules➛ingressSecurityRule","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].egresssecurityrules.egressSecurityRule}}","label":"step➛Pre Processing➛egressSecurityRules➛egressSecurityRule","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].compartmentid}}","label":"step➛Pre Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].document}}","label":"step➛Pre Processing➛document","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].documents}}","label":"step➛Pre Processing➛documents","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].networkid}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].limit}}","label":"step➛Pre Processing➛Limit","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].page}}","label":"step➛Pre Processing➛page","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].display_name}}","label":"step➛Pre Processing➛Display Name","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].sort_by}}","label":"step➛Pre Processing➛Sort By","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].lifecycle_state}}","label":"step➛Pre Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].network_id}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].documents.document}}","label":"step➛Pre Processing➛documents➛document","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].choicedocument}}","label":"step➛Pre Processing➛choicedocument","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>4c0de126dbc4201020c17a2faa96193f</latest_snapshot>
         <master_snapshot>332f4bb4db4b9810b7a7e5bd0b961981</master_snapshot>
         <name>Look Up Security Lists</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1611145fdb72d410b7a7e5bd0b961982</sys_id>
-        <sys_mod_count>69</sys_mod_count>
+        <sys_mod_count>84</sys_mod_count>
         <sys_name>Look Up Security Lists</sys_name>
         <sys_overrides/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_1611145fdb72d410b7a7e5bd0b961982</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-20 06:27:56</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:41:53</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -589,7 +589,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=document,child_name=document,child_type=object,child_type_label=Object,child_uiUniqueId=4fe9557c-8c27-4f32-a0ac-26d64360b8ba,co_type_name=FDf6f49311b2f7d8103578a333d0b3ee10,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=c916987b-56c2-442d-af86-89a47520b6db</attributes>
+        <attributes>child_label=document,child_name=document,child_type=object,child_type_label=Object,child_uiUniqueId=d7231fd6-20e2-4472-aa35-c9ff49b41c1c,co_type_name=FDf6f49311b2f7d8103578a333d0b3ee10,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=c916987b-56c2-442d-af86-89a47520b6db</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -647,14 +647,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-28 03:48:54</sys_created_on>
         <sys_id>d1c35c9fdb72d410b7a7e5bd0b961993</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-20 06:27:48</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -763,10 +763,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-28 03:37:14</sys_created_on>
         <sys_id>5e11145fdb72d410b7a7e5bd0b9619ae</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 14:48:02</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:38:05</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5e11145fdb72d410b7a7e5bd0b9619ae"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1000,11 +1000,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-28 03:37:15</sys_created_on>
         <sys_id>a611145fdb72d410b7a7e5bd0b9619c1</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 05:47:59</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:38:05</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value>{"type":"ADV_NV","value":[{"name":"compartmentId","value":"{{step[17646992-32f4-40f2-bc61-d11723a74847].compartment_id}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+        <value>{"type":"ADV_NV","value":[{"name":"compartmentId","value":"{{step[17646992-32f4-40f2-bc61-d11723a74847].compartmentid}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>resource_path</field>
@@ -1128,10 +1128,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-28 03:37:14</sys_created_on>
         <sys_id>d211145fdb72d410b7a7e5bd0b96198d</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 05:47:59</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:41:36</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d211145fdb72d410b7a7e5bd0b96198d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1142,16 +1142,21 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-28 03:37:14</sys_created_on>
         <sys_id>5211145fdb72d410b7a7e5bd0b9619ac</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 05:47:59</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:41:36</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 // ... code ...
   try{
   var vcnUtil = new OracleVirtualCloudNetworkUtils();
   vcnUtil.validateInputVariables(inputs, outputs);
-  vcnUtil.validateMandatoryVariables(inputs,["compartmentId"]);
-  outputs.compartment_id = inputs.compartmentId;
+  vcnUtil.validateMandatoryVariables(inputs,["tenancyId"]);
+   if(inputs.tenancyId &amp;&amp; inputs.compartmentId){
+		outputs.compartmentid = inputs.compartmentId;
+    }
+    else if(inputs.tenancyId){
+    	outputs.compartmentid = inputs.tenancyId;
+    }
     
   }
   catch(ex){
@@ -1310,7 +1315,100 @@
         <table>var__m_sys_hub_step_ext_input_d211145fdb72d410b7a7e5bd0b96198d</table>
         <value>{{action.sort_order}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=d211145fdb72d410b7a7e5bd0b96198d^sys_idNOT INf4c35c9fdb72d410b7a7e5bd0b96192a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>tenancyId</field>
+        <id>d211145fdb72d410b7a7e5bd0b96198d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 05:22:36</sys_created_on>
+        <sys_id>8ea87ffcdb04a05020c17a2faa961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 05:22:36</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_d211145fdb72d410b7a7e5bd0b96198d</table>
+        <value>{{action.tenancyid}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=d211145fdb72d410b7a7e5bd0b96198d^sys_idNOT IN46a87ffcdb04a05020c17a2faa96192c,f4c35c9fdb72d410b7a7e5bd0b96192a"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tenancyId</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pre Processing">d211145fdb72d410b7a7e5bd0b96198d</model>
+        <model_id>d211145fdb72d410b7a7e5bd0b96198d</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_d211145fdb72d410b7a7e5bd0b96198d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 05:22:35</sys_created_on>
+        <sys_id>46a87ffcdb04a05020c17a2faa96192c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 05:22:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1392,94 +1490,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=d211145fdb72d410b7a7e5bd0b96198d^sys_idNOT IN23a1ab39db6f141020c17a2faa961946"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=d211145fdb72d410b7a7e5bd0b96198d^sys_idNOT INd12ce1e2dbc4201020c17a2faa96194d"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
         <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fc8761f9-d04b-4dd9-bbf1-e1e4c314a0cb</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>compartment_id</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Compartment Id</label>
-        <mandatory>true</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Pre Processing">d211145fdb72d410b7a7e5bd0b96198d</model>
-        <model_id>d211145fdb72d410b7a7e5bd0b96198d</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_output_d211145fdb72d410b7a7e5bd0b96198d</name>
-        <next_element/>
-        <order>1</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-09-30 09:44:45</sys_created_on>
-        <sys_id>23a1ab39db6f141020c17a2faa961946</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-30 09:44:45</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=1611145fdb72d410b7a7e5bd0b961982^sys_idNOT IN70c3989fdb72d410b7a7e5bd0b9619c0"/>
-    <sys_hub_action_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=015f908a-8598-47ff-b9e1-60868cef7e24</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1511,7 +1527,89 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Compartment ID</label>
+        <label>Compartment Id</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pre Processing">d211145fdb72d410b7a7e5bd0b96198d</model>
+        <model_id>d211145fdb72d410b7a7e5bd0b96198d</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_d211145fdb72d410b7a7e5bd0b96198d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+        <sys_id>d12ce1e2dbc4201020c17a2faa96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 05:38:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=1611145fdb72d410b7a7e5bd0b961982^sys_idNOT IN35a83ffcdb04a05020c17a2faa9619fa,f5a87ffcdb04a05020c17a2faa961910"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0dd6ebb8-2787-49ae-a0b1-74529f96abdb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tenancyid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Tenancy ID</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Look Up Security Lists">1611145fdb72d410b7a7e5bd0b961982</model>
@@ -1535,16 +1633,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-08-28 03:48:52</sys_created_on>
-        <sys_id>70c3989fdb72d410b7a7e5bd0b9619c0</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_created_on>2020-10-22 05:22:35</sys_created_on>
+        <sys_id>35a83ffcdb04a05020c17a2faa9619fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-30 09:44:43</sys_updated_on>
+        <sys_updated_on>2020-10-22 05:22:35</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1556,6 +1654,114 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>dynamic=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=015f908a-8598-47ff-b9e1-60868cef7e24</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table>ocid1.tenancy.oc1..aaaaaaaatk6fnxw324trjilvekrte2le4xac5paw3f26spozkgnat435tpwq</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>compartmentid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Compartment ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look Up Security Lists">1611145fdb72d410b7a7e5bd0b961982</model>
+        <model_id>1611145fdb72d410b7a7e5bd0b961982</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 05:22:35</sys_created_on>
+        <sys_id>f5a87ffcdb04a05020c17a2faa961910</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 05:38:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f5a87ffcdb04a05020c17a2faa961910^sys_idNOT IN75a87ffcdb04a05020c17a2faa961918"/>
+    <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
+        <action_input display_value="">f5a87ffcdb04a05020c17a2faa961910</action_input>
+        <action_inputs/>
+        <action_type display_value="Look up Compartments">5d1c61eedb0b1c105be372143996195e</action_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 05:22:35</sys_created_on>
+        <sys_id>75a87ffcdb04a05020c17a2faa961918</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
+    </sys_hub_action_input_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=75a87ffcdb04a05020c17a2faa961918"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>75a87ffcdb04a05020c17a2faa961918</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 05:22:35</sys_created_on>
+        <sys_id>8ea87ffcdb04a05020c17a2faa961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 05:22:35</sys_updated_on>
+        <value>{{action.tenancyid}}</value>
+        <variable display_value="">251c61eedb0b1c105be3721439961963</variable>
+    </sys_variable_value>
     <sys_hub_action_output action="delete_multiple" query="model=1611145fdb72d410b7a7e5bd0b961982^sys_idNOT IN25c35c9fdb72d410b7a7e5bd0b9619eb,29c35c9fdb72d410b7a7e5bd0b9619fe,42422b79db6f141020c17a2faa9619ac,faf49311dbf7d81020c17a2faa96192c"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1810,7 +2016,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=document,child_name=document,child_type=object,child_type_label=Object,child_uiUniqueId=132158d0-58b1-404b-8b24-e03fad7eb096,co_type_name=FDcbc8d391a1f7d810e0197b336d9ad1e3,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,sourceId=8df71d19-e2c1-4c63-a578-e237eefc8960,sourceType=step,sourceUiUniqueId=c916987b-56c2-442d-af86-89a47520b6db,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b7425c8c-7797-449d-87fa-2a525fa64571</attributes>
+        <attributes>child_label=document,child_name=document,child_type=object,child_type_label=Object,child_uiUniqueId=aa48a231-63f6-4789-ad0b-dc8358615829,co_type_name=FDcbc8d391a1f7d810e0197b336d9ad1e3,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,sourceId=8df71d19-e2c1-4c63-a578-e237eefc8960,sourceType=step,sourceUiUniqueId=c916987b-56c2-442d-af86-89a47520b6db,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b7425c8c-7797-449d-87fa-2a525fa64571</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1870,14 +2076,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-11 05:48:00</sys_created_on>
         <sys_id>faf49311dbf7d81020c17a2faa96192c</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-20 06:27:49</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2353,7 +2559,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=document,child_name=document,child_type=object,child_type_label=Object,child_uiUniqueId=4fe9557c-8c27-4f32-a0ac-26d64360b8ba,co_type_name=FDf6f49311b2f7d8103578a333d0b3ee10,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=c916987b-56c2-442d-af86-89a47520b6db</attributes>
+        <attributes>child_label=document,child_name=document,child_type=object,child_type_label=Object,child_uiUniqueId=d7231fd6-20e2-4472-aa35-c9ff49b41c1c,co_type_name=FDf6f49311b2f7d8103578a333d0b3ee10,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=c916987b-56c2-442d-af86-89a47520b6db</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2411,14 +2617,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-28 03:48:54</sys_created_on>
         <sys_id>d1c35c9fdb72d410b7a7e5bd0b961993</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-20 06:27:48</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2527,10 +2733,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-28 03:37:14</sys_created_on>
         <sys_id>5e11145fdb72d410b7a7e5bd0b9619ae</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 14:48:02</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:38:05</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5e11145fdb72d410b7a7e5bd0b9619ae"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2764,11 +2970,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-28 03:37:15</sys_created_on>
         <sys_id>a611145fdb72d410b7a7e5bd0b9619c1</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 05:47:59</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:38:05</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value>{"type":"ADV_NV","value":[{"name":"compartmentId","value":"{{step[17646992-32f4-40f2-bc61-d11723a74847].compartment_id}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+        <value>{"type":"ADV_NV","value":[{"name":"compartmentId","value":"{{step[17646992-32f4-40f2-bc61-d11723a74847].compartmentid}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>resource_path</field>
@@ -2892,10 +3098,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-28 03:37:14</sys_created_on>
         <sys_id>d211145fdb72d410b7a7e5bd0b96198d</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 05:47:59</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:41:36</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d211145fdb72d410b7a7e5bd0b96198d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2906,16 +3112,21 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-28 03:37:14</sys_created_on>
         <sys_id>5211145fdb72d410b7a7e5bd0b9619ac</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 05:47:59</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:41:36</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 // ... code ...
   try{
   var vcnUtil = new OracleVirtualCloudNetworkUtils();
   vcnUtil.validateInputVariables(inputs, outputs);
-  vcnUtil.validateMandatoryVariables(inputs,["compartmentId"]);
-  outputs.compartment_id = inputs.compartmentId;
+  vcnUtil.validateMandatoryVariables(inputs,["tenancyId"]);
+   if(inputs.tenancyId &amp;&amp; inputs.compartmentId){
+		outputs.compartmentid = inputs.compartmentId;
+    }
+    else if(inputs.tenancyId){
+    	outputs.compartmentid = inputs.tenancyId;
+    }
     
   }
   catch(ex){
@@ -3074,7 +3285,100 @@
         <table>var__m_sys_hub_step_ext_input_d211145fdb72d410b7a7e5bd0b96198d</table>
         <value>{{action.sort_order}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=d211145fdb72d410b7a7e5bd0b96198d^sys_idNOT INf4c35c9fdb72d410b7a7e5bd0b96192a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>tenancyId</field>
+        <id>d211145fdb72d410b7a7e5bd0b96198d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 05:22:36</sys_created_on>
+        <sys_id>8ea87ffcdb04a05020c17a2faa961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 05:22:36</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_d211145fdb72d410b7a7e5bd0b96198d</table>
+        <value>{{action.tenancyid}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=d211145fdb72d410b7a7e5bd0b96198d^sys_idNOT IN46a87ffcdb04a05020c17a2faa96192c,f4c35c9fdb72d410b7a7e5bd0b96192a"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tenancyId</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pre Processing">d211145fdb72d410b7a7e5bd0b96198d</model>
+        <model_id>d211145fdb72d410b7a7e5bd0b96198d</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_d211145fdb72d410b7a7e5bd0b96198d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 05:22:35</sys_created_on>
+        <sys_id>46a87ffcdb04a05020c17a2faa96192c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 05:22:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -3156,7 +3460,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=d211145fdb72d410b7a7e5bd0b96198d^sys_idNOT IN23a1ab39db6f141020c17a2faa961946"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=d211145fdb72d410b7a7e5bd0b96198d^sys_idNOT INd12ce1e2dbc4201020c17a2faa96194d"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -3185,7 +3489,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>compartment_id</element>
+        <element>compartmentid</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -3217,8 +3521,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-09-30 09:44:45</sys_created_on>
-        <sys_id>23a1ab39db6f141020c17a2faa961946</sys_id>
+        <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+        <sys_id>d12ce1e2dbc4201020c17a2faa96194d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -3226,7 +3530,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-30 09:44:45</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:38:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3238,7 +3542,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982^sys_idNOT IN70c3989fdb72d410b7a7e5bd0b9619c5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982^sys_idNOT IN31a87ffcdb04a05020c17a2faa961917,35a83ffcdb04a05020c17a2faa9619ff"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>compartmentid</element>
         <help/>
@@ -3249,19 +3553,387 @@
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-08-28 03:48:52</sys_created_on>
-        <sys_id>70c3989fdb72d410b7a7e5bd0b9619c5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2020-10-22 05:22:35</sys_created_on>
+        <sys_id>31a87ffcdb04a05020c17a2faa961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-30 09:44:44</sys_updated_on>
+        <sys_updated_on>2020-10-22 05:22:35</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>tenancyid</element>
+        <help/>
+        <hint/>
+        <label>Tenancy ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 05:22:35</sys_created_on>
+        <sys_id>35a83ffcdb04a05020c17a2faa9619ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 05:22:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982^sys_idNOT IN7da87ffcdb04a05020c17a2faa961913,8d2ce1e2dbc4201020c17a2faa961922,452ce1e2dbc4201020c17a2faa961924,052ce1e2dbc4201020c17a2faa961925,c12ce1e2dbc4201020c17a2faa961926,812ce1e2dbc4201020c17a2faa961927,412ce1e2dbc4201020c17a2faa961928,012ce1e2dbc4201020c17a2faa961929,cd2ce1e2dbc4201020c17a2faa961929,8d2ce1e2dbc4201020c17a2faa96192a,5d2ce1e2dbc4201020c17a2faa96192b,1d2ce1e2dbc4201020c17a2faa96192c,d92ce1e2dbc4201020c17a2faa96192d,512ce1e2dbc4201020c17a2faa96193b,112ce1e2dbc4201020c17a2faa96193c,dd2ce1e2dbc4201020c17a2faa96193c,9d2ce1e2dbc4201020c17a2faa96193d,5d2ce1e2dbc4201020c17a2faa96193e"/>
+    <sys_choice field="compartmentid" table="var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-22 05:22:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7da87ffcdb04a05020c17a2faa961913</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:44</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>childCompart</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8d2ce1e2dbc4201020c17a2faa961922</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:44</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaamzvswdu4fhz7wq7hpbarwcfnnbhxs7czf73ta3wuvdx5ow6varaq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DemoCompart</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>452ce1e2dbc4201020c17a2faa961924</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:44</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaatofwymyfle3yvscz6hppsxeixkzaajbbh23vrmac7tiq6bgnfjxa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>firstcchild</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>052ce1e2dbc4201020c17a2faa961925</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:44</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaapqe3tgbh7squq7tsiu6qnhqqjaxblxwuewgmrhs3pm3ogeox77fq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>firstChild2</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c12ce1e2dbc4201020c17a2faa961926</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:44</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaqnwgtlvd7eryorvsdv5adcboz7lpnjal6grsmtdy3urq3nhqvqsa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>firstChild3</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>812ce1e2dbc4201020c17a2faa961927</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaespz3pd6niecpfb66cffamglsajmb4hbqyrc5wczp7e5awva4vpq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ManagedCompartmentForPaaS</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>6</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>412ce1e2dbc4201020c17a2faa961928</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaamp7hb6zt23i6gmubnwh5unv4d3dubzc5qmvulwru2mfv2yaowtka</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OEBSCompartment</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>7</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>012ce1e2dbc4201020c17a2faa961929</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaa4nkls3xk62jkgrejhyicih3lxvvwn4mxkk2ciowz5pe6fnx35w4a</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OraclePeoplesoft</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>8</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cd2ce1e2dbc4201020c17a2faa961929</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaeyed3awlhalpojmsy654xd3aorpgik6jbnexffanxgzthhrsrhgq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Test</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>9</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8d2ce1e2dbc4201020c17a2faa96192a</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaayav6ugvkkobbdodd4pafvuuwwjpt2dn2tf65vowzpk6nzmtmuhwa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Test</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>10</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5d2ce1e2dbc4201020c17a2faa96192b</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaqg2wwxirhs6in2sxspfpuy2d7i3q7h7bwikcwm5fnasyng2cksya</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>test1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>11</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1d2ce1e2dbc4201020c17a2faa96192c</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaghamclblapafyyb73s3lcxph7frdi2fb3mv42k3axhoy6l6jxala</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TestDemo</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>12</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d92ce1e2dbc4201020c17a2faa96192d</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaxyigcsel4zzdivith54e4zdy2elpxad22ju2asukhi67kio2av3q</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>testvcncompartment.l1yRJWfH</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>13</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>512ce1e2dbc4201020c17a2faa96193b</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaalrzyse7tvxht6rmb2ammrnpkcvq3gc6obqt7d3x34fqttyqk3aja</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TYest</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>14</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>112ce1e2dbc4201020c17a2faa96193c</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaq6qter23zdyb6jxbj6l2opsg4log5ccabg5xi5pxdnzk3qbdqr7a</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>updatedcompartmentikkwk</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>15</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dd2ce1e2dbc4201020c17a2faa96193c</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaywibrz34p5aqbbhqakni5t6ijdqqko2oeeaiqq5x5mceri4z2xfq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>updateFirst</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>16</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9d2ce1e2dbc4201020c17a2faa96193d</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaannt3vcuagzduizhriulgotium2g32564pcx4i4wcuekdmzgpvzna</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VCNSpokeTest</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_1611145fdb72d410b7a7e5bd0b961982</name>
+            <sequence>17</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:38:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5d2ce1e2dbc4201020c17a2faa96193e</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:41:45</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaayjki42ewm2jqirhac6yb2m7t4h7ryneyphqintqv2djxcko6sela</value>
+        </sys_choice>
+    </sys_choice>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_1611145fdb72d410b7a7e5bd0b961982^sys_idNOT IN36f49311dbf7d81020c17a2faa961931,46422b79db6f141020c17a2faa9619b0,61c39c9fdb72d410b7a7e5bd0b961903,a1c35c9fdb72d410b7a7e5bd0b9619fd"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>securitylistdetailed</element>
@@ -3359,17 +4031,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Look Up Security Lists">1611145fdb72d410b7a7e5bd0b961982</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"303f8bb4db4b9810b7a7e5bd0b9619b3","name":"plan"}}</plan>
-        <snapshot>6a64f158db00605020c17a2faa9619c8</snapshot>
+        <snapshot>4c0de126dbc4201020c17a2faa96193f</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:18:41</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>303f8bb4db4b9810b7a7e5bd0b9619b3</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-20 06:27:59</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:41:56</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -3380,9 +4052,9 @@
         <category display_value="Security List Management">9938d72edbfe5410b7a7e5bd0b96190a</category>
         <copied_from/>
         <copied_from_name/>
-        <description>&lt;p&gt;Lists the security lists in the specified VCN and compartment. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Output&lt;/b&gt; - Lists the security lists in the specified VCN and compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Securitylist Detailed List&lt;/b&gt; - Detailed list of the security lists in the specified VCN and compartment.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
+        <description>&lt;p&gt;Lists the security lists in the specified VCN and compartment. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Tenancy ID&lt;/b&gt; -OCID of the tenanacy.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Output&lt;/b&gt; - Lists the security lists in the specified VCN and compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Securitylist Detailed List&lt;/b&gt; - Detailed list of the security lists in the specified VCN and compartment.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <internal_name>lookup_security_list</internal_name>
-        <label_cache>[{"name":"{{action.security_list_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{action.compartmentid}}","label":"action➛Compartment ID","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Network Id","type":"action","ref":""},{"name":"{{action.networkid}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.limit}}","label":"action➛Limit","type":"action","ref":""},{"name":"{{action.page}}","label":"action➛Page","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.sort_by}}","label":"action➛Sort By","type":"action","ref":""},{"name":"{{action.sort_order}}","label":"action➛Sort Order","type":"action","ref":""},{"name":"{{action.lifecycle_state}}","label":"action➛Lifecycle State","type":"action","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].securitylistid}}","label":"step➛Pre Processing➛compartmentId","type":"step","ref":""},{"name":"{{step[f4b623a6-df22-40f7-b8da-99956b0d3750].status_code}}","label":"step➛Look Up Security List➛Status Code","type":"step","ref":""},{"name":"{{step[f4b623a6-df22-40f7-b8da-99956b0d3750].response_body}}","label":"step➛Look Up Security List➛Response Body","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].compartmentid}}","label":"step➛Pre Processing➛compartmentid","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].displayname}}","label":"step➛Pre Processing➛displayname","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].id}}","label":"step➛Pre Processing➛id","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].lifecyclestate}}","label":"step➛Pre Processing➛lifecyclestate","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].timecreated}}","label":"step➛Pre Processing➛timecreated","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].vcnid}}","label":"step➛Pre Processing➛vcnid","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].ingresssecurityrules}}","label":"step➛Pre Processing➛ingressSecurityRules","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].egresssecurityrules}}","label":"step➛Pre Processing➛egressSecurityRules","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].status}}","label":"step➛Pre Processing➛status","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].errormessage}}","label":"step➛Pre Processing➛errormessage","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].ingresssecurityrules.ingressSecurityRule}}","label":"step➛Pre Processing➛ingressSecurityRules➛ingressSecurityRule","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].egresssecurityrules.egressSecurityRule}}","label":"step➛Pre Processing➛egressSecurityRules➛egressSecurityRule","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].compartmentid}}","label":"step➛Pre Processing➛CompartmentId","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].document}}","label":"step➛Pre Processing➛document","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].documents}}","label":"step➛Pre Processing➛documents","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].networkid}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].limit}}","label":"step➛Pre Processing➛Limit","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].page}}","label":"step➛Pre Processing➛page","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].display_name}}","label":"step➛Pre Processing➛Display Name","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].sort_by}}","label":"step➛Pre Processing➛Sort By","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].lifecycle_state}}","label":"step➛Pre Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].compartment_id}}","label":"step➛Pre Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].network_id}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].documents.document}}","label":"step➛Pre Processing➛documents➛document","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].choicedocument}}","label":"step➛Pre Processing➛choicedocument","type":"step","ref":""}]</label_cache>
+        <label_cache>[{"name":"{{action.security_list_id}}","label":"action➛Compartment Id","type":"action","ref":""},{"name":"{{action.compartmentid}}","label":"action➛Compartment ID","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Network Id","type":"action","ref":""},{"name":"{{action.networkid}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.limit}}","label":"action➛Limit","type":"action","ref":""},{"name":"{{action.page}}","label":"action➛Page","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.sort_by}}","label":"action➛Sort By","type":"action","ref":""},{"name":"{{action.sort_order}}","label":"action➛Sort Order","type":"action","ref":""},{"name":"{{action.lifecycle_state}}","label":"action➛Lifecycle State","type":"action","ref":""},{"name":"{{action.tenancy_id}}","label":"action➛Tenancy ID","type":"action","ref":""},{"name":"{{action.tenancyid}}","label":"action➛Tenancy ID","type":"action","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].securitylistid}}","label":"step➛Pre Processing➛compartmentId","type":"step","ref":""},{"name":"{{step[f4b623a6-df22-40f7-b8da-99956b0d3750].status_code}}","label":"step➛Look Up Security List➛Status Code","type":"step","ref":""},{"name":"{{step[f4b623a6-df22-40f7-b8da-99956b0d3750].response_body}}","label":"step➛Look Up Security List➛Response Body","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].compartmentid}}","label":"step➛Pre Processing➛compartmentid","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].displayname}}","label":"step➛Pre Processing➛displayname","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].id}}","label":"step➛Pre Processing➛id","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].lifecyclestate}}","label":"step➛Pre Processing➛lifecyclestate","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].timecreated}}","label":"step➛Pre Processing➛timecreated","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].vcnid}}","label":"step➛Pre Processing➛vcnid","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].ingresssecurityrules}}","label":"step➛Pre Processing➛ingressSecurityRules","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].egresssecurityrules}}","label":"step➛Pre Processing➛egressSecurityRules","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].status}}","label":"step➛Pre Processing➛status","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].errormessage}}","label":"step➛Pre Processing➛errormessage","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].ingresssecurityrules.ingressSecurityRule}}","label":"step➛Pre Processing➛ingressSecurityRules➛ingressSecurityRule","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].egresssecurityrules.egressSecurityRule}}","label":"step➛Pre Processing➛egressSecurityRules➛egressSecurityRule","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].compartmentid}}","label":"step➛Pre Processing➛Compartment Id","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].document}}","label":"step➛Pre Processing➛document","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].documents}}","label":"step➛Pre Processing➛documents","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].networkid}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].limit}}","label":"step➛Pre Processing➛Limit","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].page}}","label":"step➛Pre Processing➛page","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].display_name}}","label":"step➛Pre Processing➛Display Name","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].sort_by}}","label":"step➛Pre Processing➛Sort By","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].lifecycle_state}}","label":"step➛Pre Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[17646992-32f4-40f2-bc61-d11723a74847].network_id}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].documents.document}}","label":"step➛Pre Processing➛documents➛document","type":"step","ref":""},{"name":"{{step[8df71d19-e2c1-4c63-a578-e237eefc8960].choicedocument}}","label":"step➛Pre Processing➛choicedocument","type":"step","ref":""}]</label_cache>
         <master>true</master>
         <name>Look Up Security Lists</name>
         <natlang/>
@@ -3395,7 +4067,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>332f4bb4db4b9810b7a7e5bd0b961981</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3403,7 +4075,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-20 06:27:54</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -3853,7 +4525,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=document,child_name=document,child_type=object,child_type_label=Object,child_uiUniqueId=4fe9557c-8c27-4f32-a0ac-26d64360b8ba,co_type_name=FD93643558610060507b511230ab41589b,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=c916987b-56c2-442d-af86-89a47520b6db</attributes>
+        <attributes>child_label=document,child_name=document,child_type=object,child_type_label=Object,child_uiUniqueId=d7231fd6-20e2-4472-aa35-c9ff49b41c1c,co_type_name=FD890d25262dc420100ebfefb56ef80676,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=c916987b-56c2-442d-af86-89a47520b6db</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -3911,14 +4583,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:18:38</sys_created_on>
         <sys_id>4c3f4bb4db4b9810b7a7e5bd0b9619de</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-20 06:27:55</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:41:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4108,10 +4780,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:18:37</sys_created_on>
         <sys_id>7b2f4bb4db4b9810b7a7e5bd0b961989</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:05:28</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:41:52</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7b2f4bb4db4b9810b7a7e5bd0b961989"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4136,16 +4808,21 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:18:37</sys_created_on>
         <sys_id>f32f4bb4db4b9810b7a7e5bd0b96199c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:05:28</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:41:52</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 // ... code ...
   try{
   var vcnUtil = new OracleVirtualCloudNetworkUtils();
   vcnUtil.validateInputVariables(inputs, outputs);
-  vcnUtil.validateMandatoryVariables(inputs,["compartmentId"]);
-  outputs.compartment_id = inputs.compartmentId;
+  vcnUtil.validateMandatoryVariables(inputs,["tenancyId"]);
+   if(inputs.tenancyId &amp;&amp; inputs.compartmentId){
+		outputs.compartmentid = inputs.compartmentId;
+    }
+    else if(inputs.tenancyId){
+    	outputs.compartmentid = inputs.tenancyId;
+    }
     
   }
   catch(ex){
@@ -4278,7 +4955,100 @@
         <table>var__m_sys_hub_step_ext_input_7b2f4bb4db4b9810b7a7e5bd0b961989</table>
         <value>{{action.sort_order}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=7b2f4bb4db4b9810b7a7e5bd0b961989^sys_idNOT INb72f4bb4db4b9810b7a7e5bd0b96198c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>tenancyId</field>
+        <id>7b2f4bb4db4b9810b7a7e5bd0b961989</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 05:22:52</sys_created_on>
+        <sys_id>3db83330db44a05020c17a2faa961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 05:22:52</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_7b2f4bb4db4b9810b7a7e5bd0b961989</table>
+        <value>{{action.tenancyid}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=7b2f4bb4db4b9810b7a7e5bd0b961989^sys_idNOT IN7db83330db44a05020c17a2faa96195c,b72f4bb4db4b9810b7a7e5bd0b96198c"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tenancyId</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>tenancyId</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pre Processing">7b2f4bb4db4b9810b7a7e5bd0b961989</model>
+        <model_id>7b2f4bb4db4b9810b7a7e5bd0b961989</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_7b2f4bb4db4b9810b7a7e5bd0b961989</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 05:22:51</sys_created_on>
+        <sys_id>7db83330db44a05020c17a2faa96195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 05:22:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4360,7 +5130,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=7b2f4bb4db4b9810b7a7e5bd0b961989^sys_idNOT IN38c1af39db6f141020c17a2faa9619c2"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=7b2f4bb4db4b9810b7a7e5bd0b961989^sys_idNOT INb37ca9e2dbc4201020c17a2faa961909"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4389,7 +5159,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>compartment_id</element>
+        <element>compartmentid</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -4421,8 +5191,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-09-30 09:45:06</sys_created_on>
-        <sys_id>38c1af39db6f141020c17a2faa9619c2</sys_id>
+        <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+        <sys_id>b37ca9e2dbc4201020c17a2faa961909</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -4430,7 +5200,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-30 09:45:06</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4458,10 +5228,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:18:37</sys_created_on>
         <sys_id>ff2f4bb4db4b9810b7a7e5bd0b96199e</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 14:48:15</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:39:37</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ff2f4bb4db4b9810b7a7e5bd0b96199e"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4643,11 +5413,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:18:38</sys_created_on>
         <sys_id>7b2f4bb4db4b9810b7a7e5bd0b9619b1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:05:29</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:39:37</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value>{"type":"ADV_NV","value":[{"name":"compartmentId","value":"{{step[17646992-32f4-40f2-bc61-d11723a74847].compartment_id}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+        <value>{"type":"ADV_NV","value":[{"name":"compartmentId","value":"{{step[17646992-32f4-40f2-bc61-d11723a74847].compartmentid}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>resource_path</field>
@@ -4755,12 +5525,120 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=332f4bb4db4b9810b7a7e5bd0b961981^sys_idNOT INf32f4bb4db4b9810b7a7e5bd0b961982"/>
+    <sys_hub_action_input action="delete_multiple" query="model=332f4bb4db4b9810b7a7e5bd0b961981^sys_idNOT INbdb83330db44a05020c17a2faa96194c,f1b83330db44a05020c17a2faa961930"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=015f908a-8598-47ff-b9e1-60868cef7e24</attributes>
+        <attributes>dynamic=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=015f908a-8598-47ff-b9e1-60868cef7e24</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table>ocid1.tenancy.oc1..aaaaaaaatk6fnxw324trjilvekrte2le4xac5paw3f26spozkgnat435tpwq</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>compartmentid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Compartment ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look Up Security Lists">332f4bb4db4b9810b7a7e5bd0b961981</model>
+        <model_id>332f4bb4db4b9810b7a7e5bd0b961981</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 05:22:51</sys_created_on>
+        <sys_id>bdb83330db44a05020c17a2faa96194c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bdb83330db44a05020c17a2faa96194c^sys_idNOT INbdb83330db44a05020c17a2faa961954"/>
+    <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
+        <action_input display_value="">bdb83330db44a05020c17a2faa96194c</action_input>
+        <action_inputs/>
+        <action_type display_value="Look up Compartments">5d1c61eedb0b1c105be372143996195e</action_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 05:22:51</sys_created_on>
+        <sys_id>bdb83330db44a05020c17a2faa961954</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 05:41:52</sys_updated_on>
+    </sys_hub_action_input_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bdb83330db44a05020c17a2faa961954"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>bdb83330db44a05020c17a2faa961954</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 05:22:51</sys_created_on>
+        <sys_id>f5b83330db44a05020c17a2faa961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 05:22:51</sys_updated_on>
+        <value>{{action.tenancyid}}</value>
+        <variable display_value="">251c61eedb0b1c105be3721439961963</variable>
+    </sys_variable_value>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0dd6ebb8-2787-49ae-a0b1-74529f96abdb</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -4784,7 +5662,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>compartmentid</element>
+        <element>tenancyid</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -4792,7 +5670,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Compartment ID</label>
+        <label>Tenancy ID</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Look Up Security Lists">332f4bb4db4b9810b7a7e5bd0b961981</model>
@@ -4816,16 +5694,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-09-02 09:18:37</sys_created_on>
-        <sys_id>f32f4bb4db4b9810b7a7e5bd0b961982</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2020-10-22 05:22:51</sys_created_on>
+        <sys_id>f1b83330db44a05020c17a2faa961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-30 09:45:05</sys_updated_on>
+        <sys_updated_on>2020-10-22 05:22:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5091,7 +5969,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=document,child_name=document,child_type=object,child_type_label=Object,child_uiUniqueId=132158d0-58b1-404b-8b24-e03fad7eb096,co_type_name=FDaf643558720060509ad62fb6cd4d30ac,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,sourceId=8df71d19-e2c1-4c63-a578-e237eefc8960,sourceType=step,sourceUiUniqueId=c916987b-56c2-442d-af86-89a47520b6db,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b7425c8c-7797-449d-87fa-2a525fa64571</attributes>
+        <attributes>child_label=document,child_name=document,child_type=object,child_type_label=Object,child_uiUniqueId=aa48a231-63f6-4789-ad0b-dc8358615829,co_type_name=FD050d2526c1c42010804aae6c6dc0bc88,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,sourceId=8df71d19-e2c1-4c63-a578-e237eefc8960,sourceType=step,sourceUiUniqueId=c916987b-56c2-442d-af86-89a47520b6db,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b7425c8c-7797-449d-87fa-2a525fa64571</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5151,14 +6029,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-11 06:05:29</sys_created_on>
         <sys_id>4ff85b91dbf7d81020c17a2faa9619a2</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-20 06:27:56</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:41:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5553,7 +6431,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=document,child_name=document,child_type=object,child_type_label=Object,child_uiUniqueId=4fe9557c-8c27-4f32-a0ac-26d64360b8ba,co_type_name=FD93643558610060507b511230ab41589b,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=c916987b-56c2-442d-af86-89a47520b6db</attributes>
+        <attributes>child_label=document,child_name=document,child_type=object,child_type_label=Object,child_uiUniqueId=d7231fd6-20e2-4472-aa35-c9ff49b41c1c,co_type_name=FD890d25262dc420100ebfefb56ef80676,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=c916987b-56c2-442d-af86-89a47520b6db</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5611,14 +6489,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:18:38</sys_created_on>
         <sys_id>4c3f4bb4db4b9810b7a7e5bd0b9619de</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-20 06:27:55</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:41:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5808,10 +6686,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:18:37</sys_created_on>
         <sys_id>7b2f4bb4db4b9810b7a7e5bd0b961989</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:05:28</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:41:52</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7b2f4bb4db4b9810b7a7e5bd0b961989"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5836,16 +6714,21 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:18:37</sys_created_on>
         <sys_id>f32f4bb4db4b9810b7a7e5bd0b96199c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:05:28</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:41:52</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 // ... code ...
   try{
   var vcnUtil = new OracleVirtualCloudNetworkUtils();
   vcnUtil.validateInputVariables(inputs, outputs);
-  vcnUtil.validateMandatoryVariables(inputs,["compartmentId"]);
-  outputs.compartment_id = inputs.compartmentId;
+  vcnUtil.validateMandatoryVariables(inputs,["tenancyId"]);
+   if(inputs.tenancyId &amp;&amp; inputs.compartmentId){
+		outputs.compartmentid = inputs.compartmentId;
+    }
+    else if(inputs.tenancyId){
+    	outputs.compartmentid = inputs.tenancyId;
+    }
     
   }
   catch(ex){
@@ -5978,7 +6861,100 @@
         <table>var__m_sys_hub_step_ext_input_7b2f4bb4db4b9810b7a7e5bd0b961989</table>
         <value>{{action.sort_order}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=7b2f4bb4db4b9810b7a7e5bd0b961989^sys_idNOT INb72f4bb4db4b9810b7a7e5bd0b96198c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>tenancyId</field>
+        <id>7b2f4bb4db4b9810b7a7e5bd0b961989</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 05:22:52</sys_created_on>
+        <sys_id>3db83330db44a05020c17a2faa961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 05:22:52</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_7b2f4bb4db4b9810b7a7e5bd0b961989</table>
+        <value>{{action.tenancyid}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=7b2f4bb4db4b9810b7a7e5bd0b961989^sys_idNOT IN7db83330db44a05020c17a2faa96195c,b72f4bb4db4b9810b7a7e5bd0b96198c"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tenancyId</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>tenancyId</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pre Processing">7b2f4bb4db4b9810b7a7e5bd0b961989</model>
+        <model_id>7b2f4bb4db4b9810b7a7e5bd0b961989</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_7b2f4bb4db4b9810b7a7e5bd0b961989</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 05:22:51</sys_created_on>
+        <sys_id>7db83330db44a05020c17a2faa96195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 05:22:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -6060,7 +7036,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=7b2f4bb4db4b9810b7a7e5bd0b961989^sys_idNOT IN38c1af39db6f141020c17a2faa9619c2"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=7b2f4bb4db4b9810b7a7e5bd0b961989^sys_idNOT INb37ca9e2dbc4201020c17a2faa961909"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -6089,7 +7065,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>compartment_id</element>
+        <element>compartmentid</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -6121,8 +7097,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-09-30 09:45:06</sys_created_on>
-        <sys_id>38c1af39db6f141020c17a2faa9619c2</sys_id>
+        <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+        <sys_id>b37ca9e2dbc4201020c17a2faa961909</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -6130,7 +7106,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-30 09:45:06</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -6158,10 +7134,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:18:37</sys_created_on>
         <sys_id>ff2f4bb4db4b9810b7a7e5bd0b96199e</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 14:48:15</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:39:37</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ff2f4bb4db4b9810b7a7e5bd0b96199e"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -6343,11 +7319,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:18:38</sys_created_on>
         <sys_id>7b2f4bb4db4b9810b7a7e5bd0b9619b1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-11 06:05:29</sys_updated_on>
+        <sys_updated_on>2020-10-27 05:39:37</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value>{"type":"ADV_NV","value":[{"name":"compartmentId","value":"{{step[17646992-32f4-40f2-bc61-d11723a74847].compartment_id}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+        <value>{"type":"ADV_NV","value":[{"name":"compartmentId","value":"{{step[17646992-32f4-40f2-bc61-d11723a74847].compartmentid}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>resource_path</field>
@@ -6455,7 +7431,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981^sys_idNOT IN372f4bb4db4b9810b7a7e5bd0b961987"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981^sys_idNOT IN79b83330db44a05020c17a2faa961953,f1b83330db44a05020c17a2faa961935"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>compartmentid</element>
         <help/>
@@ -6466,19 +7442,387 @@
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-09-02 09:18:37</sys_created_on>
-        <sys_id>372f4bb4db4b9810b7a7e5bd0b961987</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2020-10-22 05:22:51</sys_created_on>
+        <sys_id>79b83330db44a05020c17a2faa961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-30 09:45:05</sys_updated_on>
+        <sys_updated_on>2020-10-22 05:22:51</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>tenancyid</element>
+        <help/>
+        <hint/>
+        <label>Tenancy ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 05:22:51</sys_created_on>
+        <sys_id>f1b83330db44a05020c17a2faa961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 05:22:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981^sys_idNOT IN35b83330db44a05020c17a2faa961950,737c69e2dbc4201020c17a2faa9619ea,3b7c69e2dbc4201020c17a2faa9619eb,f77c69e2dbc4201020c17a2faa9619ec,b77c69e2dbc4201020c17a2faa9619ed,777c69e2dbc4201020c17a2faa9619ee,377c69e2dbc4201020c17a2faa9619ef,f37c69e2dbc4201020c17a2faa9619f0,b37c69e2dbc4201020c17a2faa9619f1,737c69e2dbc4201020c17a2faa9619f2,337c69e2dbc4201020c17a2faa9619f3,ff7c69e2dbc4201020c17a2faa9619f3,bf7c69e2dbc4201020c17a2faa9619f4,7f7c69e2dbc4201020c17a2faa9619f5,3f7c69e2dbc4201020c17a2faa9619f6,fb7c69e2dbc4201020c17a2faa9619f7,bb7c69e2dbc4201020c17a2faa9619f8,7b7c69e2dbc4201020c17a2faa9619f9"/>
+    <sys_choice field="compartmentid" table="var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-22 05:22:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>35b83330db44a05020c17a2faa961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-22 05:22:51</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>childCompart</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>737c69e2dbc4201020c17a2faa9619ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaamzvswdu4fhz7wq7hpbarwcfnnbhxs7czf73ta3wuvdx5ow6varaq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DemoCompart</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3b7c69e2dbc4201020c17a2faa9619eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaatofwymyfle3yvscz6hppsxeixkzaajbbh23vrmac7tiq6bgnfjxa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>firstcchild</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f77c69e2dbc4201020c17a2faa9619ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaapqe3tgbh7squq7tsiu6qnhqqjaxblxwuewgmrhs3pm3ogeox77fq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>firstChild2</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b77c69e2dbc4201020c17a2faa9619ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaqnwgtlvd7eryorvsdv5adcboz7lpnjal6grsmtdy3urq3nhqvqsa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>firstChild3</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>777c69e2dbc4201020c17a2faa9619ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaespz3pd6niecpfb66cffamglsajmb4hbqyrc5wczp7e5awva4vpq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ManagedCompartmentForPaaS</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>6</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>377c69e2dbc4201020c17a2faa9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaamp7hb6zt23i6gmubnwh5unv4d3dubzc5qmvulwru2mfv2yaowtka</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OEBSCompartment</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>7</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f37c69e2dbc4201020c17a2faa9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaa4nkls3xk62jkgrejhyicih3lxvvwn4mxkk2ciowz5pe6fnx35w4a</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OraclePeoplesoft</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>8</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b37c69e2dbc4201020c17a2faa9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaeyed3awlhalpojmsy654xd3aorpgik6jbnexffanxgzthhrsrhgq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Test</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>9</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>737c69e2dbc4201020c17a2faa9619f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaayav6ugvkkobbdodd4pafvuuwwjpt2dn2tf65vowzpk6nzmtmuhwa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Test</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>10</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>337c69e2dbc4201020c17a2faa9619f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaqg2wwxirhs6in2sxspfpuy2d7i3q7h7bwikcwm5fnasyng2cksya</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>test1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>11</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ff7c69e2dbc4201020c17a2faa9619f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaghamclblapafyyb73s3lcxph7frdi2fb3mv42k3axhoy6l6jxala</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TestDemo</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>12</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bf7c69e2dbc4201020c17a2faa9619f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaxyigcsel4zzdivith54e4zdy2elpxad22ju2asukhi67kio2av3q</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>testvcncompartment.l1yRJWfH</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>13</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f7c69e2dbc4201020c17a2faa9619f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaalrzyse7tvxht6rmb2ammrnpkcvq3gc6obqt7d3x34fqttyqk3aja</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TYest</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>14</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3f7c69e2dbc4201020c17a2faa9619f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaq6qter23zdyb6jxbj6l2opsg4log5ccabg5xi5pxdnzk3qbdqr7a</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>updatedcompartmentikkwk</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>15</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fb7c69e2dbc4201020c17a2faa9619f7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaaywibrz34p5aqbbhqakni5t6ijdqqko2oeeaiqq5x5mceri4z2xfq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>updateFirst</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>16</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bb7c69e2dbc4201020c17a2faa9619f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaannt3vcuagzduizhriulgotium2g32564pcx4i4wcuekdmzgpvzna</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compartmentid</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VCNSpokeTest</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_332f4bb4db4b9810b7a7e5bd0b961981</name>
+            <sequence>17</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-27 05:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7b7c69e2dbc4201020c17a2faa9619f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-27 05:39:36</sys_updated_on>
+            <value>ocid1.compartment.oc1..aaaaaaaayjki42ewm2jqirhac6yb2m7t4h7ryneyphqintqv2djxcko6sela</value>
+        </sys_choice>
+    </sys_choice>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_332f4bb4db4b9810b7a7e5bd0b961981^sys_idNOT IN23522f79db6f141020c17a2faa961916,403f4bb4db4b9810b7a7e5bd0b9619f0,403f4bb4db4b9810b7a7e5bd0b9619f6,8ff85b91dbf7d81020c17a2faa9619a7"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>output</element>

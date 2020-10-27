@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD5a485d26f5842010ce3959eb6a69330d</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>4f6e5be4dbf2541020c17a2faa96190d</scope_name>
+        <serialized_content>{"FlowDesigner:FD5a485d26f5842010ce3959eb6a69330d":{"$COCollectionField":[{"routeRule":{"cidrBlock":"String","cidrBlock.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"CIDR Block\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"destination":"String","destination.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Destination\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"destinationType":"String","destinationType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Destination Type\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"SERVICE_CIDR_BLOCK\":\"{\\\"label\\\":\\\"SERVICE_CIDR_BLOCK\\\",\\\"value\\\":\\\"SERVICE_CIDR_BLOCK\\\",\\\"order\\\":2}\",\"CIDR_BLOCK\":\"{\\\"label\\\":\\\"CIDR_BLOCK\\\",\\\"value\\\":\\\"CIDR_BLOCK\\\",\\\"order\\\":1}\"}}"},"networkEntityId":"String","networkEntityId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Network Entity ID\",\"mandatory\":\"true\",\"order\":\"4\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"RouteRules\",\"mandatory\":\"false\",\"child_name\":\"routeRule\",\"uiUniqueId\":\"eebe2bcc-3064-4de1-a50e-cb18ece7307c\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD5a485d26f5842010ce3959eb6a69330d\",\"child_label\":\"RouteRule\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"6\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"0bc7f89a-b8f9-485a-9ee1-f7756d6bc4d2\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD5a485d26f5842010ce3959eb6a69330d.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"RouteRules\",\"mandatory\":\"false\",\"child_name\":\"routeRule\",\"uiUniqueId\":\"eebe2bcc-3064-4de1-a50e-cb18ece7307c\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD5a485d26f5842010ce3959eb6a69330d\",\"child_label\":\"RouteRule\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"6\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"0bc7f89a-b8f9-485a-9ee1-f7756d6bc4d2\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-27 04:11:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1e485d26db84201020c17a2faa96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD5a485d26f5842010ce3959eb6a69330d</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name>sys_complex_object_1e485d26db84201020c17a2faa96190d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 04:11:18</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>
