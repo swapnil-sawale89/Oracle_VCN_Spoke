@@ -13,7 +13,7 @@
         <ih_action>true</ih_action>
         <internal_name>create_subnet</internal_name>
         <label_cache>[{"name":"{{action.cidr_block}}","label":"action➛CIDR Block","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment ID","type":"action","ref":""},{"name":"{{action.network_id}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.availability_domain}}","label":"action➛Availability Domain","type":"action","ref":""},{"name":"{{action.dhcpoptionsid}}","label":"action➛dhcpOptionsId","type":"action","ref":""},{"name":"{{action.dhcp_options_id}}","label":"action➛DHCP Options ID","type":"action","ref":""},{"name":"{{action.displayname}}","label":"action➛DisplayName","type":"action","ref":""},{"name":"{{action.display_name}}","label":"action➛Display Name","type":"action","ref":""},{"name":"{{action.dns_label}}","label":"action➛DNS Label","type":"action","ref":""},{"name":"{{action.ipv6_cidr_block}}","label":"action➛IPV6 CIDR Block","type":"action","ref":""},{"name":"{{action.prohibit_publicip_on_vnic}}","label":"action➛Prohibit PublicIp On Vnic","type":"action","ref":""},{"name":"{{action.prohibit_public_ip_on_vnic}}","label":"action➛Prohibit Public Ip on VNIC","type":"action","ref":""},{"name":"{{action.routetable_id}}","label":"action➛RouteTable ID","type":"action","ref":""},{"name":"{{action.security_list_ids}}","label":"action➛Security List IDs","type":"action","ref":""},{"name":"{{action.freeform_tags}}","label":"action➛Freeform Tags","type":"action","ref":""},{"name":"{{action.defined_tags}}","label":"action➛Defined Tags","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags}}","label":"action➛Freeform Tags➛Tags","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags.Name}}","label":"action➛Freeform Tags➛Tags➛Name","type":"action","ref":""},{"name":"{{action.freeform_tags.Tags.Value}}","label":"action➛Freeform Tags➛Tags➛Value","type":"action","ref":""},{"name":"{{action.security_list_ids.Security_List_Id}}","label":"action➛Security List IDs➛Security List Id","type":"action","ref":""},{"name":"{{action.security_list_ids.Security_List_ID}}","label":"action➛Security List IDs➛Security List ID","type":"action","ref":""},{"name":"{{action.tenancy_id}}","label":"action➛Tenancy ID","type":"action","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[104f522f-79c5-47fb-8bbf-50059d776117].payload}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[88602dda-a9ad-4966-9921-346344880197].status_code}}","label":"step➛Create Subnet➛Status Code","type":"step","ref":""},{"name":"{{step[88602dda-a9ad-4966-9921-346344880197].response_body}}","label":"step➛Create Subnet➛Response Body","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].availabilitydomain}}","label":"step➛Post Processing➛availabilityDomain","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].cidrblock}}","label":"step➛Post Processing➛CIDR Block","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].compartmentid}}","label":"step➛Post Processing➛Compartment ID","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].dhcpoptionsid}}","label":"step➛Post Processing➛DHCP Options ID","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].displayname}}","label":"step➛Post Processing➛Display Name","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].id}}","label":"step➛Post Processing➛ID","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].lifecyclestate}}","label":"step➛Post Processing➛Lifecycle State","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].routetableid}}","label":"step➛Post Processing➛Route Table ID","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].securitylistids}}","label":"step➛Post Processing➛Security List IDs","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].timecreated}}","label":"step➛Post Processing➛Time Created","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].vcnid}}","label":"step➛Post Processing➛Network Id","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].virtualrouterip}}","label":"step➛Post Processing➛Virtual Router IP","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].virtualroutermac}}","label":"step➛Post Processing➛Virtual Router Mac","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].subnetdomainname}}","label":"step➛Post Processing➛subnetDomainName","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].ipv6publiccidrblock}}","label":"step➛Post Processing➛ipv6PublicCidrBlock","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].ipv6virtualrouterip}}","label":"step➛Post Processing➛ipv6VirtualRouterIp","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].ipv6cidrblock}}","label":"step➛Post Processing➛ipv6CidrBlock","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].prohibitpubliciponvnic}}","label":"step➛Post Processing➛Prohibit Public IP On Vnic","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].definedtags}}","label":"step➛Post Processing➛Defined Tags","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].dnslabel}}","label":"step➛Post Processing➛dnsLabel","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].freeformtags}}","label":"step➛Post Processing➛Freeform Tags","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].securitylistids.id6}}","label":"step➛Post Processing➛Security List IDs➛id","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].securitylistids.id}}","label":"step➛Post Processing➛Security List IDs➛Id","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].errormessage}}","label":"step➛Post Processing➛Error Meessage","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].response}}","label":"step➛Post Processing➛response","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].securitylistids.ID}}","label":"step➛Post Processing➛Security List IDs➛ID","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].network_id}}","label":"step➛Post Processing➛Network ID","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].networkid}}","label":"step➛Post Processing➛Network ID","type":"step","ref":""},{"name":"{{step[da5ef75f-ba59-4612-88c1-8242577302b8].securitylistids.Id}}","label":"step➛Post Processing➛Security List IDs➛ID","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>118232eedb48201020c17a2faa9619ae</latest_snapshot>
+        <latest_snapshot>905be77edbc0601020c17a2faa961965</latest_snapshot>
         <master_snapshot>4765077cdb0b9810b7a7e5bd0b9619b8</master_snapshot>
         <name>Create Subnet</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a9f19996dbb25410b7a7e5bd0b961931</sys_id>
-        <sys_mod_count>80</sys_mod_count>
+        <sys_mod_count>85</sys_mod_count>
         <sys_name>Create Subnet</sys_name>
         <sys_overrides/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_a9f19996dbb25410b7a7e5bd0b961931</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:45:42</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:32:18</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -2943,7 +2943,7 @@
         <hint/>
         <internal_type display_value="Choice">choice</internal_type>
         <label>Compartment ID</label>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Create Subnet">a9f19996dbb25410b7a7e5bd0b961931</model>
         <model_id>a9f19996dbb25410b7a7e5bd0b961931</model_id>
@@ -2968,14 +2968,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-22 12:13:45</sys_created_on>
         <sys_id>30c6158ddb08a05020c17a2faa96190e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-22 12:34:44</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:31:38</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2995,9 +2995,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-22 12:13:45</sys_created_on>
         <sys_id>78c6158ddb08a05020c17a2faa961916</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:45:26</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:32:03</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=78c6158ddb08a05020c17a2faa961916"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3184,9 +3184,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-13 16:38:55</sys_created_on>
         <sys_id>592dff42dbff1c1020c17a2faa9619ed</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:45:26</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:32:04</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=592dff42dbff1c1020c17a2faa9619ed"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3254,7 +3254,7 @@
         <hint/>
         <internal_type display_value="String">string</internal_type>
         <label>Tenancy ID</label>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Create Subnet">a9f19996dbb25410b7a7e5bd0b961931</model>
         <model_id>a9f19996dbb25410b7a7e5bd0b961931</model_id>
@@ -3279,14 +3279,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-22 12:13:44</sys_created_on>
         <sys_id>60c6d18ddb08a05020c17a2faa9619fd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-22 12:13:44</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:31:38</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3383,7 +3383,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=Security List ID,child_name=Security_List_ID,child_type=string,child_type_label=String,child_uiUniqueId=6aaceaad-8daa-42b9-9fc3-3617b8623016,co_type_name=FD7307ea6e787e54108a64321f873c81fb,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=c8d90742-43a1-48b2-9bf4-5e972a22f317</attributes>
+        <attributes>child_label=Security List ID,child_name=Security_List_ID,child_type=string,child_type_label=String,child_uiUniqueId=e4ca299d-fd32-4f3a-a365-fd5e19efd9a7,co_type_name=FD7307ea6e787e54108a64321f873c81fb,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=c8d90742-43a1-48b2-9bf4-5e972a22f317</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -3441,14 +3441,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 11:26:04</sys_created_on>
         <sys_id>b4af1616db765410b7a7e5bd0b961957</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:45:26</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:32:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3464,7 +3464,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=Tags,child_name=Tags,child_type=object,child_type_label=Object,child_uiUniqueId=11097a68-5b49-4287-b1fd-64c386130009,co_type_name=FDa0af52d235765410a8705936897707f9,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=e3368d60-bdc4-4b50-8d8b-d15c5614c5cf</attributes>
+        <attributes>child_label=Tags,child_name=Tags,child_type=object,child_type_label=Object,child_uiUniqueId=41492780-49fb-4777-8c6e-2edfb5b66994,co_type_name=FDa0af52d235765410a8705936897707f9,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=e3368d60-bdc4-4b50-8d8b-d15c5614c5cf</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -3522,14 +3522,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 11:26:04</sys_created_on>
         <sys_id>b4af1616db765410b7a7e5bd0b96195d</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:45:26</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:32:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3630,9 +3630,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-23 06:39:49</sys_created_on>
         <sys_id>f2e31115db00e05020c17a2faa9619e3</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:45:26</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:32:04</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f2e31115db00e05020c17a2faa9619e3"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -7898,17 +7898,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Create Subnet">a9f19996dbb25410b7a7e5bd0b961931</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"1275c77cdb0b9810b7a7e5bd0b9619b2","name":"plan"}}</plan>
-        <snapshot>118232eedb48201020c17a2faa9619ae</snapshot>
+        <snapshot>905be77edbc0601020c17a2faa961965</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:36:11</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1275c77cdb0b9810b7a7e5bd0b9619b2</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:45:52</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:32:23</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -10577,7 +10577,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=Security List ID,child_name=Security_List_ID,child_type=string,child_type_label=String,child_uiUniqueId=6aaceaad-8daa-42b9-9fc3-3617b8623016,co_type_name=FD3e82b2eec548201073ee2237efe8a80c,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=c8d90742-43a1-48b2-9bf4-5e972a22f317</attributes>
+        <attributes>child_label=Security List ID,child_name=Security_List_ID,child_type=string,child_type_label=String,child_uiUniqueId=e4ca299d-fd32-4f3a-a365-fd5e19efd9a7,co_type_name=FDe95b6b7e1ec060107468e319882a262a,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=c8d90742-43a1-48b2-9bf4-5e972a22f317</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -10635,14 +10635,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:35:59</sys_created_on>
         <sys_id>1765077cdb0b9810b7a7e5bd0b9619e7</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:45:41</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:32:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -10743,9 +10743,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-13 16:39:25</sys_created_on>
         <sys_id>a04d7782dbff1c1020c17a2faa96196c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:45:40</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:32:16</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a04d7782dbff1c1020c17a2faa96196c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -10780,7 +10780,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=Tags,child_name=Tags,child_type=object,child_type_label=Object,child_uiUniqueId=11097a68-5b49-4287-b1fd-64c386130009,co_type_name=FDb282b2eed04820103da4388b3ec8450b,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=e3368d60-bdc4-4b50-8d8b-d15c5614c5cf</attributes>
+        <attributes>child_label=Tags,child_name=Tags,child_type=object,child_type_label=Object,child_uiUniqueId=41492780-49fb-4777-8c6e-2edfb5b66994,co_type_name=FDad5b6b7e63c060101c63a120f0882328,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=e3368d60-bdc4-4b50-8d8b-d15c5614c5cf</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -10838,14 +10838,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 08:35:59</sys_created_on>
         <sys_id>5b65077cdb0b9810b7a7e5bd0b9619ed</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:45:40</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:32:16</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -10894,7 +10894,7 @@
         <hint/>
         <internal_type display_value="Choice">choice</internal_type>
         <label>Compartment ID</label>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Create Subnet">4765077cdb0b9810b7a7e5bd0b9619b8</model>
         <model_id>4765077cdb0b9810b7a7e5bd0b9619b8</model_id>
@@ -10919,14 +10919,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-27 10:45:39</sys_created_on>
         <sys_id>7282b2eedb48201020c17a2faa96191f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:45:39</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:32:16</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -10946,9 +10946,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-27 10:45:39</sys_created_on>
         <sys_id>7682b2eedb48201020c17a2faa961939</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:45:39</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:32:16</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7682b2eedb48201020c17a2faa961939"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -11002,7 +11002,7 @@
         <hint/>
         <internal_type display_value="String">string</internal_type>
         <label>Tenancy ID</label>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Create Subnet">4765077cdb0b9810b7a7e5bd0b9619b8</model>
         <model_id>4765077cdb0b9810b7a7e5bd0b9619b8</model_id>
@@ -11027,14 +11027,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-27 10:45:38</sys_created_on>
         <sys_id>7a82b2eedb48201020c17a2faa96190e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:45:38</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:32:16</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -11378,9 +11378,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-27 10:45:40</sys_created_on>
         <sys_id>5382b2eedb48201020c17a2faa961989</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:45:40</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:32:17</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5382b2eedb48201020c17a2faa961989"/>
     <sys_variable_value action="INSERT_OR_UPDATE">

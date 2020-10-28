@@ -13,7 +13,7 @@
         <ih_action>true</ih_action>
         <internal_name>change_subnet_compartment</internal_name>
         <label_cache>[{"name":"{{action.network_id}}","label":"action➛Subnet Id","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment ID","type":"action","ref":""},{"name":"{{action.subnet_id}}","label":"action➛Subnet ID","type":"action","ref":""},{"name":"{{action.target_compartment_id}}","label":"action➛Target Compartment ID","type":"action","ref":""},{"name":"{{action.tenancy_id}}","label":"action➛Tenancy ID","type":"action","ref":""},{"name":"{{step[2c850f0d-0954-49a2-af7d-b15d3c2aa46c].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[2c850f0d-0954-49a2-af7d-b15d3c2aa46c].network_id}}","label":"step➛Pre Processing➛subnet_id","type":"step","ref":""},{"name":"{{step[2c850f0d-0954-49a2-af7d-b15d3c2aa46c].compartment_id}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[2c850f0d-0954-49a2-af7d-b15d3c2aa46c].payload}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[1132c8e6-6b00-4fe6-b5e4-854644e9dc3b].response_body}}","label":"step➛Change Subnet Compartment➛Response Body","type":"step","ref":""},{"name":"{{step[1132c8e6-6b00-4fe6-b5e4-854644e9dc3b].status_code}}","label":"step➛Change Subnet Compartment➛Status Code","type":"step","ref":""},{"name":"{{step[20df4add-5bda-49ea-aee5-62f32b19aaf9].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[20df4add-5bda-49ea-aee5-62f32b19aaf9].errormessage}}","label":"step➛Post Processing➛errormessage","type":"step","ref":""},{"name":"{{step[20df4add-5bda-49ea-aee5-62f32b19aaf9].variable2}}","label":"step➛Post Processing➛variable2","type":"step","ref":""},{"name":"{{step[20df4add-5bda-49ea-aee5-62f32b19aaf9].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[2c850f0d-0954-49a2-af7d-b15d3c2aa46c].subnet_id}}","label":"step➛Pre Processing➛subnet_id","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>483f262edb48201020c17a2faa961936</latest_snapshot>
+        <latest_snapshot>adf9a73edbc0601020c17a2faa9619d7</latest_snapshot>
         <master_snapshot>5ffd4774db4b9810b7a7e5bd0b961947</master_snapshot>
         <name>Change Subnet Compartment</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>99d5dfaadbfe5410b7a7e5bd0b961955</sys_id>
-        <sys_mod_count>65</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_name>Change Subnet Compartment</sys_name>
         <sys_overrides/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_99d5dfaadbfe5410b7a7e5bd0b961955</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:31:03</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:26:19</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1450,9 +1450,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-22 05:35:10</sys_created_on>
         <sys_id>468bbfb0db44a05020c17a2faa961992</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:30:55</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:26:11</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=468bbfb0db44a05020c17a2faa961992"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1558,11 +1558,39 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-08 16:03:55</sys_created_on>
         <sys_id>7b258ae4db7f581020c17a2faa9619b6</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:30:55</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:26:11</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7b258ae4db7f581020c17a2faa9619b6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>7b258ae4db7f581020c17a2faa9619b6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-28 09:26:03</sys_created_on>
+        <sys_id>3ae9273edbc0601020c17a2faa9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-28 09:26:03</sys_updated_on>
+        <value>{{action.tenancy_id}}</value>
+        <variable display_value="">ef577fbcdb04a05020c17a2faa9619dd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>7b258ae4db7f581020c17a2faa9619b6</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-28 09:26:03</sys_created_on>
+        <sys_id>76e9273edbc0601020c17a2faa9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-28 09:26:03</sys_updated_on>
+        <value>{{action.compartment_id}}</value>
+        <variable display_value="">2f577fbcdb04a05020c17a2faa9619d4</variable>
+    </sys_variable_value>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -3621,17 +3649,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Change Subnet Compartment">99d5dfaadbfe5410b7a7e5bd0b961955</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"a00e8774db4b9810b7a7e5bd0b96197a","name":"plan"}}</plan>
-        <snapshot>483f262edb48201020c17a2faa961936</snapshot>
+        <snapshot>adf9a73edbc0601020c17a2faa9619d7</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-02 09:13:29</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a00e8774db4b9810b7a7e5bd0b96197a</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:31:07</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:26:22</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -5029,11 +5057,39 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-08 16:04:13</sys_created_on>
         <sys_id>90454ee4db7f581020c17a2faa961991</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:31:02</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:26:18</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=90454ee4db7f581020c17a2faa961991"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>90454ee4db7f581020c17a2faa961991</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-28 09:26:18</sys_created_on>
+        <sys_id>56f9e73edbc0601020c17a2faa961995</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-28 09:26:18</sys_updated_on>
+        <value>{{action.tenancy_id}}</value>
+        <variable display_value="">ef577fbcdb04a05020c17a2faa9619dd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>90454ee4db7f581020c17a2faa961991</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-28 09:26:18</sys_created_on>
+        <sys_id>92f9e73edbc0601020c17a2faa961995</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-28 09:26:18</sys_updated_on>
+        <value>{{action.compartment_id}}</value>
+        <variable display_value="">2f577fbcdb04a05020c17a2faa9619d4</variable>
+    </sys_variable_value>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -5285,9 +5341,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-22 05:35:38</sys_created_on>
         <sys_id>b8abb3f0db44a05020c17a2faa9619f2</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:31:02</sys_updated_on>
+        <sys_updated_on>2020-10-28 09:26:18</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b8abb3f0db44a05020c17a2faa9619f2"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
