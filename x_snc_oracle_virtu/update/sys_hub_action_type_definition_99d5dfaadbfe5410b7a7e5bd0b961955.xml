@@ -7,8 +7,8 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category display_value="Subnet Management">a3d19996dbb25410b7a7e5bd0b96191d</category>
-        <copied_from>f14b9ee6db7e5410b7a7e5bd0b961929</copied_from>
-        <copied_from_name>Change Sub-net Compartment</copied_from_name>
+        <copied_from/>
+        <copied_from_name/>
         <description>&lt;p&gt;Moves a subnet to different compartment within the same tenancy. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Tenancy ID&lt;/b&gt; -OCID of the tenanacy.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; - OCID of the compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Subnet ID&lt;/b&gt; - OCID of the subnet.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Target Compartment ID&lt;/b&gt; - OCID of the compartment to move the subnet to.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>change_subnet_compartment</internal_name>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>99d5dfaadbfe5410b7a7e5bd0b961955</sys_id>
-        <sys_mod_count>75</sys_mod_count>
+        <sys_mod_count>77</sys_mod_count>
         <sys_name>Change Subnet Compartment</sys_name>
         <sys_overrides/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_99d5dfaadbfe5410b7a7e5bd0b961955</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 11:50:48</sys_updated_on>
+        <sys_updated_on>2020-11-05 08:31:21</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1446,7 +1446,7 @@
     <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
         <action_input display_value="">028bbfb0db44a05020c17a2faa96198a</action_input>
         <action_inputs/>
-        <action_type display_value="Look up Compartments">5d1c61eedb0b1c105be372143996195e</action_type>
+        <action_type display_value="">5d1c61eedb0b1c105be372143996195e</action_type>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-22 05:35:10</sys_created_on>
         <sys_id>468bbfb0db44a05020c17a2faa961992</sys_id>
@@ -1554,7 +1554,7 @@
     <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
         <action_input display_value="">4efac407db44601020c17a2faa961993</action_input>
         <action_inputs/>
-        <action_type display_value="Look up Compartments">5d1c61eedb0b1c105be372143996195e</action_type>
+        <action_type display_value="">5d1c61eedb0b1c105be372143996195e</action_type>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 11:50:28</sys_created_on>
         <sys_id>06fac407db44601020c17a2faa9619a0</sys_id>
@@ -1662,7 +1662,7 @@
     <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
         <action_input display_value="">77258ae4db7f581020c17a2faa9619ab</action_input>
         <action_inputs/>
-        <action_type display_value="Look Up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action_type>
+        <action_type display_value="Look up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action_type>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-08 16:03:55</sys_created_on>
         <sys_id>7b258ae4db7f581020c17a2faa9619b6</sys_id>
@@ -3256,11 +3256,11 @@
         <sys_created_on>2020-10-22 05:35:09</sys_created_on>
         <sys_id>028bbfb0db44a05020c17a2faa961991</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Compartment ID</sys_name>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_99d5dfaadbfe5410b7a7e5bd0b961955_compartment_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-22 05:35:09</sys_updated_on>
         <url/>
@@ -3279,11 +3279,11 @@
         <sys_created_on>2020-10-22 05:35:10</sys_created_on>
         <sys_id>468bbfb0db44a05020c17a2faa9619a0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Tenancy ID</sys_name>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_99d5dfaadbfe5410b7a7e5bd0b961955_tenancy_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-22 05:35:10</sys_updated_on>
         <url/>
@@ -3302,11 +3302,11 @@
         <sys_created_on>2020-10-28 11:50:28</sys_created_on>
         <sys_id>4afac407db44601020c17a2faa96199e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Target Compartment ID</sys_name>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_99d5dfaadbfe5410b7a7e5bd0b961955_target_compartment_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-28 11:50:28</sys_updated_on>
         <url/>
@@ -3325,11 +3325,11 @@
         <sys_created_on>2020-10-08 16:03:55</sys_created_on>
         <sys_id>b3258ae4db7f581020c17a2faa9619b5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Subnet ID</sys_name>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_99d5dfaadbfe5410b7a7e5bd0b961955_subnet_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-08 16:03:55</sys_updated_on>
         <url/>
@@ -3660,11 +3660,11 @@
         <sys_created_on>2020-08-26 10:01:22</sys_created_on>
         <sys_id>71d5dfaadbfe5410b7a7e5bd0b9619e1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Status</sys_name>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_99d5dfaadbfe5410b7a7e5bd0b961955_status_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-08-26 10:01:22</sys_updated_on>
         <url/>
@@ -3683,11 +3683,11 @@
         <sys_created_on>2020-08-26 10:01:22</sys_created_on>
         <sys_id>79d5dfaadbfe5410b7a7e5bd0b9619f3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Error Message</sys_name>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_99d5dfaadbfe5410b7a7e5bd0b961955_error_message_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-08-26 10:01:22</sys_updated_on>
         <url/>
@@ -5101,7 +5101,7 @@
     <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
         <action_input display_value="">18454ee4db7f581020c17a2faa961989</action_input>
         <action_inputs/>
-        <action_type display_value="Look Up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action_type>
+        <action_type display_value="Look up Subnets">45006eaadb7e5410b7a7e5bd0b96190f</action_type>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-08 16:04:13</sys_created_on>
         <sys_id>90454ee4db7f581020c17a2faa961991</sys_id>
@@ -5223,7 +5223,7 @@
     <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
         <action_input display_value="">760b8807db44601020c17a2faa9619fd</action_input>
         <action_inputs/>
-        <action_type display_value="Look up Compartments">5d1c61eedb0b1c105be372143996195e</action_type>
+        <action_type display_value="">5d1c61eedb0b1c105be372143996195e</action_type>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 11:50:48</sys_created_on>
         <sys_id>760bc807db44601020c17a2faa961905</sys_id>
@@ -5412,7 +5412,7 @@
     <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
         <action_input display_value="">b8abb3f0db44a05020c17a2faa9619ea</action_input>
         <action_inputs/>
-        <action_type display_value="Look up Compartments">5d1c61eedb0b1c105be372143996195e</action_type>
+        <action_type display_value="">5d1c61eedb0b1c105be372143996195e</action_type>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-22 05:35:38</sys_created_on>
         <sys_id>b8abb3f0db44a05020c17a2faa9619f2</sys_id>
@@ -6859,11 +6859,11 @@
         <sys_created_on>2020-10-08 16:04:13</sys_created_on>
         <sys_id>10454ee4db7f581020c17a2faa961990</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Subnet ID</sys_name>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_5ffd4774db4b9810b7a7e5bd0b961947_subnet_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-08 16:04:13</sys_updated_on>
         <url/>
@@ -6882,11 +6882,11 @@
         <sys_created_on>2020-10-28 11:50:48</sys_created_on>
         <sys_id>320bc807db44601020c17a2faa961904</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Target Compartment ID</sys_name>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_5ffd4774db4b9810b7a7e5bd0b961947_target_compartment_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-28 11:50:48</sys_updated_on>
         <url/>
@@ -6905,11 +6905,11 @@
         <sys_created_on>2020-10-22 05:35:38</sys_created_on>
         <sys_id>74abb3f0db44a05020c17a2faa9619f1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Compartment ID</sys_name>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_5ffd4774db4b9810b7a7e5bd0b961947_compartment_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-22 05:35:38</sys_updated_on>
         <url/>
@@ -6928,11 +6928,11 @@
         <sys_created_on>2020-10-22 05:35:37</sys_created_on>
         <sys_id>b4abb3f0db44a05020c17a2faa9619df</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Tenancy ID</sys_name>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_5ffd4774db4b9810b7a7e5bd0b961947_tenancy_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-22 05:35:37</sys_updated_on>
         <url/>
@@ -7263,11 +7263,11 @@
         <sys_created_on>2020-09-02 09:13:26</sys_created_on>
         <sys_id>b7fd4774db4b9810b7a7e5bd0b9619d0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Status</sys_name>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_5ffd4774db4b9810b7a7e5bd0b961947_status_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-09-02 09:13:26</sys_updated_on>
         <url/>
@@ -7286,11 +7286,11 @@
         <sys_created_on>2020-09-02 09:13:26</sys_created_on>
         <sys_id>b7fd4774db4b9810b7a7e5bd0b9619d6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Error Message</sys_name>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_5ffd4774db4b9810b7a7e5bd0b961947_error_message_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-09-02 09:13:26</sys_updated_on>
         <url/>

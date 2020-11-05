@@ -6,14 +6,14 @@
         <active>true</active>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category display_value="Network(VCN) Management">6e7fd728dbf2541020c17a2faa96199f</category>
+        <category display_value="Network Management">6e7fd728dbf2541020c17a2faa96199f</category>
         <copied_from/>
         <copied_from_name/>
-        <description>&lt;p&gt;Delete a virtual cloud network(VCN).&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Tenancy ID&lt;/b&gt; -OCID of the tenancy.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -OCID of the network.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
+        <description>&lt;p&gt;Delete a Virtual Cloud Network (VCN).&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Tenancy ID&lt;/b&gt; -OCID of the tenancy.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -OCID of the network.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>delete_network</internal_name>
         <label_cache>[{"name":"{{action.network_id}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment ID","type":"action","ref":""},{"name":"{{action.tenancy_id}}","label":"action➛Tenancy ID","type":"action","ref":""},{"name":"{{step[61a1cfab-c390-4022-b807-43ef4208a943].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[61a1cfab-c390-4022-b807-43ef4208a943].network_id}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].status_code}}","label":"step➛Delete Network➛Status Code","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].error_code}}","label":"step➛Delete Network➛Error Code","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].response_body}}","label":"step➛Delete Network➛Response Body","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].response_headers}}","label":"step➛Delete Network➛Response Headers","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].errormessage}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>0d733222db88201020c17a2faa9619a3</latest_snapshot>
+        <latest_snapshot>2ccfd0eddb5ca4505be37214399619e7</latest_snapshot>
         <master_snapshot>9422c6d2db365410b7a7e5bd0b961911</master_snapshot>
         <name>Delete Network</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>81dc38b4dbb6541020c17a2faa961903</sys_id>
-        <sys_mod_count>71</sys_mod_count>
+        <sys_mod_count>76</sys_mod_count>
         <sys_name>Delete Network</sys_name>
         <sys_overrides/>
         <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_81dc38b4dbb6541020c17a2faa961903</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:49:42</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:46:11</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -675,7 +675,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Network Id</label>
+        <label>network_id</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Pre Processing">e2604538dbb6541020c17a2faa96192e</model>
@@ -701,14 +701,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-20 12:39:09</sys_created_on>
         <sys_id>22604538dbb6541020c17a2faa961937</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-20 12:39:09</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:45:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1067,7 +1067,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Error Message</label>
+        <label>errormessage</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Post Processing">e6604538dbb6541020c17a2faa96196b</model>
@@ -1093,14 +1093,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-24 11:50:29</sys_created_on>
         <sys_id>24ab9d4adbba1410b7a7e5bd0b9619f4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-24 11:50:29</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:45:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1148,7 +1148,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Status</label>
+        <label>status</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Post Processing">e6604538dbb6541020c17a2faa96196b</model>
@@ -1174,14 +1174,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-20 12:39:10</sys_created_on>
         <sys_id>32604538dbb6541020c17a2faa96198c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-20 12:39:10</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:45:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1279,13 +1279,13 @@
     <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
         <action_input display_value="">40fc45eadb44201020c17a2faa961902</action_input>
         <action_inputs/>
-        <action_type display_value="Look up Compartments">5d1c61eedb0b1c105be372143996195e</action_type>
+        <action_type display_value="">5d1c61eedb0b1c105be372143996195e</action_type>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-27 03:21:44</sys_created_on>
         <sys_id>14fc45eadb44201020c17a2faa96190e</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:49:33</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:46:00</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=14fc45eadb44201020c17a2faa96190e"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1468,13 +1468,13 @@
     <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
         <action_input display_value="">f6d2a794db3b581020c17a2faa96199e</action_input>
         <action_inputs/>
-        <action_type display_value="Look Up Networks">1fae08cedbf61410b7a7e5bd0b96192c</action_type>
+        <action_type display_value="Look up Networks">1fae08cedbf61410b7a7e5bd0b96192c</action_type>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-08 04:14:41</sys_created_on>
         <sys_id>fed2a794db3b581020c17a2faa9619a5</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:49:33</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:46:00</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fed2a794db3b581020c17a2faa9619a5"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2282,7 +2282,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Network Id</label>
+        <label>network_id</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Pre Processing">e2604538dbb6541020c17a2faa96192e</model>
@@ -2308,14 +2308,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-20 12:39:09</sys_created_on>
         <sys_id>22604538dbb6541020c17a2faa961937</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-20 12:39:09</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:45:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2674,7 +2674,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Error Message</label>
+        <label>errormessage</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Post Processing">e6604538dbb6541020c17a2faa96196b</model>
@@ -2700,14 +2700,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-24 11:50:29</sys_created_on>
         <sys_id>24ab9d4adbba1410b7a7e5bd0b9619f4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-24 11:50:29</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:45:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2755,7 +2755,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Status</label>
+        <label>status</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Post Processing">e6604538dbb6541020c17a2faa96196b</model>
@@ -2781,14 +2781,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-20 12:39:10</sys_created_on>
         <sys_id>32604538dbb6541020c17a2faa96198c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-20 12:39:10</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:45:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3648,17 +3648,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Delete Network">81dc38b4dbb6541020c17a2faa961903</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"d1220ad2db365410b7a7e5bd0b96192c","name":"plan"}}</plan>
-        <snapshot>0d733222db88201020c17a2faa9619a3</snapshot>
+        <snapshot>2ccfd0eddb5ca4505be37214399619e7</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:17:13</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d1220ad2db365410b7a7e5bd0b96192c</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:49:46</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:46:15</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -3666,10 +3666,10 @@
         <action_template/>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category display_value="Network(VCN) Management">6e7fd728dbf2541020c17a2faa96199f</category>
+        <category display_value="Network Management">6e7fd728dbf2541020c17a2faa96199f</category>
         <copied_from/>
         <copied_from_name/>
-        <description>&lt;p&gt;Delete a virtual cloud network(VCN).&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Tenancy ID&lt;/b&gt; -OCID of the tenancy.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -OCID of the network.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
+        <description>&lt;p&gt;Delete a Virtual Cloud Network (VCN).&lt;/p&gt; &lt;p&gt;&lt;b&gt;Inputs&lt;/b&gt; :&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Tenancy ID&lt;/b&gt; -OCID of the tenancy.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Compartment ID&lt;/b&gt; -OCID of the compartment.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Network ID&lt;/b&gt; -OCID of the network.&lt;/li&gt; &lt;p&gt;&lt;/p&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Outputs&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure, Status is set to “Error”.&lt;/li&gt; &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error, along with code. Populated only when an error occurs.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;b&gt;Error Messages&lt;/b&gt; : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Bad Request.&lt;/li&gt; &lt;li&gt;Unauthorized.&lt;/li&gt; &lt;li&gt;Not Found.&lt;/li&gt; &lt;li&gt;Internal Server Error.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;To use this action, the corresponding Oracle connection and credential must be created and associated with the Oracle Connection &amp; Credential alias. &lt;a target='_blank' href='http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias'&gt;Learn More&lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt; &lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target='_blank' href='https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information'&gt;Read More&lt;/a&gt;. &lt;/p&gt;</description>
         <internal_name>delete_network</internal_name>
         <label_cache>[{"name":"{{action.network_id}}","label":"action➛Network ID","type":"action","ref":""},{"name":"{{action.compartment_id}}","label":"action➛Compartment ID","type":"action","ref":""},{"name":"{{action.tenancy_id}}","label":"action➛Tenancy ID","type":"action","ref":""},{"name":"{{step[61a1cfab-c390-4022-b807-43ef4208a943].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[61a1cfab-c390-4022-b807-43ef4208a943].network_id}}","label":"step➛Pre Processing➛Network Id","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].status_code}}","label":"step➛Delete Network➛Status Code","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].error_code}}","label":"step➛Delete Network➛Error Code","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].response_body}}","label":"step➛Delete Network➛Response Body","type":"step","ref":""},{"name":"{{step[ffe320df-881a-4d98-b92c-353454a689be].response_headers}}","label":"step➛Delete Network➛Response Headers","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[a2ae92ef-9633-435b-bc0c-f0413a0b45c6].errormessage}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -3684,7 +3684,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9422c6d2db365410b7a7e5bd0b961911</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3692,7 +3692,7 @@
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:47:38</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:46:09</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -4412,7 +4412,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Error Message</label>
+        <label>errormessage</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Post Processing">ac22c6d2db365410b7a7e5bd0b961952</model>
@@ -4438,14 +4438,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:17:10</sys_created_on>
         <sys_id>6822c6d2db365410b7a7e5bd0b961968</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:17:10</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:46:10</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4493,7 +4493,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Status</label>
+        <label>status</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Post Processing">ac22c6d2db365410b7a7e5bd0b961952</model>
@@ -4519,14 +4519,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:17:10</sys_created_on>
         <sys_id>e022c6d2db365410b7a7e5bd0b961962</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:17:10</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:46:10</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4758,7 +4758,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Network Id</label>
+        <label>network_id</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Pre Processing">dc22c6d2db365410b7a7e5bd0b961919</model>
@@ -4784,14 +4784,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:17:09</sys_created_on>
         <sys_id>5822c6d2db365410b7a7e5bd0b961923</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:17:09</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:46:09</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4970,13 +4970,13 @@
     <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
         <action_input display_value="">9d332f94db3b581020c17a2faa961927</action_input>
         <action_inputs/>
-        <action_type display_value="Look Up Networks">1fae08cedbf61410b7a7e5bd0b96192c</action_type>
+        <action_type display_value="Look up Networks">1fae08cedbf61410b7a7e5bd0b96192c</action_type>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-08 04:16:14</sys_created_on>
         <sys_id>95332f94db3b581020c17a2faa96194c</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:49:41</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:46:09</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=95332f94db3b581020c17a2faa96194c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5092,13 +5092,13 @@
     <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
         <action_input display_value="">f81e452edb44201020c17a2faa961962</action_input>
         <action_inputs/>
-        <action_type display_value="Look up Compartments">5d1c61eedb0b1c105be372143996195e</action_type>
+        <action_type display_value="">5d1c61eedb0b1c105be372143996195e</action_type>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-27 03:26:42</sys_created_on>
         <sys_id>f81e452edb44201020c17a2faa96197c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:49:40</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:46:09</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f81e452edb44201020c17a2faa96197c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5971,7 +5971,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Error Message</label>
+        <label>errormessage</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Post Processing">ac22c6d2db365410b7a7e5bd0b961952</model>
@@ -5997,14 +5997,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:17:10</sys_created_on>
         <sys_id>6822c6d2db365410b7a7e5bd0b961968</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:17:10</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:46:10</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -6052,7 +6052,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Status</label>
+        <label>status</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Post Processing">ac22c6d2db365410b7a7e5bd0b961952</model>
@@ -6078,14 +6078,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:17:10</sys_created_on>
         <sys_id>e022c6d2db365410b7a7e5bd0b961962</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:17:10</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:46:10</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -6317,7 +6317,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Network Id</label>
+        <label>network_id</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Pre Processing">dc22c6d2db365410b7a7e5bd0b961919</model>
@@ -6343,14 +6343,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-25 09:17:09</sys_created_on>
         <sys_id>5822c6d2db365410b7a7e5bd0b961923</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-25 09:17:09</sys_updated_on>
+        <sys_updated_on>2020-11-05 07:46:09</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

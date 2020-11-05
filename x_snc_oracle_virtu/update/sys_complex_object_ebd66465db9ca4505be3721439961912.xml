@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD2bd664657e9ca4508fe5fea04aba2b12</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>4f6e5be4dbf2541020c17a2faa96190d</scope_name>
+        <serialized_content>{"FlowDesigner:FD2bd664657e9ca4508fe5fea04aba2b12":{"$COCollectionField":[{"egressSecurityRule":{"protocol":"String","protocol.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"protocol\",\"mandatory\":\"true\",\"order\":\"19\",\"max_length\":\"0\"}"},"destination":"String","destination.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"destination\",\"mandatory\":\"true\",\"order\":\"20\",\"max_length\":\"0\"}"},"tcpOptions":{"destinationPortRange":{"min":"String","min.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"min\",\"mandatory\":\"true\",\"order\":\"23\",\"max_length\":\"0\"}"},"max":"String","max.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"max\",\"mandatory\":\"true\",\"order\":\"24\",\"max_length\":\"0\"}"}},"destinationPortRange.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"destinationPortRange\",\"mandatory\":\"true\",\"order\":\"22\",\"max_length\":\"0\"}"}},"tcpOptions.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"tcpOptions\",\"mandatory\":\"true\",\"order\":\"21\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"egresssecurityrules\",\"mandatory\":\"true\",\"child_name\":\"egressSecurityRule\",\"uiUniqueId\":\"5a71ab89-a5e4-4948-99c5-b2c0cacceb36\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD2bd664657e9ca4508fe5fea04aba2b12\",\"child_label\":\"egressSecurityRule\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"6\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"c6817244-1c79-4222-9b28-4ead3bbfebe5\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD2bd664657e9ca4508fe5fea04aba2b12.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"egresssecurityrules\",\"mandatory\":\"true\",\"child_name\":\"egressSecurityRule\",\"uiUniqueId\":\"5a71ab89-a5e4-4948-99c5-b2c0cacceb36\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD2bd664657e9ca4508fe5fea04aba2b12\",\"child_label\":\"egressSecurityRule\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"6\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"c6817244-1c79-4222-9b28-4ead3bbfebe5\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-05 08:17:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ebd66465db9ca4505be3721439961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD2bd664657e9ca4508fe5fea04aba2b12</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Oracle Virtual Cloud Network Spoke" source="sn_oracle_vcn_spke">4f6e5be4dbf2541020c17a2faa96190d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Virtual Cloud Network Spoke">4f6e5be4dbf2541020c17a2faa96190d</sys_scope>
+        <sys_update_name>sys_complex_object_ebd66465db9ca4505be3721439961912</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-05 08:17:10</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>
